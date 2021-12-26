@@ -13,3 +13,5 @@ With the onset of two new batches of students in the college, and while Google D
 <br><br>
 
 # About Code 
+ 
+ This Repository is based on HTML/CSS for building a Student Portfolio Web Page.As It contains only HTML and CSS so it becomes easier for even a geek developer.
