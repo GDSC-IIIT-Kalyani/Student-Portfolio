@@ -31,48 +31,68 @@
     font-size: 1rem;
     padding: 5px;
     cursor: pointer;
+    background-color: rgb(42, 42, 255);
+    border-radius: 5px;
+    width:100px;
+    height:50px;
+    border:2px solid white;
+    color:white;
+    text-transform: capitalize;
 }
-
+.your_button:hover{
+   
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
 /* about me */
 .about{
-    height: 100vh;
+    min-height: 60vh;
 }
 
 .about_heading{
     font-size: 3rem;
     text-align: center;
     text-decoration: underline;
-}
-
-/* project */
-.project{
-    height: 100vh;
-}
-
-.project_heading{
-    font-size: 3rem;
-    text-align: center;
-    text-decoration: underline;
-}
-
-/* experience */
-.experience_sec{
-    height: 100vh;
-}
-
-.experience_heading{
-    font-size: 3rem;
-    text-align: center;
-    text-decoration: underline;
+    font-weight:600;
 }
 
 /* contact */
 .contact_sec{
-    height: 100vh;
+    height: 60vh;
+    width:70vw;
+    margin: 0 auto;
 }
 
 .contact_heading{
+    font-weight:600;
     font-size: 3rem;
     text-align: center;
     text-decoration: underline;
+}
+
+.contact_info{
+    font-size:1.3em;
+    font-weight: 600;
+    margin-top:10vh;
+}
+.data{
+    font-weight:initial;
+}
+
+.Email,.mobile_no,.linkdin,.github,.others{
+    padding:2vh 0;
+}
+
+span a{
+    color:black;
+}
+
+span a:hover{
+    color:blue;
+}
+
+
+.para{
+    width:70vw;
+    margin:8vh auto;
+    font-size: 2em;
 }
