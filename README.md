@@ -15,4 +15,5 @@ With the onset of two new batches of students in the college, and while Google D
 # About Code 
  
  This Repository is based on HTML/CSS for building a Student Portfolio Web Page.As It contains only HTML and CSS so it becomes easier for even a geek developer.
+ <br>
  For a quick view of the Web Page Visit here <a href='https://gdsc-iiit-kalyani.github.io/Student-Portfolio/'>Preview</a>
