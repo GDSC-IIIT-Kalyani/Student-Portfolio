@@ -2,41 +2,6 @@
     margin: 0;
     padding: 0;
 }
-/* navbar styling */
-.navBar{
-    display: flex;
-    padding: 0 1rem;
-    height: 6rem;
-    background-color: rgb(84, 88, 84);
-}
-
-.navLogo{
-    display: flex;
-    align-items: center;
-}
-
-.navLogo img{
-    height: 5rem;
-    width: 10rem;
-    border-radius: 50%;
-    border: 2px solid black;
-}
-
-.navBar li{
-    list-style: none;
-    margin: 0rem 1rem 0 1rem;
-}
-
-.navBar li a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-.navLinks{
-    display: flex;
-    font-size: 1.3rem;
-    align-items: center;
-}
 
 /* home page styling */
 

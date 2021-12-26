@@ -12,4 +12,4 @@ With the onset of two new batches of students in the college, and while Google D
 - Install Git in Local System (<a href="https://www.youtube.com/watch?v=2j7fD92g-gE)"> Tutorial Link</a> )
 <br><br>
 
-<!-- # About Code  -->
+# About Code 
