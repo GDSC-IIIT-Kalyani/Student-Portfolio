@@ -4,6 +4,9 @@
 }
 
 /* home page styling */
+body{
+    background-color: black;
+}
 
 .homePage{                                      /* selecting div with class "homePage" and adding styling to it */
     display: flex;                              /* creating a flex box */
