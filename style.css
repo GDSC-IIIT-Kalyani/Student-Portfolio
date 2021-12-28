@@ -5,7 +5,8 @@
 
 /* home page styling */
 body{
-    background-color: black;
+    background-color: #252839;
+    color: #01fe87;
 }
 
 .homePage{                                      /* selecting div with class "homePage" and adding styling to it */
