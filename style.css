@@ -23,6 +23,7 @@ body{
 
 .name{                                         /* selecting div with class "name" and adding styling to it */
     font-size: 3rem; 
+    color: green;
 }
 
 .intro p{                                      /* selecting div with class "intro" then navigating to p tag inside it, and adding styling to it */
