@@ -2,7 +2,20 @@
     margin: 0;
     padding: 0;  /* providing default margin and padding to be 0 */
 }
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  min-height: 99vh;
+}
 
+body {  
+  background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* home page styling */
 
 .homePage{                                      /* selecting div with class "homePage" and adding styling to it */
