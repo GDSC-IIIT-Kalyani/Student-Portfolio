@@ -14,28 +14,44 @@
     <!-- home page -->
     <div id="home" class="homePage">
         <div class="intro">                                  <!-- creating a master div to have child elements in it -->
-            <div class="name">Hi, I am &#60;name&#62;</div>  <!-- creating a div to enter your name (edit your name here) -->
-            <p>Frontend developer</p>                        <!-- paragraph tag -->
-            <button class="your_button">button</button>      <!-- creating a button -->
-        </div>
-        <div class="myImage">                                <!-- always a good habbit to add master divs -->
-            <img src="https://miro.medium.com/max/3960/0*HICLyAdNSIyT0ODU.jpg" alt="MyImage">  <!-- adding a image using url -->
-        </div>
-    </div>
-
-    <!-- about me -->
-    <div id="aboutme" class="about">                         <!-- again a master div -->
-        <div class="about_heading">                          <!-- child div for heading -->
-            About me
-        </div>
-        <!-- adding a paragraph tag to write "about me", edit it and write about you -->
-        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptates provident molestias a
-            animi facilis iusto voluptatum repellat eligendi consequatur distinctio placeat mollitia veritatis
-            recusandae, ad, quasi commodi enim quos! Quasi aspernatur veniam, blanditiis sint necessitatibus dicta
-            libero voluptatibus reiciendis asperiores nemo maiores ducimus corrupti magnam error voluptatum ab velit.
-        </p>
-    </div>
-
+           <nav>
+			<h2 class="logo">Portfo<span>lio</span></h2>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+                li><a href="#">Contact Us</a></li>
+			</ul>
+            <a href="#" class="btn">Subscribe</a>
+		</nav>
+       <div class="content">
+			<h4>Hello, my name is</h4>
+			<h1>Tahmid <span>Ahmed</span></h1>
+			<h3>I'am a Web Developer.</h3>
+			<div class="newslatter">
+				<form>
+					<input type="email" name="email" id="mail" placeholder="Enter Your Email">
+					<input type="submit" name="submit" value="Lets Start">
+				</form>
+			</div>
+		</div>
+	</div>
+   <!----About section start---->
+	<section class="about">
+		<div class="main">
+			<img src="img/main-img.png">
+			<div class="about-text">
+				<h2>About Me</h2>
+				<h5>Developer <span>& Designer</span></h5>
+				<p>I am a front-end web developer. I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.A responsive design makes your website accessible to all users, regardless of their device.</p>
+				<button type="button">Let's Talk</button>
+			</div>
+		</div>
+	</section> 
+    <!------Contact Me------>
+	<div class="contact-me">
+		<p>Let Me Get You A Beautiful Website.</p>
+		<a class="button-two" href="#">Hire Me</a>
+	</div>
     <!-- contact -->
     <div id="contact" class="contact_sec">                  <!-- adding a master div again -->
         <div class="contact_heading">
