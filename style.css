@@ -13,8 +13,8 @@
 }
 
 .myImage img{                                  /* selecting div with class "myImage" then navigating to img tag inside it, and adding styling to it */
-    height: 18rem;
-    width: auto;
+    height: 200px;
+    width: 50%;
     border-radius: 1rem;
 }
 
