@@ -1,304 +1,105 @@
 *{
-	padding: 0;
-	margin: 0;
-	font-family: 'Josefin Sans', sans-serif;
-	box-sizing: border-box;
-}
-.hero{
-	height: 100vh;
-	width: 100%;
-	background-image: url(../img/background.jpg);
-	background-size: cover;
-	background-position: center;
-}
-nav{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding-top: 45px;
-	padding-left: 8%;
-	padding-right: 8%;
-}
-.logo{
-	color: white;
-	font-size: 35px;
-	letter-spacing: 1px;
-	cursor: pointer;
-}
-span{
-	color: #f9004d;
-}
-nav ul li{
-	list-style-type: none;
-	display: inline-block;
-	padding: 10px  25px;
-}
-nav ul li a{
-	color: white;
-	text-decoration: none;
-	font-weight: bold;
-	text-transform: capitalize;
-}
-nav ul li a:hover{
-	color: #f9004d;
-	transition: .4s;
-}
-.btn{
-	background-color:#f9004d;
-	color: white;
-	text-decoration: none;
-	border: 2px solid transparent;
-	font-weight: bold;
-	padding: 10px 25px;
-	border-radius: 30px;
-	transition: transform .4s; 
-}
-.btn:hover{
-	transform: scale(1.2);
-}
-.content{
-	position: absolute;
-	top: 50%;
-	left:8%;
-	transform: translateY(-50%);
-}
-h1{
-	color: white;
-	margin: 20px 0px 20px;
-	font-size: 75px;
-}
-h3{
-	color: white;
-	font-size: 25px;
-	margin-bottom: 50px;
-}
-h4{
-	color: #fcfc;
-	letter-spacing: 2px;
-	font-size: 20px;
-}
-.newslatter form{
-	width: 380px;
-	max-width: 100%;
-	position: relative;
-}
-.newslatter form input:first-child{
-	display: inline-block;
-	width: 100%;
-	padding: 14px 130px 14px 15px;
-	border: 2px solid #f9004d;
-	outline: none;
-	border-radius: 30px;
-}
-.newslatter form input:last-child{
-	position: absolute;
-	display: inline-block;
-	outline: none;
-	border: none;
-	padding: 10px 30px;
-	border-radius: 30px;
-	background-color:#f9004d;
-	color: white;
-	box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
-	top: 6px;
-	right: 6px; 
+    margin: 0;
+    padding: 0;  /* providing default margin and padding to be 0 */
 }
 
-.about{
-	width: 100%;
-	padding: 100px 0px;
-	background-color: #191919;
-}
-.about img{
-	height: auto;
-	width: 430px;
-}
-.about-text{
-	width: 550px;
-}
-.main{
-	width: 1130px;
-	max-width: 95%;
-	margin: 0 auto;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-}
-.about-text h2{
-	color: white;
-	font-size: 75px;
-	text-transform: capitalize;
-	margin-bottom: 20px;
-}
-.about-text h5{
-	color: white;
-	letter-spacing: 2px;
-	font-size: 22px;
-	margin-bottom: 25px;
-	text-transform: capitalize;
-}
-.about-text p{
-	color: #fcfc;
-	letter-spacing: 1px;
-	line-height: 28px;
-	font-size: 18px;
-	margin-bottom: 45px;
-}
-button{
-	background-color:#f9004d;
-	color: white;
-	text-decoration: none;
-	border: 2px solid transparent;
-	font-weight: bold;
-	padding: 13px 30px;
-	border-radius: 30px;
-	transition: .4s; 
-}
-button:hover{
-	background-color: transparent;
-	border: 2px solid #f9004d;
-	cursor: pointer;
+/* home page styling */
+
+.homePage{                                      /* selecting div with class "homePage" and adding styling to it */
+    display: flex;                              /* creating a flex box */
+    justify-content: space-around;   
+    height: 100vh;
+    align-items: center;
 }
 
-.service{
-	background: #101010;
-	width: 100%;
-	padding: 100px 0px;
+.myImage img{                                  /* selecting div with class "myImage" then navigating to img tag inside it, and adding styling to it */
+    height: 18rem;
+    width: auto;
+    border-radius: 1rem;
 }
-.title h2{
-	color: white;
-	font-size: 75px;
-	width: 1130px;
-	margin: 30px auto;
-	text-align: center;
-}
-.box{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 400px;
-}
-.card{
-	height: 365px;
-	width: 335px;
-	padding: 20px 35px;
-	background: #191919;
-	border-radius: 20px;
-	margin: 15px;
-	position: relative;
-	overflow: hidden;
-	text-align: center;
-}
-.card i{
-	font-size: 50px;
-	display: block;
-	text-align: center;
-	margin: 25px 0px;
-	color: #f9004d;
 
+.name{                                         /* selecting div with class "name" and adding styling to it */
+    font-size: 3rem; 
 }
-h5{
-	color: white;
-	font-size: 23px;
-	margin-bottom: 15px;
+
+.intro p{                                      /* selecting div with class "intro" then navigating to p tag inside it, and adding styling to it */
+    font-size: 2rem;
+    line-height: 3rem;
 }
-.pra p{
-	color: #fcfc;
-	font-size: 16px;
-	line-height: 27px;
-	margin-bottom: 25px;
+
+.your_button{                                  /* selecting button with class "your_button" and adding styling to it */
+    font-size: 1rem;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(42, 42, 255);
+    border-radius: 5px;
+    width:100px;
+    height:50px;
+    border:2px solid white;
+    color:white;
+    text-transform: capitalize;
 }
-.card .button{
-	background-color:#f9004d;
-	color: white;
-	text-decoration: none;
-	border: 2px solid transparent;
-	font-weight: bold;
-	padding: 9px 22px;
-	border-radius: 30px;
-	transition: .4s; 
+.your_button:hover{                           /* here we add a special animation to button when it is hovered (hover: when a cursor roams in the specified setion it is the hover state for that element) */
+   
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
-.card .button:hover{
-	background-color: transparent;
-	border: 2px solid #f9004d;
-	cursor: pointer;
+/* about me */
+.about{                                       /* selecting div with class "about" and adding styling to it */
+    min-height: 60vh;
 }
-.contact-me{
-	width: 100%;
-	height: 290px;
-	background: #191919;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	justify-content: center;
+
+.about_heading{                               /* selecting div with class "about_heading" and adding styling to it */
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+    font-weight:600;
 }
-.contact-me p{
-	color: white;
-	font-size: 30px;
-	font-weight: bold;
-	margin-bottom: 25px;
+
+/* contact */
+.contact_sec{                                /* selecting div with class "contact_sec" and adding styling to it */
+    height: 60vh;
+    width:70vw;
+    margin: 0 auto;
 }
-.contact-me .button-two{
-	background-color:#f9004d;
-	color: white;
-	text-decoration: none;
-	border: 2px solid transparent;
-	font-weight: bold;
-	padding: 13px 30px;
-	border-radius: 30px;
-	transition: .4s; 
+
+.contact_heading{                            /* selecting div with class "contact_heading" and adding styling to it */
+    font-weight:600;
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
 }
-.contact-me .button-two:hover{
-	background-color: transparent;
-	border: 2px solid #f9004d;
-	cursor: pointer;
+
+.contact_info{                               /* selecting div with class "contact_info" and adding styling to it */
+    font-size:1.3em;
+    font-weight: 600;
+    margin-top:10vh;
 }
-footer{
-	position: relative;
-	width: 100%;
-	height: 400px;
-	background: #101010;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+.data{                                       /* selecting div with class "data" and adding styling to it */
+    font-weight:initial;
 }
-footer p:nth-child(1){
-	font-size: 30px;
-	color: white;
-	margin-bottom: 20px;
-	font-weight: bold;
+
+.Email,.mobile_no,.linkdin,.github,.others{ /* selecting many divs with the class listed and adding same styling to all of them */
+    padding:2vh 0;
 }
-footer p:nth-child(2){
-	color: white;
-	font-size: 17px;
-	width: 500px;
-	text-align: center;
-	line-height: 26px;
+
+span a{                                     /* selecting span and then navigating to a tag in it and adding styling to it */
+    color:black;
 }
-.social{
-	display: flex;
+
+span a:hover{                               /* here we add a special animation to anchor tag when it is hovered (hover: when a cursor roams in the specified setion it is the hover state for that element) */
+    color:blue;
 }
-.social a{
-	width: 45px;
-	height: 45px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background:  #f9004d;
-	border-radius: 50%;
-	margin: 22px 10px;
-	color: white;
-	text-decoration: none;
-	font-size: 20px;
+
+
+.para{                                      /* selecting div with class "para" and adding styling to it */
+    width:70vw; 
+    margin:8vh auto;
+    font-size: 2em;
 }
-.social a:hover{
-	transform: scale(1.3);
-	transition: .3s;
-}
-.end{
-	position: absolute;
-	color:#f9004d;
-	bottom: 35px;
-	font-size: 14px; 
-}
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
