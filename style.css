@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;  /* providing default margin and padding to be 0 */
+    font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
 }
 
 /* home page styling */
@@ -11,7 +13,39 @@
     height: 100vh;
     align-items: center;
 }
-
+.hero{
+	height: 100vh;
+	width: 100%;
+	background-image: url(../img/background.jpg);
+	background-size: cover;
+	background-position: center;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 45px;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+span{
+	color: #f9004d;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  25px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+nav ul li a:hover{
+	color: #f9004d;
+	transition: .4s;
+}
 .myImage img{                                  /* selecting div with class "myImage" then navigating to img tag inside it, and adding styling to it */
     height: 18rem;
     width: auto;
@@ -44,15 +78,60 @@
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 /* about me */
-.about{                                       /* selecting div with class "about" and adding styling to it */
-    min-height: 60vh;
+.about{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #191919;
 }
-
-.about_heading{                               /* selecting div with class "about_heading" and adding styling to it */
-    font-size: 3rem;
-    text-align: center;
-    text-decoration: underline;
-    font-weight:600;
+.about img{
+	height: auto;
+	width: 430px;
+}
+.about-text{
+	width: 550px;
+}
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.about-text h2{
+	color: white;
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.about-text h5{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+.about-text p{
+	color: #fcfc;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+button{
+	background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+button:hover{
+	background-color: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
 }
 
 /* contact */
