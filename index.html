@@ -1,56 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Nikhil | Portfolio</title>
+    <meta name="description"
+        content="Code is an annual IT symposium hosted by Apeejay School, Noida. Ever since our founding in 1999 we have retained the position of Delhi-NCR's most awaited IT symposium. With over 50 schools from across Delhi-NCR, we make it bigger and better each year. ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#040a14">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-search-pseudo-elements></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
 </head>
 
 <body>
-    <!-- We will be creating many elements in this document with some class (to add some styling later) -->
-    <!-- home page -->
-    <div id="home" class="homePage">
-        <div class="intro">                                  <!-- creating a master div to have child elements in it -->
-            <div class="name">Hi, I am &#60;Nikhil&#62;</div>  <!-- creating a div to enter your name (edit your name here) -->
-            <p>Student at IIIT Kalyani</p>                        <!-- paragraph tag -->
-            <button class="your_button">I Dare you to Click</button>      <!-- creating a button -->
+    <header>
+        <div class="container" id="navbar">
+            <div class="header-top">
+                <h1>Nikhil</h1>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li><a href="#intro">About</a></li>
+                    <li><a href="#footer">Contact</a></li>
+
+                </ul>
+            </div>
         </div>
-        <div class="myImage">                                <!-- always a good habbit to add master divs -->
-            <img src="https://miro.medium.com/max/3960/0*HICLyAdNSIyT0ODU.jpg" alt="MyImage">  <!-- adding a image using url -->
+    </header>
+    <div id="bg-full">
+        <div id="center-text-start">
+            <p><h1>I am <br/>
+            Nikhil Laxminarayana</h1></p>
+
+            <p><br /> Veni . Vidi . Vici</p>
+        </div>
+
+        <canvas class="background"></canvas>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    </div>
+    <script>
+        $(".header-right").hide();
+        window.onscroll = function () {
+            console.log(document.body.scrollTop)
+            // $("#navbar").slideUp();
+            if (document.documentElement.scrollTop > 100) {
+                $(".header-right").fadeIn()
+                $("#center-text-start").fadeOut(150);
+            } else {
+                $(".header-right").fadeOut()
+                $("#center-text-start").fadeIn(150);
+            }
+        }
+    </script>
+    <div id="intro">
+        <div>I am currently a freshman, studying Bachelor of Technology in Electronics and Communications Engineering at
+            Indian Institute of Information Technology, Kalyani </div>
+        <div>I am someone with weird combination of tastes. I am an avid learner, always looking to expand my knowledge
+            base on all thigs IT. I am also very devout speaker and love intellectual arguments. Astrophysics and even
+            economics excite me and my love for live sports is here to be forever. </div>
+        <div><strong><i>Technologically Curious? Obviously.....</i></strong></div>
+    </div>
+    <div id="intro2">
+        <div>
+            <h1>5+</h1><br> Skills
+        </div>
+        <div>
+            <h1>0 </h1><br>Projects
+        </div>
+        <div>
+            <h1>0 </h1><br> Contributions
+        </div>
+        <div>
+            <h1>0 </h1><br> Contests
         </div>
     </div>
-
-    <!-- about me -->
-    <div id="aboutme" class="about">                         <!-- again a master div -->
-        <div class="about_heading">                          <!-- child div for heading -->
-            About me
+    <footer id="footer" font>
+        <div class="header-top">
+        <h2>Contact Me</h2>
         </div>
-        <!-- adding a paragraph tag to write "about me", edit it and write about you -->
-        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptates provident molestias a
-            animi facilis iusto voluptatum repellat eligendi consequatur distinctio placeat mollitia veritatis
-            recusandae, ad, quasi commodi enim quos! Quasi aspernatur veniam, blanditiis sint necessitatibus dicta
-            libero voluptatibus reiciendis asperiores nemo maiores ducimus corrupti magnam error voluptatum ab velit.
-        </p>
-    </div>
-
-    <!-- contact -->
-    <div id="contact" class="contact_sec">                  <!-- adding a master div again -->
-        <div class="contact_heading">
-            Contact Me                                      <!-- adding a chiid div for heading -->
+            <br />
+        <h5><div class = "strong">Mail:    <a href="mailto:ece21136@iiitkalyani.ac.in">ece21136@iiitkalayani.ac.in</a>
+        </h5></div>
+        <div class="social">
+            <a href="https://twitter.com/thegeneralnix">
+                <div class="fab fa-twitter"></div>
+            </a>
+            <a href="https://github.com/valiant-nix/valiant_nix.github.io">
+                <div class="fab fa-github"></div>
+            </a>
+            <a href="https://www.linkedin.com/in/nikhil-laxminarayana-8a420a22a/">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="" onclick="navigator.clipboard.writeText('NickHill#0861')">
+                <div class="fab fa-discord"></div>
+            </a>
+            <a href="https://www.instagram.com/thegeneralnikhil/">
+                <div class="fab fa-instagram"></div>
+            </a>
+            <a href="https://www.facebook.com/Nikhil5622/">
+                <i class="fab fa-facebook-f"></i>
+            </a>
         </div>
-        <div class="contact_info">
-            <!-- adding more divs for personal details, edit them! -->
-            <div class="Email">Email : <span class='data'>gdsc@example.com</span></div>
-            <div class="mobile_no">Mobile no : <span class='data'>+91 XXXXXXXXXX</span></div>
-            <!-- adding anchor tag to directly redirect user to your profile, add links to your profile in href -->
-            <div class="linkdin">linkdin :<span class='data'> <a
-                        href="https://www.linkedin.com/company/gdsc-iiit-kalyani/">Linkdin IN</a></span></div>  
-            <div class="github">Github : <span class='data'> <a href="https://github.com/GDSC-IIIT-Kalyani">Github</a></span></div>
-            <div class="others">Others :<span class='data'> <a href="https://gdsc.bio.link/">BIO</a></span></div>
-        </div>
+    </footer>
 </body>
-
 </html>
