@@ -5,52 +5,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Portfolio Website</title>
+    <title>Maharshi Basu</title>
+    <link rel="shortcut icon" href="memini.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
-
 <body>
-    <!-- We will be creating many elements in this document with some class (to add some styling later) -->
-    <!-- home page -->
-    <div id="home" class="homePage">
-        <div class="intro">                                  <!-- creating a master div to have child elements in it -->
-            <div class="name">Hi, I am &#60;name&#62;</div>  <!-- creating a div to enter your name (edit your name here) -->
-            <p>Frontend developer</p>                        <!-- paragraph tag -->
-            <button class="your_button">button</button>      <!-- creating a button -->
-        </div>
-        <div class="myImage">                                <!-- always a good habbit to add master divs -->
-            <img src="https://miro.medium.com/max/3960/0*HICLyAdNSIyT0ODU.jpg" alt="MyImage">  <!-- adding a image using url -->
+    <div class="headerimg" id="top"></div>
+    <div class="head">
+        <h1>hello friend.</h1>
+        <h2>i am maharshi</h2>
+        <div class="wrapper">
+            <div class="button">
+                <div class="icon">
+                    <a href="https://www.instagram.com/chilled.goru/"><i class="fab fa-instagram"></i></a>
+                </div>
+                <span>Instagram</span>
+            </div>
+            <div class="button">
+                <div class="icon">
+                    <a href="https://github.com/MashyBasker"><i class="fab fa-github"></i></a>
+                </div>
+                <span>Github</span>
+            </div>
+            <div class="button">
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/maharshi-basu-480548229/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <span>Linkedin</span>
+            </div>
         </div>
     </div>
-
-    <!-- about me -->
-    <div id="aboutme" class="about">                         <!-- again a master div -->
-        <div class="about_heading">                          <!-- child div for heading -->
-            About me
+      
+    </div>
+    <div class="split left">
+        <div class="centered">
+                <h3 class="title">
+                    <span class="title-word title-word-1">ABOUT</span>
+                    <span class="title-word title-word-1">ME</span>
+                </h3>
         </div>
-        <!-- adding a paragraph tag to write "about me", edit it and write about you -->
-        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptates provident molestias a
-            animi facilis iusto voluptatum repellat eligendi consequatur distinctio placeat mollitia veritatis
-            recusandae, ad, quasi commodi enim quos! Quasi aspernatur veniam, blanditiis sint necessitatibus dicta
-            libero voluptatibus reiciendis asperiores nemo maiores ducimus corrupti magnam error voluptatum ab velit.
+    </div>
+    <div class="split right">
+        <div class="centered">
+            <p align="left">I'm a first year student at Indian Institute of Information Technology, Kalyani(2021-2025). Currently pursuing B.Tech in Computer Science
+                and Engineering. I am learning C/C++, HTML, CSS and am proficient in googling stuff. I passed my 10th and 12th in the 
+                years 2018(ICSE) and 2020(CBSE) respectively.
+            </p>
+        </div>
+    </div>
+    <section class="interest">
+        <h4>I'm interested in...<br><span></span></h4>
+        <p>I'm active in platforms such as <a href="https://www.codechef.com/users/fetl">Codechef</a> , <a href="https://codeforces.com/profile/fetl">
+            Codeforces</a> , <a href="https://www.hackerrank.com/basumaharshi10">Hackerrank</a> , <a href="https://www.hackthissite.org/">Hackthissite</a>
+             , <a href="https://tryhackme.com/p/fetl">TryHackMe</a> and more.</p>
+    </section>
+    <div class="split2 left2">
+        <div class="centered2">
+            <p>I was a student at St. Mary's Orphanage & Day School, Dum Dum, Kolkata where 
+            I completed my primary, middle and secondary school. I went to Sudhir Memorial Institute
+            , Madhyamgram, Kolkata, where I completed my higher secondary.
+            </p>
+        </div>
+      </div>
+      <div class="split2 right2">
+        <div class="centered2">
+          <h5>Where was I before?</h5>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="footer-text-left">
+            <a href="#top" class="menu"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+                <p class="email">My E-mail: basumaharshi10@gmail.com<br><br>
+                    Mob: +91 9163641462
+                </p>
         </p>
+
+        <div class="footer-content-right">
+            <p>
+                <a href='https://youtu.be/oHg5SJYRHA0'>
+                    <button class="btn success">Don't click me</button></a>
+            </p>
+        </div>
     </div>
-
-    <!-- contact -->
-    <div id="contact" class="contact_sec">                  <!-- adding a master div again -->
-        <div class="contact_heading">
-            Contact Me                                      <!-- adding a chiid div for heading -->
-        </div>
-        <div class="contact_info">
-            <!-- adding more divs for personal details, edit them! -->
-            <div class="Email">Email : <span class='data'>gdsc@example.com</span></div>
-            <div class="mobile_no">Mobile no : <span class='data'>+91 XXXXXXXXXX</span></div>
-            <!-- adding anchor tag to directly redirect user to your profile, add links to your profile in href -->
-            <div class="linkdin">linkdin :<span class='data'> <a
-                        href="https://www.linkedin.com/company/gdsc-iiit-kalyani/">Linkdin IN</a></span></div>  
-            <div class="github">Github : <span class='data'> <a href="https://github.com/GDSC-IIIT-Kalyani">Github</a></span></div>
-            <div class="others">Others :<span class='data'> <a href="https://gdsc.bio.link/">BIO</a></span></div>
-        </div>
+   
+   
+    
 </body>
-
-</html>
