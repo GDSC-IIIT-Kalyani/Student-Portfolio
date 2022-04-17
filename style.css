@@ -1,98 +1,303 @@
-*{
-    margin: 0;
-    padding: 0;  /* providing default margin and padding to be 0 */
-}
 
-/* home page styling */
+@font-face {
+    font-family: Westminster;
+    src: url(Westminster.ttf);
+  }
+  textarea{
+    resize:none;
+  }
+  *{
+      margin:0;
+      padding:0;
+  }
+  body,html{    
+      margin:0;
+      padding:0;
+      scroll-behavior: smooth;
+      width:100%;
+      height:100%;
+      font-family: 'Abel';
+  }
+  #bg-full{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+  #center-text-start{
+      position: relative;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      font-family: Westminster;
+      color:white;
+      font-size: 250%;
+      flex-direction: column;
+      z-index:2;
+  }
+  canvas{
+      opacity: 0.9;
+  }
+  #center-text-start h1{
+  font-size: 3em; 
+  color:white; 
+  font-family: Westminster;
+   z-index: 1;
+  }
+  
+  .background {
+      position:  absolute;
+      display:  block;
+      background-color: black;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    } 
+    figure{
+        cursor: pointer;
+    }
+  .ityped-cursor {
+      
+      opacity: 1;
+      -webkit-animation: blink 0.3s infinite;
+      -moz-animation: blink 0.3s infinite;
+      animation: blink 0.3s infinite;
+      animation-direction: alternate;
+  }
+  
+  @keyframes blink {
+      100% {
+          opacity: 0;
+      }
+  }
+  
+  @-webkit-keyframes blink {
+      100% {
+          opacity: 0;
+      }
+  }
+  
+  @-moz-keyframes blink {
+      100% {
+          opacity: 0;
+      }
+  }
+  #intro{
+      display: flex;
+      font-size:1.1em;
+      flex-wrap: wrap;
+      padding:5px;
+      justify-content: center;
+      
+  }
+  #intro div{
+      padding:20px
+  }
+  #intro2{
+      display: flex;
+      font-size: 120%;
+      flex-wrap: wrap;
+      background-color: #393e46;
+      color:white;
+      justify-content: center;
+      text-align: center;
+  }
+  #intro2 div{
+      padding:5vh;
+      width:20vw;
+  }
+  
+  #intro3{
+      display: flex;
+      font-size:1.1em;
+      flex-wrap: wrap;
+      padding:2vh;
+      text-align: center;
+  }
+  .image{
+      background-image: url("../assets/webd.jpg");
+      background-size: cover;
+      color:white;    
+      height:200px;
+      margin:1em;
+      width:250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transition: all 0.3s;
+  }
+  .image p{
+  
+      font-size: 1.2em;
+  }
+  header{
+      opacity: 0.87;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      background-color: black;
+      color: white;
+      position: fixed;
+      opacity: 1;
+  }
+  .header-top{
+      font-family: Westminster;
+  }
+  
+  .header-top h1{
+      font-size: 2.8em;
+  }
+  .header-top p{
+      font-size: 1.2em;
+      padding-bottom: 0.8em;
+  }
+  .container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      flex-direction: column;
+  }
+  .hidden{
+      display:none;
+      transition: all 0,1s ease-in-out;
+  }
+  ul{
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      flex-direction: row;
+      transition: all 0,1s ease-in-out;
+  }
+  li{
+      font-size: 1.2em;
+      padding: 8px;
+      margin: 2px 5px;
+  }
+  li:hover{
+      background-color: whitesmoke;
+      color: black;
+  }
+   #navbar {
+    z-index:4;
+  }
+  .overlay{
+      display: none;
+  }
+  a{
+      text-decoration: none;
+      color:inherit
+  }
+  
+  @media only screen and (max-width: 500px) {
+      #ityped{
+          display: none;
+      }
+      /* #bg-full{
+          background-color: #ffbd39
+      } */
+      /* .background{
+          display: none;
+      } */
+      #intro2 div{
+          
+          width:100vw;
+      }
+     
+    }
+  
+  
+    /* Bulma things */
+  .hero-body{
+      background-color: black;
+      color: #EEE;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  @media only screen and (max-width: 1100px) {
+      .image{
+          width: 95%;
+      }
+  }
 
-.homePage{                                      /* selecting div with class "homePage" and adding styling to it */
-    display: flex;                              /* creating a flex box */
-    justify-content: space-around;   
-    height: 100vh;
-    align-items: center;
-}
+  .image:hover{
+      opacity: 1;
+  
+  }
+  .image p{
+  
+      font-size: 1.2em;
+  }
 
-.myImage img{                                  /* selecting div with class "myImage" then navigating to img tag inside it, and adding styling to it */
-    height: 18rem;
-    width: auto;
-    border-radius: 1rem;
-}
-
-.name{                                         /* selecting div with class "name" and adding styling to it */
-    font-size: 3rem; 
-}
-
-.intro p{                                      /* selecting div with class "intro" then navigating to p tag inside it, and adding styling to it */
-    font-size: 2rem;
-    line-height: 3rem;
-}
-
-.your_button{                                  /* selecting button with class "your_button" and adding styling to it */
-    font-size: 1rem;
-    padding: 5px;
-    cursor: pointer;
-    background-color: rgb(42, 42, 255);
-    border-radius: 5px;
-    width:100px;
-    height:50px;
-    border:2px solid white;
-    color:white;
-    text-transform: capitalize;
-}
-.your_button:hover{                           /* here we add a special animation to button when it is hovered (hover: when a cursor roams in the specified setion it is the hover state for that element) */
-   
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-}
-/* about me */
-.about{                                       /* selecting div with class "about" and adding styling to it */
-    min-height: 60vh;
-}
-
-.about_heading{                               /* selecting div with class "about_heading" and adding styling to it */
-    font-size: 3rem;
-    text-align: center;
-    text-decoration: underline;
-    font-weight:600;
-}
-
-/* contact */
-.contact_sec{                                /* selecting div with class "contact_sec" and adding styling to it */
-    height: 60vh;
-    width:70vw;
-    margin: 0 auto;
-}
-
-.contact_heading{                            /* selecting div with class "contact_heading" and adding styling to it */
-    font-weight:600;
-    font-size: 3rem;
-    text-align: center;
-    text-decoration: underline;
-}
-
-.contact_info{                               /* selecting div with class "contact_info" and adding styling to it */
-    font-size:1.3em;
-    font-weight: 600;
-    margin-top:10vh;
-}
-.data{                                       /* selecting div with class "data" and adding styling to it */
-    font-weight:initial;
-}
-
-.Email,.mobile_no,.linkdin,.github,.others{ /* selecting many divs with the class listed and adding same styling to all of them */
-    padding:2vh 0;
-}
-
-span a{                                     /* selecting span and then navigating to a tag in it and adding styling to it */
-    color:black;
-}
-
-span a:hover{                               /* here we add a special animation to anchor tag when it is hovered (hover: when a cursor roams in the specified setion it is the hover state for that element) */
-    color:blue;
-}
-
-
-.para{                                      /* selecting div with class "para" and adding styling to it */
-    width:70vw; 
-    margin:8vh auto;
-    font-size: 2em;
-}
+  footer{
+      width:100%;
+      background-color: black;
+      color:#eee;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding:15px;
+      flex-direction: column;
+  }
+  strong,label{
+      color: #000000;
+  }
+  
+  .modal-content{
+      background-color: black;
+      color:#eee;
+      height:inherit;
+  }
+  .modal-dialog{
+      height:90%;
+  }
+  #banner-p{
+      width:100%;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      flex-direction: column;
+      height:30%;
+      color:#EEE;
+      background-color: #252525;
+  }
+  #forms{
+      margin:50px;
+      
+  }
+  .row{
+      display: flex;
+      margin:30px 0;
+  }
+  .row input,textarea{
+      width:40vw;
+      margin:10px;
+  }  
+  .social a{
+    font-size:2em;
+    margin:15px;
+  }
+  a[href ="assets/brochure.pdf"]{
+      background-color:  	#FF8C00;
+      border:none;
+      text-decoration: none;
+      color:#eee;
+      padding:5px;
+      
+  }
+  
+  footer a:hover{
+    color:#eee;
+    text-decoration:none
+  }
+  
