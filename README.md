@@ -1,8 +1,6 @@
 # <b>Student's Portfolio</b>
 
-This Repository is basically a template repo for a interactive season on Open source by GDSC IIIT KALYANI 
-
-With the onset of two new batches of students in the college, and while Google Developer Student Club at IIIT Kalyani hosts its second installment of this open source event called Winter of Code, we thought it'd be nice to give the freshers a quick insight into what actually do we mean when we talk about Open Source
+This is my Website Design for the Portfolio Contest, conducted by GDSC, IIIT Kalyani. Below are their guidelines for the same.
 <br>
 
 ## <b>Pre Requisites</b>
