@@ -1,29 +1,96 @@
 *{
+    background-color: #282828;
+    color: #8aba79;
+    font-family: 'Fira Code', monospace;
+    /* font-size: 25px; */
     margin: 0;
     padding: 0;  /* providing default margin and padding to be 0 */
 }
 
+/* body {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform: rotate(-90deg); 
+    transform-origin: left top;
+    overflow-y: auto;
+    overflow-x: auto;
+    position: absolute;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 300vw;
+    position: relative;
+    transform:rotate(90deg) translateY(-100vh);
+    transform: rotate(90deg);
+    transform-origin: left top;
+} */
+
+/* .slide {
+    width: 100vw;
+    height: 100vh;
+} */
+
 /* home page styling */
 
 .homePage{                                      /* selecting div with class "homePage" and adding styling to it */
-    display: flex;                              /* creating a flex box */
-    justify-content: space-around;   
+    /* transition: scale 2s; */
+    transition: background-size 2s;
+    /* image-resolution: 1920x1080; */
+    background-image: url(https://gruvbox-wallpapers.onrender.com/wallpapers/minimalistic/gruvbox_minimal_space.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    justify-content: left;   
     height: 100vh;
     align-items: center;
+    /* outline: #fabd2f solid 7px; */
+    outline: #8aba79 solid 7px;
+    outline-offset: -2em;
+    border-radius: 3em;
 }
 
-.myImage img{                                  /* selecting div with class "myImage" then navigating to img tag inside it, and adding styling to it */
-    height: 18rem;
-    width: auto;
-    border-radius: 1rem;
+.homePage:hover {
+    background-size: 125%;
 }
+
+.myImage{              
+    /* selecting div with class "myImage" then navigating to img tag inside it, and adding styling to it */
+    /* z-index: -1;   */
+    /* height: 100vh;
+    width: 100vw; */
+    /* border-radius: 1rem; */
+}
+
+/* img:hover {
+    scale: 150%;
+} */
 
 .name{                                         /* selecting div with class "name" and adding styling to it */
-    font-size: 3rem; 
+    font-size: 5vw; 
+    /* animation-name: namme; */
+    transition: font-size 1s;
+}
+
+/* @keyframes namme {
+    from(font-size)
+    
+} */
+
+.name:hover {
+    font-size: 5.5vw; 
+}
+
+.intro {
+    margin: 70vh 0 0 5vw;
+    /* margin-top: 10vh; */
 }
 
 .intro p{                                      /* selecting div with class "intro" then navigating to p tag inside it, and adding styling to it */
-    font-size: 2rem;
+    font-size: 2.5vw;
     line-height: 3rem;
 }
 
@@ -45,11 +112,17 @@
 }
 /* about me */
 .about{                                       /* selecting div with class "about" and adding styling to it */
-    min-height: 60vh;
+    /* margin: 10vh 0 10vh 0; */
+    /* min-height: 60vh; */
+    height: 100vh;
+    outline: #8aba79 solid 7px;
+    outline-offset: -2em;
+    border-radius: 3em;
 }
 
-.about_heading{                               /* selecting div with class "about_heading" and adding styling to it */
-    font-size: 3rem;
+.about_heading{       
+    padding-top: 10vh;                        /* selecting div with class "about_heading" and adding styling to it */
+    font-size: 5vw;
     text-align: center;
     text-decoration: underline;
     font-weight:600;
@@ -58,21 +131,31 @@
 /* contact */
 .contact_sec{                                /* selecting div with class "contact_sec" and adding styling to it */
     height: 60vh;
-    width:70vw;
+    /* width:70vw; */
+    height: 100vh;
     margin: 0 auto;
+    outline: #8aba79 solid 7px;
+    outline-offset: -2em;
+    border-radius: 3em;
+    /* margin: auto; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
 .contact_heading{                            /* selecting div with class "contact_heading" and adding styling to it */
+    padding-top: 10vh;                        /* selecting div with class "about_heading" and adding styling to it */
     font-weight:600;
-    font-size: 3rem;
+    font-size: 5vw;
     text-align: center;
     text-decoration: underline;
 }
 
 .contact_info{                               /* selecting div with class "contact_info" and adding styling to it */
-    font-size:1.3em;
+    font-size: 2vw;
     font-weight: 600;
     margin-top:10vh;
+    margin-left: 40vw;
 }
 .data{                                       /* selecting div with class "data" and adding styling to it */
     font-weight:initial;
@@ -92,7 +175,8 @@ span a:hover{                               /* here we add a special animation t
 
 
 .para{                                      /* selecting div with class "para" and adding styling to it */
-    width:70vw; 
+    width:85vw; 
     margin:8vh auto;
+    /* margin: 8vh 0 8vh 0vw; */
     font-size: 2em;
 }
