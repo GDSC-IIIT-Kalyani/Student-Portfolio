@@ -48,6 +48,21 @@
     color: rgb(231, 184, 190);
 }
 
+.btn{
+    color: #0d0117;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    background-size: 120% 100%;
+    background: #fd4766;
+    border: 2px solid #fd4766;
+}
+
 /* home page styling */
 
 .homePage{                                      /* selecting div with class "homePage" and adding styling to it */
