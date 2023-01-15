@@ -2,11 +2,58 @@
     margin: 0;
     padding: 0;  /* providing default margin and padding to be 0 */
 }
+/* navbar stying */
+.navbar{
+    position: fixed;
+    width: 95%;
+    padding: 20px 0;
+   /* background-color: rgb(122, 74, 55); */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar .max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    color: rgb(235, 191, 142);
+    font-size: 80px;
+    font-weight: 900;
+    margin-left: -50px;
+    font-family: 'Cutive Mono', monospace;
+    font-family: 'MonteCarlo', cursive;
+    font-family: 'Waterfall', cursive;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    color: rgb(105, 62, 27);
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 50px;
+    margin-right: auto;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: rgb(231, 184, 190);
+}
 
 /* home page styling */
 
 .homePage{                                      /* selecting div with class "homePage" and adding styling to it */
     display: flex;                              /* creating a flex box */
+    background: url();
+    background-size: cover;
     justify-content: space-around;   
     height: 100vh;
     align-items: center;
@@ -78,7 +125,7 @@
     font-weight:initial;
 }
 
-.Email,.mobile_no,.linkdin,.github,.others{ /* selecting many divs with the class listed and adding same styling to all of them */
+.Email,.mobile_no,.Facebook,.Instagram,.LinkedIn,.github,.others{ /* selecting many divs with the class listed and adding same styling to all of them */
     padding:2vh 0;
 }
 

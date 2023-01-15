@@ -11,15 +11,26 @@
 
 <body>
     <!-- We will be creating many elements in this document with some class (to add some styling later) -->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portfolio.</a></div>
+             <ul class="menu">
+                 <li><a href="#home">Home</a></li>
+                 <li><a href="#aboutme">About me</a></li>
+                 <li><a href="#projects">Projects</a></li>
+                 <li><a href="#contact">Contact Me</a></li>
+             </ul>    
+        </div>
+    </nav>
     <!-- home page -->
     <div id="home" class="homePage">
         <div class="intro">                                  <!-- creating a master div to have child elements in it -->
             <div class="name">Hi, I am Satadru Halder</div>  <!-- creating a div to enter your name (edit your name here) -->
-            <p>1st year student</p>                        <!-- paragraph tag -->
-            <button class="your_button">button</button>      <!-- creating a button -->
+            <p>1st year student in IIIT Kalyani</p>                        <!-- paragraph tag -->
+            <!--<button class="your_button">button</button> -->     <!-- creating a button -->
         </div>
         <div class="myImage">                                <!-- always a good habbit to add master divs -->
-            <img src="https://miro.medium.com/max/3960/0*HICLyAdNSIyT0ODU.jpg" alt="MyImage">  <!-- adding a image using url -->
+            <img src="" alt="MyImage">  <!-- adding a image using url -->
         </div>
     </div>
 
@@ -29,8 +40,10 @@
             About me
         </div>
         <!-- adding a paragraph tag to write "about me", edit it and write about you -->
-        <p class="para">Hello I'm Satadru Halder from IIIT Kalyani of 2026 batch. I am interested in
-             exploring all domains for now. I know java and I'm learning c and python currently.
+        <p class="para">Hello I'm Satadru Halder pursuing B.Tech. in ECE from IIIT Kalyani.
+             I am interested in learning new technologies.
+             I know basic java and currently learning c and python.
+             Also I like playing video-games, nature photography and listening music.
         </p>
     </div>
 
@@ -38,16 +51,22 @@
     <div id="contact" class="contact_sec">                  <!-- adding a master div again -->
         <div class="contact_heading">
             Contact Me                                      <!-- adding a chiid div for heading -->
-        </div>
+        </div>    
+        <!-- adding a paragraph tag to write "about me", edit it and write about you -->
+        <p class="para">Have any suggestion? Interested in learning new technologies together or building projects together?
+            Feel free to contact me.
+        </p>
         <div class="contact_info">
             <!-- adding more divs for personal details, edit them! -->
             <div class="Email">Email : <span class='data'>satadruhalder03@gmail.com</span></div>
             <div class="mobile_no">Mobile no : <span class='data'>+91 8240097964</span></div>
             <!-- adding anchor tag to directly redirect user to your profile, add links to your profile in href -->
+            <div class="Facebook">Facebook : <span class='data'> <a href="">Facebook</a></span></div>
+            <div class="Instagram">Instagram : <span class='data'> <a href="">Instagram</a></span></div>
             <div class="LinkedIn">LinkedIn :<span class='data'> <a
                         href="https://www.linkedin.com/satadru-halder-791415213">Linkedin In</a></span></div>  
             <div class="github">Github : <span class='data'> <a href="https://github.com/Satadru03">Github</a></span></div>
-            <div class="others">Others :<span class='data'> <a href="https://gdsc.bio.link/">BIO</a></span></div>
+           <!-- <div class="others">Others :<span class='data'> <a href="https://gdsc.bio.link/">BIO</a></span></div> -->
         </div>
 </body>
 
