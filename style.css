@@ -147,10 +147,17 @@
 }
 .data{                                       /* selecting div with class "data" and adding styling to it */
     font-weight:initial;
+
+    font-weight: 600;
+    margin-top:10vh;
+
+    width:70vw; 
+    margin:8vh auto;
 }
 
 .Email,.mobile_no,.Facebook,.Instagram,.LinkedIn,.github,.others{ /* selecting many divs with the class listed and adding same styling to all of them */
     padding:2vh 0;
+    
 }
 
 span a{                                     /* selecting span and then navigating to a tag in it and adding styling to it */
