@@ -21,10 +21,11 @@
 }
 
 .navbar .logo a{
-    color: #FF6961;
+    color: #040404;
     font-size: 80px;
     font-weight: 900;
     margin-left: -50px;
+    font-family: 'Courgette', cursive;
     /* font-family: 'Cutive Mono', monospace;
     font-family: 'MonteCarlo', cursive;
     font-family: 'Waterfall', cursive; */
@@ -122,13 +123,16 @@
     min-height: 60vh;
     background: url("https://www.mestizosmexicancafe.com/wp-content/uploads/2017/12/about-me-background2.png");
     background-size: cover;
+    justify-content: space-around;   
+    height: 100vh;
+    align-items: center;
 }
 
 .about_heading{                               /* selecting div with class "about_heading" and adding styling to it */
     font-size: 3rem;
     text-align: center;
     text-decoration: underline;
-    font-weight:600;
+    font-weight:600;  
 }
 
 /* contact */
