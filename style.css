@@ -1,13 +1,13 @@
 *{
     margin: 0;
     padding: 0;  /* providing default margin and padding to be 0 */
+    box-sizing: border-box;
 }
 /* navbar stying */
 .navbar{
     position: fixed;
     width: 95%;
     padding: 20px 0;
-   /* background-color: rgb(122, 74, 55); */
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -26,9 +26,6 @@
     font-weight: 900;
     margin-left: -50px;
     font-family: 'Courgette', cursive;
-    /* font-family: 'Cutive Mono', monospace;
-    font-family: 'MonteCarlo', cursive;
-    font-family: 'Waterfall', cursive; */
 }
 
 .navbar .menu li{
@@ -47,8 +44,6 @@
 
 .navbar .menu li a:hover{
     color: #fbfafa;
-
-    /*color: #0d0117;*/
     font-size: 16px;
     letter-spacing: 2px;
     padding: 16px 40px;
@@ -61,20 +56,6 @@
     border: 2px solid #FF6961;
 }
 
-.btn{
-    color: #0d0117;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 16px 40px;
-    border-radius: 500px;
-    display: inline-block;
-    font-weight: 500;
-    transition: all .4s ease-in-out;
-    background-size: 120% 100%;
-    background: #FF6961;
-    border: 2px solid #FF6961;
-}
 
 /* home page styling */
 
