@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Portfolio Website</title>
+    <title>Bhaskar's Hub</title>
+    <script src="index.js"></script>
     <style> @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap'); </style>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -20,6 +21,25 @@
                 <p>Frontend developer</p>                        <!-- paragraph tag -->
                 <!-- <button class="your_button">button</button>      creating a button -->
             </div>
+
+
+    <div id="container">
+        <span id="text1"></span>
+        <span id="text2"></span>
+    </div>
+
+    <svg id="filters">
+        <defs>
+            <filter id="threshold">
+                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    0 0 0 255 -140" />
+            </filter>
+        </defs>
+    </svg>
+
+
             <div class="myImage">                                <!-- always a good habbit to add master divs -->
                 <!-- <img src="https://miro.medium.com/max/3960/0*HICLyAdNSIyT0ODU.jpg" alt="MyImage">  adding a image using url -->
                 <!-- <img src="https://gruvbox-wallpapers.onrender.com/wallpapers/minimalistic/gruvbox_minimal_space.png" alt="MyImage">  adding a image using url -->

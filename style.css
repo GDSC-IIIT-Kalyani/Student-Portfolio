@@ -1,24 +1,26 @@
 *{
-    background-color: #282828;
-    color: #8aba79;
+    /* color: #8aba79; */
+    color: #fff;
     font-family: 'Fira Code', monospace;
     /* font-size: 25px; */
     margin: 0;
     padding: 0;  /* providing default margin and padding to be 0 */
 }
 
-/* body {
-    width: 100vh;
+body {
+    /* background-color: #282828; */
+    background-color: #0e0e0e;
+    /* width: 100vh;
     height: 100vw;
     transform: rotate(-90deg) translateX(-100vh);
     transform: rotate(-90deg); 
     transform-origin: left top;
     overflow-y: auto;
     overflow-x: auto;
-    position: absolute;
+    position: absolute; */
 }
 
-.wrapper {
+/*.wrapper {
     display: flex;
     flex-direction: row;
     width: 300vw;
@@ -39,7 +41,7 @@
     /* transition: scale 2s; */
     transition: background-size 2s;
     /* image-resolution: 1920x1080; */
-    background-image: url(https://gruvbox-wallpapers.onrender.com/wallpapers/minimalistic/gruvbox_minimal_space.png);
+    /* background-image: url(https://gruvbox-wallpapers.onrender.com/wallpapers/minimalistic/gruvbox_minimal_space.png); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -179,4 +181,35 @@ span a:hover{                               /* here we add a special animation t
     margin:8vh auto;
     /* margin: 8vh 0 8vh 0vw; */
     font-size: 2em;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+body {
+    margin: 0px;
+}
+
+#container {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 80pt;
+    top: 0;
+    bottom: 0;
+
+    filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 80pt;
+
+    text-align: center;
+
+    user-select: none;
 }
