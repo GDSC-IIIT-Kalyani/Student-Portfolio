@@ -7,35 +7,17 @@
     padding: 0;  /* providing default margin and padding to be 0 */
 }
 
+/* write css for horizontal scrolling for entire webpage */
+html {
+    overflow: scroll;
+}
+
+
+
 body {
     /* background-color: #282828; */
     background-color: #0e0e0e;
-    /* width: 100vh;
-    height: 100vw;
-    transform: rotate(-90deg) translateX(-100vh);
-    transform: rotate(-90deg); 
-    transform-origin: left top;
-    overflow-y: auto;
-    overflow-x: auto;
-    position: absolute; */
 }
-
-/*.wrapper {
-    display: flex;
-    flex-direction: row;
-    width: 300vw;
-    position: relative;
-    transform:rotate(90deg) translateY(-100vh);
-    transform: rotate(90deg);
-    transform-origin: left top;
-} */
-
-/* .slide {
-    width: 100vw;
-    height: 100vh;
-} */
-
-/* home page styling */
 
 .homePage{                                      /* selecting div with class "homePage" and adding styling to it */
     /* transition: scale 2s; */
@@ -59,28 +41,11 @@ body {
     background-size: 125%;
 }
 
-.myImage{              
-    /* selecting div with class "myImage" then navigating to img tag inside it, and adding styling to it */
-    /* z-index: -1;   */
-    /* height: 100vh;
-    width: 100vw; */
-    /* border-radius: 1rem; */
-}
-
-/* img:hover {
-    scale: 150%;
-} */
-
 .name{                                         /* selecting div with class "name" and adding styling to it */
     font-size: 5vw; 
     /* animation-name: namme; */
     transition: font-size 1s;
 }
-
-/* @keyframes namme {
-    from(font-size)
-    
-} */
 
 .name:hover {
     font-size: 5.5vw; 
@@ -181,35 +146,4 @@ span a:hover{                               /* here we add a special animation t
     margin:8vh auto;
     /* margin: 8vh 0 8vh 0vw; */
     font-size: 2em;
-}
-
-@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
-
-body {
-    margin: 0px;
-}
-
-#container {
-    position: absolute;
-    margin: auto;
-    width: 100vw;
-    height: 80pt;
-    top: 0;
-    bottom: 0;
-
-    filter: url(#threshold) blur(0.6px);
-}
-
-#text1,
-#text2 {
-    position: absolute;
-    width: 100%;
-    display: inline-block;
-
-    font-family: "Raleway", sans-serif;
-    font-size: 80pt;
-
-    text-align: center;
-
-    user-select: none;
 }
