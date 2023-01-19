@@ -1,56 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+        <title>Shashwat Dwivedi's Portfolio</title>
+    </head>
+    <body>
 
-<body>
-    <!-- We will be creating many elements in this document with some class (to add some styling later) -->
-    <!-- home page -->
-    <div id="home" class="homePage">
-        <div class="intro">                                  <!-- creating a master div to have child elements in it -->
-            <div class="name">Hi, I am &#60;name&#62;</div>  <!-- creating a div to enter your name (edit your name here) -->
-            <p>Frontend developer</p>                        <!-- paragraph tag -->
-            <button class="your_button">button</button>      <!-- creating a button -->
-        </div>
-        <div class="myImage">                                <!-- always a good habbit to add master divs -->
-            <img src="https://miro.medium.com/max/3960/0*HICLyAdNSIyT0ODU.jpg" alt="MyImage">  <!-- adding a image using url -->
-        </div>
-    </div>
+         <!-- HEADER -->
+         <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Passionate Coder</a>
+                </div>
 
-    <!-- about me -->
-    <div id="aboutme" class="about">                         <!-- again a master div -->
-        <div class="about_heading">                          <!-- child div for heading -->
-            About me
-        </div>
-        <!-- adding a paragraph tag to write "about me", edit it and write about you -->
-        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptates provident molestias a
-            animi facilis iusto voluptatum repellat eligendi consequatur distinctio placeat mollitia veritatis
-            recusandae, ad, quasi commodi enim quos! Quasi aspernatur veniam, blanditiis sint necessitatibus dicta
-            libero voluptatibus reiciendis asperiores nemo maiores ducimus corrupti magnam error voluptatum ab velit.
-        </p>
-    </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
 
-    <!-- contact -->
-    <div id="contact" class="contact_sec">                  <!-- adding a master div again -->
-        <div class="contact_heading">
-            Contact Me                                      <!-- adding a chiid div for heading -->
-        </div>
-        <div class="contact_info">
-            <!-- adding more divs for personal details, edit them! -->
-            <div class="Email">Email : <span class='data'>gdsc@example.com</span></div>
-            <div class="mobile_no">Mobile no : <span class='data'>+91 XXXXXXXXXX</span></div>
-            <!-- adding anchor tag to directly redirect user to your profile, add links to your profile in href -->
-            <div class="linkdin">linkdin :<span class='data'> <a
-                        href="https://www.linkedin.com/company/gdsc-iiit-kalyani/">Linkdin IN</a></span></div>  
-            <div class="github">Github : <span class='data'> <a href="https://github.com/GDSC-IIIT-Kalyani">Github</a></span></div>
-            <div class="others">Others :<span class='data'> <a href="https://gdsc.bio.link/">BIO</a></span></div>
-        </div>
-</body>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
 
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>My self <span class="home__title-color">Shashwat Dwivedi</span><br> Student of IIIT KALYANI</h1>
+
+                    <a href="#" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/shashwat-dwivedi-1264a6259/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                
+                    <a href="https://github.com/shashwatdwi176" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">    
+                    <img src="img/profile.png" alt="">
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="img/about.png" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Hi </h2>
+                        <p class="about__text"><br>I am <b>Shashwat Dwivedi</b> a student at <b>Indian Institute of Information Technolgy , Kalyani</b> currently I'm pursuing my <b>Bachelor of Technology</b> in <b>Computer Science and Engineering</b>. I will gradute in 2026. I was born and raised in Prayagraj Uttar Pradesh. I'm very passionate about new technolgies.<br>
+                            Apart from tech I have a interest in reading books, cycling, like to meet new peoples and always try to learn something new from them, sharemarket, podcasts </p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">As I have already mentioned that I'm first year student so, I am making efforts to increase my skills   </p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-C skills__icon'></i>
+                                <span class="skills__name">C</span>
+                            </div>
+                            <div class="skills__bar skills__c">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-python skills__icon'></i>
+                                <span class="skills__name">Python</span>
+                            </div>
+                            <div class="skills__bar skills__python">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-mysql skills__icon' ></i>
+                                <span class="skills__name">My SQL</span>
+                            </div>
+                            <div class="skills__bar skills__mysql">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html5">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-css3 skills__icon'></i>
+                                    <span class="skills__name">CSS3</span>
+                                </div>
+                                <div class="skills__bar skills__css3">
+    
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">70%</span>
+                                </div>
+
+                            
+                        
+
+                    </div>
+                    
+                    <div>              
+                        <img src="img/skills.png" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== Achievement =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Achievements</h2>
+
+                <div class="work__container bd-grid">
+                  <div class="work__img">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="img/3.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="img/4.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="img/5.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="img/6.jpg" alt="">
+                    </div>
+
+                    
+                        <ul>
+                            <li>
+                                Got an opportunity to contribute in Woc3.0
+                            </li>
+                            <li>
+                                Achieved bronze badge in Problem solving codechef
+                            </li>
+                            <li>
+                                Won silver medal in Rotary Fest - 2019
+
+                            </li>
+                           <li>Qualified IIT-JEE-Mains 2022</li>
+                           <li>
+                            Excellence in AISSCE (achieved 94%) 2021
+                           </li>
+                        </ul>
+                
+                </div>
+            </section>
+
+
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Enter" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Passionate Coder</p>
+            <div class="footer__social">
+                <a href="https://www.instagram.com/shashwat_dwivedi_76/?next=%2F" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://twitter.com/Shashwat176" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            
+        </footer>
+    </body>
 </html>
