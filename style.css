@@ -1,98 +1,471 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
 *{
     margin: 0;
-    padding: 0;  /* providing default margin and padding to be 0 */
+    padding: 0;
+    font-family: 'Josefin Sans',sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    
 }
 
-/* home page styling */
 
-.homePage{                                      /* selecting div with class "homePage" and adding styling to it */
-    display: flex;                              /* creating a flex box */
-    justify-content: space-around;   
-    height: 100vh;
+  
+.hero ,
+ ul,
+.about,.about-text,
+.skills .skills-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
 }
-
-.myImage img{                                  /* selecting div with class "myImage" then navigating to img tag inside it, and adding styling to it */
-    height: 18rem;
-    width: auto;
-    border-radius: 1rem;
+html{
+    scroll-behavior: smooth;
 }
-
-.name{                                         /* selecting div with class "name" and adding styling to it */
-    font-size: 3rem; 
+.navbar.sticky{
+    padding: 15px 0;
+    background: crimson;
 }
-
-.intro p{                                      /* selecting div with class "intro" then navigating to p tag inside it, and adding styling to it */
-    font-size: 2rem;
-    line-height: 3rem;
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
-.your_button{                                  /* selecting button with class "your_button" and adding styling to it */
-    font-size: 1rem;
-    padding: 5px;
+.hero{
+    display: flex;
+    background: url("./images/background.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 50vh;
+    background-size:cover;
+}
+.test{
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+}
+nav{
+    font-family: 'Baloo Paaji',cursive;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-top: 1px;
+    padding-top: 3%;
+    padding-left: 8%;
+}
+.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
     cursor: pointer;
-    background-color: rgb(42, 42, 255);
-    border-radius: 5px;
-    width:100px;
-    height:50px;
-    border:2px solid white;
-    color:white;
+    letter-spacing: 1px;
+}
+.hero span{
+    color:#f9004d;
+    font-weight: bold;
+}
+nav ul li{
+    font-family: 'Baloo Paaji',cursive;
+    padding-right: 10%;
+    list-style-type: none;
+    display:inline-block;
+    padding: 1px 35px;
+
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
     text-transform: capitalize;
 }
-.your_button:hover{                           /* here we add a special animation to button when it is hovered (hover: when a cursor roams in the specified setion it is the hover state for that element) */
-   
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+nav ul li a:hover{
+    color: #f9004d;
+    transition: 0.4s;
 }
-/* about me */
-.about{                                       /* selecting div with class "about" and adding styling to it */
-    min-height: 60vh;
+ul{
+    padding-right: 20%;
 }
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1{
+    color: white;
+    margin: 5px 0px 10px;
+    font-size: 75px;
+}
+h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+h4{
+    color: #fcfc;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+.about{
+    height: auto;
+    width: auto;
+    padding: 100px 0px;
+    background-color: #191919;
+}
+.about img:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+    cursor: pointer;
+}
+.about img{
+    height: auto;
+    width: 460px;
+    margin-right: 60px;
+}
+.about-text{
+    min-width:40vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 
-.about_heading{                               /* selecting div with class "about_heading" and adding styling to it */
-    font-size: 3rem;
-    text-align: center;
-    text-decoration: underline;
-    font-weight:600;
 }
-
-/* contact */
-.contact_sec{                                /* selecting div with class "contact_sec" and adding styling to it */
-    height: 60vh;
-    width:70vw;
+.main{
+    width: 1130px;
+    max-width:95px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2{
+    width: 40vw;
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    
+}
+.about-text h5{
+    width: 40vw;
+    color: white;
+    font-size: 22px;
+    text-transform: capitalize;
+    letter-spacing: 2 px;
+    margin-bottom: 20px;
+    
+}
+.about-text p{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: justify;
+    width: 40vw;
+    color: #fcfc;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
 }
 
-.contact_heading{                            /* selecting div with class "contact_heading" and adding styling to it */
-    font-weight:600;
-    font-size: 3rem;
-    text-align: center;
-    text-decoration: underline;
+button{
+    background-color: #f9004d;
+    color: white;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+button a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+button:hover{
+    background-color: transparent;
+    border:2px solid #f9004d;
+    cursor:pointer;
+    transform: scale(1.2);
+}
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.contact_info{                               /* selecting div with class "contact_info" and adding styling to it */
-    font-size:1.3em;
+/* skills section styling */
+
+.skills .title::after{
+    content: "What i Know";
+    background-color: #111;
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left{
+    font-size: 20px;
     font-weight: 600;
-    margin-top:10vh;
+    margin-bottom: 10px;
 }
-.data{                                       /* selecting div with class "data" and adding styling to it */
-    font-weight:initial;
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: crimson;
+    background: none;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+    /* transform-origin: left;
+    transform: scaleX(0);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards; */
 }
 
-.Email,.mobile_no,.linkdin,.github,.others{ /* selecting many divs with the class listed and adding same styling to all of them */
-    padding:2vh 0;
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+}
+.skills .skills-content .right .line::before{
+    transform-origin: left;
+    transform: scaleX(0);
+    animation: animate 1s cubic-bezier(1,1,1,1) forwards;
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.skills-content .right .c::before{
+    width: 65%;
+    background: crimson;
+}
+.skills-content .right .cplus::before{
+    width: 65%;
+    background: crimson;
+}
+.skills-content .right .html::before{
+    width: 70%;
+    background: crimson;
+}
+.skills-content .right .css::before{
+    width: 50%;
+    background: crimson;
+}
+.skills-content .right .ps::before{
+    width: 85%;
+    background: crimson;
+}
+section.skills{
+    padding: 100px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+section .title{
+    color:#fff;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: rgb(239, 236, 236);
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.max-width{
+max-width: 1300px;
+padding: 0 80px;
+margin: auto;
+}
+.text{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin: 10px 0 17px 0;
+    color: #fff;
+}
+.skills-content p{
+    text-align: justify;
+    width: 400px;
+    color: #fcfc;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+.skills{
+    background-color: #111;
+}
+.contact{
+    background-color: #111;
 }
 
-span a{                                     /* selecting span and then navigating to a tag in it and adding styling to it */
-    color:black;
+.contact .title::after{
+    content: "Get in touch";
+
 }
-
-span a:hover{                               /* here we add a special animation to anchor tag when it is hovered (hover: when a cursor roams in the specified setion it is the hover state for that element) */
-    color:blue;
+.contact .contact-content .column {
+    width: 50%;
 }
-
-
-.para{                                      /* selecting div with class "para" and adding styling to it */
-    width:70vw; 
-    margin:8vh auto;
-    font-size: 2em;
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #fff;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+.contact .right{
+  padding-top: 10px;
+  resize: none;
+  display: flex;
+  align-items: center;
+}
+.column.left{
+    margin-left: 30px;
+}
+.head{
+    color:#f9004d;
+    margin-bottom:5px;
+}
+footer{
+    position: relative;
+    width:100%;
+    height:150px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color:white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.social{
+    display: flex;
+    align-items: center;
+}
+.social a{
+    width:45px;
+    height:45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f9004d;
+    border-radius: 50%;
+    margin: 30px;
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.social a:hover{
+    transform: scale(1.3);
+    transition: 0.4s;
+    
 }
