@@ -83,22 +83,6 @@
     line-height: 3rem;
 }
 
-.your_button{                                  /* selecting button with class "your_button" and adding styling to it */
-    font-size: 1rem;
-    padding: 5px;
-    cursor: pointer;
-    background-color: rgb(42, 42, 255);
-    border-radius: 5px;
-    width:100px;
-    height:50px;
-    border:2px solid white;
-    color:white;
-    text-transform: capitalize;
-}
-.your_button:hover{                           /* here we add a special animation to button when it is hovered (hover: when a cursor roams in the specified setion it is the hover state for that element) */
-   
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-}
 /* about me */
 .about{                                       /* selecting div with class "about" and adding styling to it */
     min-height: 60vh;
@@ -110,10 +94,28 @@
 }
 
 .about_heading{                               /* selecting div with class "about_heading" and adding styling to it */
+    padding: 75px 0px 0px 0px;
     font-size: 3rem;
     text-align: center;
     text-decoration: underline;
-    font-weight:600;  
+    font-weight:600;
+}
+
+.Projectpage{                                       /* selecting div with class "about" and adding styling to it */
+    min-height: 60vh;
+    background: url("https://png.pngtree.com/background/20210717/original/pngtree-business-cream-reforestation-project-proposal-picture-image_1436780.jpg");
+    background-size: cover;
+    justify-content: space-around;   
+    height: 100vh;
+    align-items: center;
+}
+
+.projects_heading{                               /* selecting div with class "about_heading" and adding styling to it */
+    padding: 75px 0px 0px 0px;
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+    font-weight:600;
 }
 
 /* contact */
@@ -129,6 +131,7 @@
 }
 
 .contact_heading{                            /* selecting div with class "contact_heading" and adding styling to it */
+    padding: 75px 0px 0px 0px;
     font-weight:600;
     font-size: 3rem;
     text-align: center;
