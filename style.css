@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    padding: 0;  /* providing default margin and padding to be 0 */
+    padding: 0;
 }
 
 @font-face {
@@ -10,11 +10,18 @@
 
 .page1 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100vw;
   font-family: 'codeNewRoman', sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+#element0 {
+  padding-bottom: 100px;
 }
 
 .page2 {
@@ -22,4 +29,5 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  color: white;
 }
