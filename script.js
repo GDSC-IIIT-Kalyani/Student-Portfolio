@@ -36,22 +36,26 @@ ScrollTrigger.create({
   pin: true
 })
 
-tl.to(".page2", {
-  y: '-100vh',
-  duration: 10
+const tl2 = gsap.timeline();
+
+ScrollTrigger.create({
+  animation: tl2,
+  trigger: ".page2",
+  scrub: true,
+  pin: true
 })
 
-tl.from("#element3", {
+tl2.from("#element3", {
   x: '-1vw',
   opacity: 0
 })
 
-tl.from("#element4", {
+tl2.from("#element4", {
   x: '-1vw',
   opacity: 0
 })
 
-tl.from("#element5", {
+tl2.from("#element5", {
   x: '1vw',
   opacity: 0
 })
