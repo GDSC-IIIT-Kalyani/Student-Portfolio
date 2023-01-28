@@ -82,4 +82,7 @@
   position: relative;
   left: 25vw;
   bottom: 20vh;
+  width: 40vw;
+  height: 40vh;
+  object-fit: contain;
 }
