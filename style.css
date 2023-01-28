@@ -3,8 +3,6 @@
     padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
-
 @font-face {
   font-family: 'codeNewRoman';
   src: url(Code\ New\ Roman\ Nerd\ Font\ Complete\ Mono.otf);
@@ -18,24 +16,24 @@
   height: 100vh;
   width: 100vw;
   font-family: 'codeNewRoman', sans-serif;
-  font-size: 30px;
+  font-size: 3vh;
   color: white;
 }
 
 #element-1, #elementPurgatory {
   position: absolute;
   z-index: 3;
-  top: 500px;
+  top: 50vh;
 }
 
 #elementPurgatory {
-  bottom: 1px;
+  padding-top: 4vh;
 }
 
 #element0 {
   position: relative;
   z-index: 1;
-  padding-bottom: 100px;
+  padding-bottom: 10vh;
 }
 
 #element1, #element2 {
@@ -48,7 +46,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Yellowtail', cursive;
+  font-family: sans-serif;
   background: linear-gradient(45deg, black 45%, green);
   height: 100vh;
   width: 100vw;
@@ -57,10 +55,10 @@
 
 #element3 {
   position: relative;
-  right: 550px;
-  font-size: 70px;
-  padding-bottom: 70px;
-  top: 140px;
+  right: 30vw;
+  font-size: 6vh;
+  padding-bottom: 10vh;
+  top: 15vh;
 }
 
 #interiorelement3 {
@@ -74,14 +72,14 @@
 #element4 {
   display: flex;
   width: 40vw;
-  font-size: 26px;
+  font-size: 2.5vh;
   position: relative;
-  right: 330px;
-  top: 160px;
+  right: 17.6vw;
+  top: 15vh;
 }
 
 #element5 {
   position: relative;
-  left: 450px;
-  bottom: 200px;
+  left: 25vw;
+  bottom: 20vh;
 }
