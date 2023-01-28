@@ -92,3 +92,29 @@
   height: 40vh;
   object-fit: contain;
 }
+
+.page3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'codeNewRoman', sans-serif;
+  background: linear-gradient(45deg, black 45%, green);
+  height: 100vh;
+  width: 100vw;
+  color: white;
+}
+
+.Buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#element6 {
+  font-size: 10vh;
+  padding-bottom: 10vh;
+}
+
+#element9, #element10, #element11 {
+  border-radius: 20px;
+}
