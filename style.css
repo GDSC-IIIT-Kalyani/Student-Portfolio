@@ -70,12 +70,18 @@
 }
 
 #element4 {
-  display: flex;
   width: 40vw;
   font-size: 2.5vh;
   position: relative;
   right: 17.6vw;
   top: 15vh;
+}
+
+.coloredText {
+  background: linear-gradient(45deg, #e66465, #9198e5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #element5 {
