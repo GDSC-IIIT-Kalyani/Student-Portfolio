@@ -71,3 +71,42 @@ function twitter() {
 function linkedin() {
   location.href = "https://in.linkedin.com/in/iman-kalyan-chakraborty-33822b260?trk=people-guest_people_search-card"
 }
+
+const tl3 = gsap.timeline();
+
+ScrollTrigger.create({
+  animation: tl3,
+  trigger: ".page3",
+  scrub: true,
+  pin: true
+})
+
+tl3.from("#element6", {
+  y: '1vh',
+  opacity: 0
+})
+
+tl3.from("#element7", {
+  y: '1vh',
+  opacity: 0
+})
+
+tl3.from("#element8", {
+  y: '1vh',
+  opacity: 0
+})
+
+tl3.from("#element9", {
+  y: '1vh',
+  opacity: 0
+})
+
+tl3.from("#element10", {
+  y: '1vh',
+  opacity: 0
+})
+
+tl3.from("#element11", {
+  y: '1vh',
+  opacity: 0
+})
