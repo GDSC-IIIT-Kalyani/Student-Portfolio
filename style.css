@@ -99,10 +99,9 @@
   align-items: center;
   justify-content: center;
   font-family: 'codeNewRoman', sans-serif;
-  background: linear-gradient(45deg, black 45%, green);
+  background: linear-gradient(45deg, black 45%, purple);
   height: 100vh;
   width: 100vw;
-  color: white;
 }
 
 .Buttons {
@@ -113,8 +112,35 @@
 #element6 {
   font-size: 10vh;
   padding-bottom: 10vh;
+  background: linear-gradient(45deg, #e66465, #9198e5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#element7, #element8 {
+  font-size: 5vh;
+  background: linear-gradient(45deg, #e66465, #9198e5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#element8 {
+  padding-bottom: 10vh;
 }
 
 #element9, #element10, #element11 {
   border-radius: 20px;
+  height: 10vh;
+  width: 20vh;
+  font-size: 3vh;
+  font-family: 'codeNewRoman';
+  background: linear-gradient(45deg, pink, rgba(240, 210, 33, 0.8));
+}
+
+#element9:hover, #element10:hover, #element11:hover {
+  background: linear-gradient(45deg, #e66465, #9198e5);
+  border: 0px solid red;
+  cursor: pointer;
 }

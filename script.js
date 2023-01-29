@@ -59,3 +59,15 @@ tl2.from("#element5", {
   x: '1vw',
   opacity: 0
 })
+
+function github() {
+  location.href = "https://github.com/ImanKalyanChakraborty"
+}
+
+function twitter() {
+  location.href = "https://twitter.com/ikc1975"
+}
+
+function linkedin() {
+  location.href = "https://in.linkedin.com/in/iman-kalyan-chakraborty-33822b260?trk=people-guest_people_search-card"
+}
