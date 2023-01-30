@@ -9,48 +9,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <!-- We will be creating many elements in this document with some class (to add some styling later) -->
-    <!-- home page -->
-    <div id="home" class="homePage">
-        <div class="intro">                                  <!-- creating a master div to have child elements in it -->
-            <div class="name">Hi, I am &#60;name&#62;</div>  <!-- creating a div to enter your name (edit your name here) -->
-            <p>Frontend developer</p>                        <!-- paragraph tag -->
-            <button class="your_button">button</button>      <!-- creating a button -->
-        </div>
-        <div class="myImage">                                <!-- always a good habbit to add master divs -->
-            <img src="https://miro.medium.com/max/3960/0*HICLyAdNSIyT0ODU.jpg" alt="MyImage">  <!-- adding a image using url -->
-        </div>
+<body bgcolor="black">
+  <div class="page1">
+    <div id="element-1">Scroll Down</div>
+    <div id="elementPurgatory"><img src="GregariousBitterConch-max-1mb.gif" alt="Scroll Down Gif" height="100vh" width="100vw"></div>
+    <div id="element0"><h1>Hi</h1></div>
+    <div id="element1">I am Iman Kalyan Chakraborty.</div>
+    <div id="element2">Welcome to my Website.</div>
+  </div>
+  <div class="page2">
+    <div id="element3"><span id="interiorelement3">About Me:</span></div>
+    <div id="element4">I am a current first year student at <span class="coloredText">Indian Institute of Information Technology, Kalyani</span>. I love learning new things about computers. I love <span class="coloredText">competitive programming</span> and am learning more and more about new things in <span class="coloredText">computer science.</span></div>
+    <img id="element5" src="IMG-20220502-WA0000.jpg" alt="Iman's Photo">
+  </div>
+  <div class="page3">
+    <div id="element6">Contact me</div>
+    <div id="links">
+      <div id="element7">Email: imankc1975@gmail.com</div>
+      <div id="element8">Mobile Number: +91 9875421899</div>
+      <div class="Buttons">
+        <button id="element9" type="button" onclick="linkedin()">LinkedIn</button>
+        <button id="element10" type="button" onclick="twitter()">Twitter</button>
+        <button id="element11" type="button" onclick="github()">GitHub</button>
+      </div>
     </div>
-
-    <!-- about me -->
-    <div id="aboutme" class="about">                         <!-- again a master div -->
-        <div class="about_heading">                          <!-- child div for heading -->
-            About me
-        </div>
-        <!-- adding a paragraph tag to write "about me", edit it and write about you -->
-        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptates provident molestias a
-            animi facilis iusto voluptatum repellat eligendi consequatur distinctio placeat mollitia veritatis
-            recusandae, ad, quasi commodi enim quos! Quasi aspernatur veniam, blanditiis sint necessitatibus dicta
-            libero voluptatibus reiciendis asperiores nemo maiores ducimus corrupti magnam error voluptatum ab velit.
-        </p>
-    </div>
-
-    <!-- contact -->
-    <div id="contact" class="contact_sec">                  <!-- adding a master div again -->
-        <div class="contact_heading">
-            Contact Me                                      <!-- adding a chiid div for heading -->
-        </div>
-        <div class="contact_info">
-            <!-- adding more divs for personal details, edit them! -->
-            <div class="Email">Email : <span class='data'>gdsc@example.com</span></div>
-            <div class="mobile_no">Mobile no : <span class='data'>+91 XXXXXXXXXX</span></div>
-            <!-- adding anchor tag to directly redirect user to your profile, add links to your profile in href -->
-            <div class="linkdin">linkdin :<span class='data'> <a
-                        href="https://www.linkedin.com/company/gdsc-iiit-kalyani/">Linkdin IN</a></span></div>  
-            <div class="github">Github : <span class='data'> <a href="https://github.com/GDSC-IIIT-Kalyani">Github</a></span></div>
-            <div class="others">Others :<span class='data'> <a href="https://gdsc.bio.link/">BIO</a></span></div>
-        </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
