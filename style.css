@@ -1,6 +1,8 @@
 *{
     margin: 0;
+    margin-top: 0rem;
     padding: 0;  /* providing default margin and padding to be 0 */
+    background-color: black;
 }
 
 /* home page styling */
@@ -10,49 +12,59 @@
     justify-content: space-around;   
     height: 100vh;
     align-items: center;
+    line-height: 10rem;
+    margin-left: 2rem;
 }
 
-.myImage img{                                  /* selecting div with class "myImage" then navigating to img tag inside it, and adding styling to it */
-    height: 18rem;
+.myImage img{
+    margin-top: 4rem;                                  /* selecting div with class "myImage" then navigating to img tag inside it, and adding styling to it */
+    height: 35rem;
     width: auto;
     border-radius: 1rem;
+    margin-right: 1.5rem;
+    border: 10px solid yellowgreen;
+    animation-name: profilepic;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 }
 
 .name{                                         /* selecting div with class "name" and adding styling to it */
-    font-size: 3rem; 
+    font-size: 5rem; 
+    color: white;
+    text-decoration: underline;
+    animation-name: fromleft;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 }
 
 .intro p{                                      /* selecting div with class "intro" then navigating to p tag inside it, and adding styling to it */
-    font-size: 2rem;
-    line-height: 3rem;
-}
-
-.your_button{                                  /* selecting button with class "your_button" and adding styling to it */
-    font-size: 1rem;
-    padding: 5px;
-    cursor: pointer;
-    background-color: rgb(42, 42, 255);
-    border-radius: 5px;
-    width:100px;
-    height:50px;
-    border:2px solid white;
-    color:white;
-    text-transform: capitalize;
-}
-.your_button:hover{                           /* here we add a special animation to button when it is hovered (hover: when a cursor roams in the specified setion it is the hover state for that element) */
-   
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    font-size: 3rem;
+    line-height: 2.5rem;
+    color: greenyellow;
+    animation-name: fromleft;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    
 }
 /* about me */
 .about{                                       /* selecting div with class "about" and adding styling to it */
     min-height: 60vh;
+    color: aliceblue;
+    box-sizing: content-box;
+    border: 15px solid greenyellow;
 }
 
 .about_heading{                               /* selecting div with class "about_heading" and adding styling to it */
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
-    text-decoration: underline;
     font-weight:600;
+    color: white;
+    text-decoration: underline;
+    background-color: greenyellow;
+    animation-name: headings;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    margin-top: 2rem;
 }
 
 /* contact */
@@ -60,30 +72,46 @@
     height: 60vh;
     width:70vw;
     margin: 0 auto;
+    color: aliceblue;
+    box-sizing: content-box;
+    border: 15px solid greenyellow;
+    margin-top: 5rem;
 }
 
 .contact_heading{                            /* selecting div with class "contact_heading" and adding styling to it */
     font-weight:600;
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
     text-decoration: underline;
+    color: white;
+    background-color: greenyellow;
+    animation-name: headings;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 }
 
 .contact_info{                               /* selecting div with class "contact_info" and adding styling to it */
     font-size:1.3em;
     font-weight: 600;
-    margin-top:10vh;
+    margin-top:5vh;
+    color: aliceblue;
+    animation-name: fromleft;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 }
 .data{                                       /* selecting div with class "data" and adding styling to it */
     font-weight:initial;
+    color: skyblue
 }
 
-.Email,.mobile_no,.linkdin,.github,.others{ /* selecting many divs with the class listed and adding same styling to all of them */
+.Email,.mobile_no,.discord, .youtube, .location{ /* selecting many divs with the class listed and adding same styling to all of them */
     padding:2vh 0;
+    font-size: 2rem;
+    color: white;
 }
 
 span a{                                     /* selecting span and then navigating to a tag in it and adding styling to it */
-    color:black;
+    color:orange;
 }
 
 span a:hover{                               /* here we add a special animation to anchor tag when it is hovered (hover: when a cursor roams in the specified setion it is the hover state for that element) */
@@ -95,4 +123,124 @@ span a:hover{                               /* here we add a special animation t
     width:70vw; 
     margin:8vh auto;
     font-size: 2em;
+    color: skyblue;
+    word-spacing: 0.5rem;
+    line-height: 2.7rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation-name: fromleft;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.toplinks{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    cursor: pointer;
+    position: fixed;
+}
+.toplinks a{
+    color: blanchedalmond;
+    line-height: 1rem;
+}
+.toplinks a:hover{
+    color: blue;
+}
+#brief{
+    font-size: 1.5rem;
+    color: skyblue;
+}
+.topbutton{
+    margin-left: 12.9rem;
+    width:80px;
+    height:40px;
+    text-transform: capitalize;
+    border-radius: 15%;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.skills{
+    color: white;
+    text-align: center;
+    box-sizing: content-box;
+    border: 15px solid greenyellow;
+}
+.skills_heading{
+    font-size: 6rem;
+    text-decoration: underline;
+    color: white;
+    background-color: greenyellow;
+    animation-name: headings;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    margin-top: 2rem;
+}
+.skills_body{
+    text-align: center;
+    font-size: 3rem;
+    line-height: 5rem;
+    word-spacing: 5rem;
+    color: darkorange;
+    animation-name: fromleft;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.myhandles{
+    margin-left: 23rem;
+    word-spacing: 2rem;
+    animation-name: images;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.java, .webdev, .linux{
+    margin-left: 2rem;
+    float: left;
+    animation-name: images;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.c, .py{
+    margin-right: 2rem;
+    float: right;
+    animation-name: images;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.education{
+    text-align: center;
+    font-size: 2rem;
+    animation-name: fromleft;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.education_heading{
+    font-size: 4rem;
+    color: greenyellow;
+    text-decoration: underline;
+}
+.education_details{
+    line-height: 3rem;
+    color: skyblue;
+}
+/*ANIMATIONS*/
+@keyframes profilepic {
+    0%{
+        transform: translateY(-1000px);
+    }
+}
+@keyframes fromleft{
+    0%{
+        transform: translateX(-500px);
+    }
+}
+@keyframes headings {
+    0%{
+        transform: translateX(1000px);
+    }
+}
+@keyframes images {
+    0%{
+        visibility: hidden;
+    }
+    0%{
+        transform: translateY(-1000px);
+    }
 }
