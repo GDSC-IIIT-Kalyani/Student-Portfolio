@@ -1,81 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhaskar's Hub</title>
-    <script src="index.js"></script>
-    <style> @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap'); </style>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style5.css">
+    <title>Document</title>
 </head>
-
 <body>
-    <!-- We will be creating many elements in this document with some class (to add some styling later) -->
-    <!-- home page -->
-    <div class="wrapper">
-        <div id="home" class="homePage slide">
-            <div class="intro">                                  <!-- creating a master div to have child elements in it -->
-                <div class="name">I'm &#60;Bhaskar Metiya&#62;</div>  <!-- creating a div to enter your name (edit your name here) -->
-                <p>Frontend developer</p>                        <!-- paragraph tag -->
-                <!-- <button class="your_button">button</button>      creating a button -->
-            </div>
-
-
-    <div id="container">
-        <span id="text1"></span>
-        <span id="text2"></span>
+    <div class="navbar">
+        <ul>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#meet">Meet Me</a></li>
+            <li id="h"><a href="#home"><b>Home</b></a></li>
+        </ul>
     </div>
-
-    <svg id="filters">
-        <defs>
-            <filter id="threshold">
-                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
-                    0 1 0 0 0
-                    0 0 1 0 0
-                    0 0 0 255 -140" />
-            </filter>
-        </defs>
-    </svg>
-
-
-            <div class="myImage">                                <!-- always a good habbit to add master divs -->
-                <!-- <img src="https://miro.medium.com/max/3960/0*HICLyAdNSIyT0ODU.jpg" alt="MyImage">  adding a image using url -->
-                <!-- <img src="https://gruvbox-wallpapers.onrender.com/wallpapers/minimalistic/gruvbox_minimal_space.png" alt="MyImage">  adding a image using url -->
-            </div>
-        </div>
-
-        <!-- about me -->
-        <div id="aboutme" class="about slide">                         <!-- again a master div -->
-            <div class="about_heading">                          <!-- child div for heading -->
-                About me
-            </div>
-            <!-- adding a paragraph tag to write "about me", edit it and write about you -->
-            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptates provident molestias a
-                animi facilis iusto voluptatum repellat eligendi consequatur distinctio placeat mollitia veritatis
-                recusandae, ad, quasi commodi enim quos! Quasi aspernatur veniam, blanditiis sint necessitatibus dicta
-                libero voluptatibus reiciendis asperiores nemo maiores ducimus corrupti magnam error voluptatum ab velit.
-            </p>
-        </div>
-
-        <!-- contact -->
-        <div id="contact" class="contact_sec slide">                  <!-- adding a master div again -->
-            <div class="contact_heading">
-                Contact Me                                      <!-- adding a chiid div for heading -->
-            </div>
-            <div class="contact_info">
-                <!-- adding more divs for personal details, edit them! -->
-                <div class="Email">Email : <span class='data'>gdsc@example.com</span></div>
-                <div class="mobile_no">Mobile no : <span class='data'>+91 XXXXXXXXXX</span></div>
-                <!-- adding anchor tag to directly redirect user to your profile, add links to your profile in href -->
-                <div class="linkdin">linkdin :<span class='data'> <a
-                            href="https://www.linkedin.com/company/gdsc-iiit-kalyani/">Linkdin IN</a></span></div>  
-                <div class="github">Github : <span class='data'> <a href="https://github.com/GDSC-IIIT-Kalyani">Github</a></span></div>
-                <div class="others">Others :<span class='data'> <a href="https://gdsc.bio.link/">BIO</a></span></div>
-            </div>
-        </div>
+    <div class="section" id="home">
+        <h1>Bhaskar Metiya</h1>
+        <h2>An Upcoming Software Developer</h2>
+        <ul>
+            <!-- <svg width="96px" height="96px" src="github-mark/github-mark.svg"></svg> -->
+            <!-- <li><svg width="98" height="96" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" fill="#"/></svg></li> -->
+            <li><a href="https://www.github.com/bhaskar1001101"><svg width="98" height="96" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" fill="#fff"/></svg></a></li>
+            <li><a href="https://twitter.com/metiya_bhaskar"><svg fill="#fff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                width="96px" height="96px" viewBox="0 0 97.637 97.637"
+                xml:space="preserve">
+           <g>
+               <path d="M97.523,18.526c-0.14-0.165-0.371-0.221-0.568-0.131c-2.919,1.295-5.99,2.226-9.153,2.776
+                   c3.358-2.526,5.86-6.024,7.143-10.035c0.062-0.192-0.002-0.402-0.159-0.527c-0.158-0.125-0.377-0.141-0.55-0.038
+                   c-3.782,2.243-7.878,3.824-12.18,4.701c-3.812-3.956-9.135-6.219-14.644-6.219c-11.204,0-20.318,9.114-20.318,20.317
+                   c0,1.355,0.131,2.697,0.391,4c-15.518-0.958-30.028-8.408-39.894-20.509c-0.101-0.124-0.254-0.193-0.414-0.177
+                   c-0.159,0.012-0.301,0.102-0.381,0.239c-1.8,3.088-2.751,6.621-2.751,10.215c0,6.229,2.83,12.053,7.649,15.896
+                   c-2.481-0.298-4.904-1.079-7.089-2.292c-0.147-0.083-0.33-0.082-0.477,0.003c-0.147,0.084-0.24,0.24-0.244,0.41l-0.002,0.26
+                   c0,8.946,5.895,16.801,14.282,19.409c-2.209,0.356-4.501,0.332-6.754-0.098c-0.166-0.031-0.34,0.026-0.454,0.154
+                   c-0.113,0.128-0.151,0.307-0.099,0.469c2.515,7.85,9.503,13.355,17.637,14.041c-6.785,4.971-14.805,7.59-23.279,7.59
+                   c-1.561,0-3.133-0.093-4.673-0.274c-0.22-0.025-0.438,0.106-0.514,0.317c-0.076,0.213,0.005,0.451,0.195,0.572
+                   c9.17,5.881,19.773,8.988,30.664,8.988c35.625,0,56.913-28.938,56.913-56.914c0-0.779-0.015-1.554-0.046-2.327
+                   c3.843-2.811,7.142-6.252,9.802-10.235C97.675,18.929,97.662,18.692,97.523,18.526z"/>
+           </g>
+            </svg></a></li>
+            <li><a href="https://www.linkedin.com/in/bhaskar-metiya-428b9b253/"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="100px" height="100px" fill="#fff">    <path d="M25,2C12.318,2,2,12.317,2,25s10.318,23,23,23s23-10.317,23-23S37.682,2,25,2z M18,35h-4V20h4V35z M16,17 c-1.105,0-2-0.895-2-2c0-1.105,0.895-2,2-2s2,0.895,2,2C18,16.105,17.105,17,16,17z M37,35h-4v-5v-2.5c0-1.925-1.575-3.5-3.5-3.5 S26,25.575,26,27.5V35h-4V20h4v1.816C27.168,20.694,28.752,20,30.5,20c3.59,0,6.5,2.91,6.5,6.5V35z"/></svg></a></li>
+            <li><a href="https://discordapp.com/users/436567906516467714"><svg width="96px" height="96px" viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+            <g>
+                <path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z" fill="#fff" fill-rule="nonzero">
+        
+        </path>
+            </g>
+            </svg></a></li>
+        </ul>
     </div>
+    <div class="section" id="meet">
+        <h1>Meet Me!</h1>
+        <p>I'm a freshman at IIIT Kolloni</p>
+        <p>Learning is my pasion.</p>
+    </div>
+    <div class="section" id="skills">
+        <h1>Skills</h1>
+        <p></p>
+    </div>
+    <div class="section" id="projects">
+        <h1>Projects</h1>
+        <h1>Coming Soon</h1>
+        <p>ek na ek din jarur aayenge</p>
+    </div>
+    <div class="section" id="contact">
+        <h1>Connect With Me!</h1>
+        <p>Have an awesome project idea ?</p>
+        <p>Or simply want to chat with me ?</p>
+        <p></p>
+    </div>
+    <!-- <img onclick="topFunction()" id="myBtn" title="Go to top" src="chevron-upwards-arrow.png"> -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Go to Top</button> 
+    <script src="script2.js"></script>
 </body>
-
 </html>
