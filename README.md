@@ -16,4 +16,4 @@ Also watch-
  This Repository is based on HTML/CSS for building a Student Portfolio Web Page. As It contains only HTML and CSS so it becomes easier for even a geek developer. 
  I will be working on it more both in frontend and backend using javascript in future.
  <br>
- For a quick view of the Web Page Visit here <a href='https://gdsc-iiit-kalyani.github.io/Student-Portfolio/'>Preview</a>
+ For a quick view of the Web Page Visit here <a href='https://satadru03.github.io/'>Preview</a>
