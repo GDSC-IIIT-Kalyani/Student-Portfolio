@@ -1,246 +1,396 @@
 *{
-    margin: 0;
-    margin-top: 0rem;
-    padding: 0;  /* providing default margin and padding to be 0 */
-    background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: black;
+  color: white;
+}
+#header{
+  width: 100%;
+  height: 100vh;
+  background-image: url(homepic.png);
+  background-size: cover;
+  background-position: center;
+}
+.container{
+  padding: 10px 10%;
 
-/* home page styling */
+}
+/*TO ARRANGE NAVBAR IN A PROPER MANNER AS IT IS NOW*/
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo{
+  width: 250px;
+}
+/*TO SET NAVBAR STRAIGHT*/
+nav ul li{
+  display: inline-block;
+  list-style:none ;
+  margin: 10px 20px;
+}
+/*TO REMOVE UNDERLINE FROM NAVABR ITEMS AND ARRANGING THEM PROPERLY*/
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+/*TO SET THE DETAILS AFTER HOVERING*/
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+/*DECORATING THE HEADER TEXT*/
+.header-text{
+  margin-top: 20%;
+  font-size: 30px;
+}
+/*DECORATING THE NAME WALA HISSA*/
+.header-text h1{
+  font-size: 60px;
+  margin-top: 20px;
+}
+/*COLORING MY NAME PART*/
+.header-text h1 span{
+  color: #ff004f;
+}
+/* -----------------------about---------------------- */
+#about{
+  padding: 80px 0;
+  color: #ababab;
+}
+.row{
+  display: flex;/*gets content side by side*/
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col-1{
+  flex-basis: 35%;/*width of the column*/
+}
+.about-col-1 img{
+  width: 100%;
+  border-radius: 15px;
+}
+.about-col-2{
+  flex-basis: 60%;
+}
+.sub-title{
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+}
+.tab-titles{
+  display: flex;
+  margin: 10px 0 40px;
+}
+.tab-links{
+  margin: 10px;
+  font-size: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after{
+  content: '';
+  width:0 ;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transform: 0.5s;
+}
+.tab-links:hover::after{
+  width: 100%;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+  list-style: none;
+  margin: 5px 0;
+}
+.tab-contents ul li span{
+  color: #b54769;
+  font-size: 20px;
+}
+.tab-contents{
+  display:none ;
+}
+.tab-contents.active-tab{
+  display: block;
+}
+/*-------------------PROJECT------------------*/
+#projects{
+  padding: 50px 0;
 
-.homePage{                                      /* selecting div with class "homePage" and adding styling to it */
-    display: flex;                              /* creating a flex box */
-    justify-content: space-around;   
-    height: 100vh;
-    align-items: center;
-    line-height: 10rem;
-    margin-left: 2rem;
 }
-
-.myImage img{
-    margin-top: 4rem;                                  /* selecting div with class "myImage" then navigating to img tag inside it, and adding styling to it */
-    height: 35rem;
-    width: auto;
-    border-radius: 1rem;
-    margin-right: 1.5rem;
-    border: 10px solid yellowgreen;
-    animation-name: profilepic;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
+.project-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
 }
-
-.name{                                         /* selecting div with class "name" and adding styling to it */
-    font-size: 5rem; 
-    color: white;
-    text-decoration: underline;
-    animation-name: fromleft;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
+.work{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
 }
-
-.intro p{                                      /* selecting div with class "intro" then navigating to p tag inside it, and adding styling to it */
-    font-size: 3rem;
-    line-height: 2.5rem;
-    color: greenyellow;
-    animation-name: fromleft;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    
+.work img{
+  width: 30%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s ;
 }
-/* about me */
-.about{                                       /* selecting div with class "about" and adding styling to it */
-    min-height: 60vh;
-    color: aliceblue;
-    box-sizing: content-box;
-    border: 15px solid greenyellow;
+.work:hover img{
+  transform:scale(1.1) ;
 }
-
-.about_heading{                               /* selecting div with class "about_heading" and adding styling to it */
-    font-size: 5rem;
-    text-align: center;
-    font-weight:600;
-    color: white;
-    text-decoration: underline;
-    background-color: greenyellow;
-    animation-name: headings;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    margin-top: 2rem;
+.layer{
+  width: 31.8%;
+  height: 0;
+  background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
 }
-
-/* contact */
-.contact_sec{                                /* selecting div with class "contact_sec" and adding styling to it */
-    height: 60vh;
-    width:70vw;
-    margin: 0 auto;
-    color: aliceblue;
-    box-sizing: content-box;
-    border: 15px solid greenyellow;
-    margin-top: 5rem;
+.work:hover .layer{
+  height: 100%;
 }
-
-.contact_heading{                            /* selecting div with class "contact_heading" and adding styling to it */
-    font-weight:600;
-    font-size: 4rem;
-    text-align: center;
-    text-decoration: underline;
-    color: white;
-    background-color: greenyellow;
-    animation-name: headings;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
+#link-icon{
+  width: 30px;
+  display: flex;
+  margin: 15px 150px;
 }
-
-.contact_info{                               /* selecting div with class "contact_info" and adding styling to it */
-    font-size:1.3em;
-    font-weight: 600;
-    margin-top:5vh;
-    color: aliceblue;
-    animation-name: fromleft;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
+.layer h3{
+  font-weight: 5000;
+  margin-bottom: 20px;
 }
-.data{                                       /* selecting div with class "data" and adding styling to it */
-    font-weight:initial;
-    color: skyblue
+.social-icons a img{
+  width: 40px;
+  margin: 30px 0 ;
 }
-
-.Email,.mobile_no,.discord, .youtube, .location{ /* selecting many divs with the class listed and adding same styling to all of them */
-    padding:2vh 0;
-    font-size: 2rem;
-    color: white;
+/*----------------contact*------------------*/
+.contact-left{
+  flex-basis: 35%;
 }
-
-span a{                                     /* selecting span and then navigating to a tag in it and adding styling to it */
-    color:orange;
+.contact-right{
+  flex-basis: 60%;
 }
-
-span a:hover{                               /* here we add a special animation to anchor tag when it is hovered (hover: when a cursor roams in the specified setion it is the hover state for that element) */
-    color:blue;
+.contact-left p{
+  margin: 20px;
+  transition: transform 0.5s;
 }
-
-
-.para{                                      /* selecting div with class "para" and adding styling to it */
-    width:70vw; 
-    margin:8vh auto;
-    font-size: 2em;
-    color: skyblue;
-    word-spacing: 0.5rem;
-    line-height: 2.7rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    animation-name: fromleft;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
+.contact-left p:hover{
+  transform: translateY(-6px);
 }
-.toplinks{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 10px;
+.contact-left p img{
+  width: 30px;
+  margin-top: 0px;
+  transition: transform 0.5s;
+}
+.social-icons a.fb img{
+  width: 48px;
+}
+.social-icons a.tw img{
+  width: 37px;
+}
+.social-icons a.git img{
+  width: 42px;
+}
+.social-icons a img:hover{
+  transform: translateY(-7px);
+}
+.btn{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.5s;
+}
+.btn:hover{
+  background: #ff004f;
+}
+.btn.btn2{
+  display: inline-block;
+  /*background: #ff004f;*/
+}
+#submit{
+  background: #ff004f;
+  cursor: pointer;
+}
+.contact-right form{
+  width: 100%;
+}
+/*CONTACT RIGHT WALE KE STYLES*/
+form input, form textarea{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+form.btn2{
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.copyright{
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+}
+/*-------------------------for small screen--------------*/
+@media only screen and (max-width: 600px){
+  #header{
+    background-image: url(phone.png);
+  }
+  .header-text{
+    margin-bottom: 100%;
+    font-size: 16px;
+  }
+  .header-text h1{
+    font-size: 40px;
+    margin: 20px 0;
+  }  
+  nav .img{
+    display: block;
+    width: 30px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
     cursor: pointer;
+  }
+  nav ul{
+    background: #ff004f;
     position: fixed;
-}
-.toplinks a{
-    color: blanchedalmond;
-    line-height: 1rem;
-}
-.toplinks a:hover{
-    color: blue;
-}
-#brief{
-    font-size: 1.5rem;
-    color: skyblue;
-}
-.topbutton{
-    margin-left: 12.9rem;
-    width:80px;
-    height:40px;
-    text-transform: capitalize;
-    border-radius: 15%;
-    font-size: 1.5rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.skills{
-    color: white;
-    text-align: center;
-    box-sizing: content-box;
-    border: 15px solid greenyellow;
-}
-.skills_heading{
-    font-size: 6rem;
-    text-decoration: underline;
-    color: white;
-    background-color: greenyellow;
-    animation-name: headings;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    margin-top: 2rem;
-}
-.skills_body{
-    text-align: center;
-    font-size: 3rem;
-    line-height: 5rem;
-    word-spacing: 5rem;
-    color: darkorange;
-    animation-name: fromleft;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-}
-.myhandles{
-    margin-left: 23rem;
-    word-spacing: 2rem;
-    animation-name: images;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-}
-.java, .webdev, .linux{
-    margin-left: 2rem;
-    float: left;
-    animation-name: images;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-}
-.c, .py{
-    margin-right: 2rem;
-    float: right;
-    animation-name: images;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-}
-.education{
-    text-align: center;
-    font-size: 2rem;
-    animation-name: fromleft;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-}
-.education_heading{
-    font-size: 4rem;
-    color: greenyellow;
-    text-decoration: underline;
-}
-.education_details{
-    line-height: 3rem;
-    color: skyblue;
-}
-/*ANIMATIONS*/
-@keyframes profilepic {
-    0%{
-        transform: translateY(-1000px);
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 25px;
+  }
+  #menu{
+    margin-left: 350px;
+  }
+  .sub-title{
+    font-size: 40px;
+  }
+  .about-col-1, .about-col-2{
+    flex-basis: 100%;
+  }
+  .about-col-1{
+    margin-bottom: 30px;
+  }
+  .about-col-2{
+    font-size: 14px;
+  }
+  .tab-links{
+    font-size: 25px;
+    margin-right: 20px;
+  }
+  .tab-contents{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .work img{
+    width: 500px;
+    height: 50vh;
+  }
+  .layer{
+    width: 350px;
+    height: 0px;
+  }
+  .work:hover .layer{
+    height: 100%;
+  }
+  #link-icon{
+    width: 30px;
+    height: 20px;
+  }
+  /*
+  .contact-left p{
+      margin: 30px 50px;
+      transition: transform 0.5s;
+      display: flex;
     }
+  .sub-title.contactme{
+    font-size: 49px;
+    margin-left: 20px;
+  }
+  .contact-left p img{
+    width: 25px;
+  }
+  .social-icons a.fb{
+    margin-left: 50px;
+  }*/
+  .contact-left p:hover{
+    color: #ff004f;
+  }
+  .contact-left, .contact-right{
+    flex-basis: 100%;
+  }
 }
-@keyframes fromleft{
-    0%{
-        transform: translateX(-500px);
-    }
+.img{
+  display: none;
 }
-@keyframes headings {
-    0%{
-        transform: translateX(1000px);
-    }
+#msg{
+  color: #61b752;
+  margin-top: -40px;
+  display: block;
 }
-@keyframes images {
-    0%{
-        visibility: hidden;
-    }
-    0%{
-        transform: translateY(-1000px);
-    }
+/*-------------------------------ANIMATIONS--------------------------------*/
+@keyframes leftse {
+  0% {
+    transform: translateX(-200px);
+  }
+  25%{
+    transform: translateX(50px);
+  }
 }
