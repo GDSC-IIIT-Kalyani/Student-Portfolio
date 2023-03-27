@@ -1,98 +1,396 @@
 *{
-    margin: 0;
-    padding: 0;  /* providing default margin and padding to be 0 */
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
 }
-
-/* home page styling */
-
-.homePage{                                      /* selecting div with class "homePage" and adding styling to it */
-    display: flex;                              /* creating a flex box */
-    justify-content: space-around;   
-    height: 100vh;
-    align-items: center;
+html{
+  scroll-behavior: smooth;
 }
-
-.myImage img{                                  /* selecting div with class "myImage" then navigating to img tag inside it, and adding styling to it */
-    height: 18rem;
-    width: auto;
-    border-radius: 1rem;
+body{
+  background-color: black;
+  color: white;
 }
-
-.name{                                         /* selecting div with class "name" and adding styling to it */
-    font-size: 3rem; 
+#header{
+  width: 100%;
+  height: 100vh;
+  background-image: url(homepic.png);
+  background-size: cover;
+  background-position: center;
 }
+.container{
+  padding: 10px 10%;
 
-.intro p{                                      /* selecting div with class "intro" then navigating to p tag inside it, and adding styling to it */
-    font-size: 2rem;
-    line-height: 3rem;
 }
+/*TO ARRANGE NAVBAR IN A PROPER MANNER AS IT IS NOW*/
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo{
+  width: 250px;
+}
+/*TO SET NAVBAR STRAIGHT*/
+nav ul li{
+  display: inline-block;
+  list-style:none ;
+  margin: 10px 20px;
+}
+/*TO REMOVE UNDERLINE FROM NAVABR ITEMS AND ARRANGING THEM PROPERLY*/
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+/*TO SET THE DETAILS AFTER HOVERING*/
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+/*DECORATING THE HEADER TEXT*/
+.header-text{
+  margin-top: 20%;
+  font-size: 30px;
+}
+/*DECORATING THE NAME WALA HISSA*/
+.header-text h1{
+  font-size: 60px;
+  margin-top: 20px;
+}
+/*COLORING MY NAME PART*/
+.header-text h1 span{
+  color: #ff004f;
+}
+/* -----------------------about---------------------- */
+#about{
+  padding: 80px 0;
+  color: #ababab;
+}
+.row{
+  display: flex;/*gets content side by side*/
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col-1{
+  flex-basis: 35%;/*width of the column*/
+}
+.about-col-1 img{
+  width: 100%;
+  border-radius: 15px;
+}
+.about-col-2{
+  flex-basis: 60%;
+}
+.sub-title{
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+}
+.tab-titles{
+  display: flex;
+  margin: 10px 0 40px;
+}
+.tab-links{
+  margin: 10px;
+  font-size: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after{
+  content: '';
+  width:0 ;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transform: 0.5s;
+}
+.tab-links:hover::after{
+  width: 100%;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+  list-style: none;
+  margin: 5px 0;
+}
+.tab-contents ul li span{
+  color: #b54769;
+  font-size: 20px;
+}
+.tab-contents{
+  display:none ;
+}
+.tab-contents.active-tab{
+  display: block;
+}
+/*-------------------PROJECT------------------*/
+#projects{
+  padding: 50px 0;
 
-.your_button{                                  /* selecting button with class "your_button" and adding styling to it */
-    font-size: 1rem;
-    padding: 5px;
+}
+.project-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.work{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.work img{
+  width: 30%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s ;
+}
+.work:hover img{
+  transform:scale(1.1) ;
+}
+.layer{
+  width: 31.8%;
+  height: 0;
+  background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+.work:hover .layer{
+  height: 100%;
+}
+#link-icon{
+  width: 30px;
+  display: flex;
+  margin: 15px 150px;
+}
+.layer h3{
+  font-weight: 5000;
+  margin-bottom: 20px;
+}
+.social-icons a img{
+  width: 40px;
+  margin: 30px 0 ;
+}
+/*----------------contact*------------------*/
+.contact-left{
+  flex-basis: 35%;
+}
+.contact-right{
+  flex-basis: 60%;
+}
+.contact-left p{
+  margin: 20px;
+  transition: transform 0.5s;
+}
+.contact-left p:hover{
+  transform: translateY(-6px);
+}
+.contact-left p img{
+  width: 30px;
+  margin-top: 0px;
+  transition: transform 0.5s;
+}
+.social-icons a.fb img{
+  width: 48px;
+}
+.social-icons a.tw img{
+  width: 37px;
+}
+.social-icons a.git img{
+  width: 42px;
+}
+.social-icons a img:hover{
+  transform: translateY(-7px);
+}
+.btn{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.5s;
+}
+.btn:hover{
+  background: #ff004f;
+}
+.btn.btn2{
+  display: inline-block;
+  /*background: #ff004f;*/
+}
+#submit{
+  background: #ff004f;
+  cursor: pointer;
+}
+.contact-right form{
+  width: 100%;
+}
+/*CONTACT RIGHT WALE KE STYLES*/
+form input, form textarea{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+form.btn2{
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.copyright{
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+}
+/*-------------------------for small screen--------------*/
+@media only screen and (max-width: 600px){
+  #header{
+    background-image: url(phone.png);
+  }
+  .header-text{
+    margin-bottom: 100%;
+    font-size: 16px;
+  }
+  .header-text h1{
+    font-size: 40px;
+    margin: 20px 0;
+  }  
+  nav .img{
+    display: block;
+    width: 30px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
     cursor: pointer;
-    background-color: rgb(42, 42, 255);
-    border-radius: 5px;
-    width:100px;
-    height:50px;
-    border:2px solid white;
-    color:white;
-    text-transform: capitalize;
+  }
+  nav ul{
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 25px;
+  }
+  #menu{
+    margin-left: 350px;
+  }
+  .sub-title{
+    font-size: 40px;
+  }
+  .about-col-1, .about-col-2{
+    flex-basis: 100%;
+  }
+  .about-col-1{
+    margin-bottom: 30px;
+  }
+  .about-col-2{
+    font-size: 14px;
+  }
+  .tab-links{
+    font-size: 25px;
+    margin-right: 20px;
+  }
+  .tab-contents{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .work img{
+    width: 500px;
+    height: 50vh;
+  }
+  .layer{
+    width: 350px;
+    height: 0px;
+  }
+  .work:hover .layer{
+    height: 100%;
+  }
+  #link-icon{
+    width: 30px;
+    height: 20px;
+  }
+  /*
+  .contact-left p{
+      margin: 30px 50px;
+      transition: transform 0.5s;
+      display: flex;
+    }
+  .sub-title.contactme{
+    font-size: 49px;
+    margin-left: 20px;
+  }
+  .contact-left p img{
+    width: 25px;
+  }
+  .social-icons a.fb{
+    margin-left: 50px;
+  }*/
+  .contact-left p:hover{
+    color: #ff004f;
+  }
+  .contact-left, .contact-right{
+    flex-basis: 100%;
+  }
 }
-.your_button:hover{                           /* here we add a special animation to button when it is hovered (hover: when a cursor roams in the specified setion it is the hover state for that element) */
-   
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+.img{
+  display: none;
 }
-/* about me */
-.about{                                       /* selecting div with class "about" and adding styling to it */
-    min-height: 60vh;
+#msg{
+  color: #61b752;
+  margin-top: -40px;
+  display: block;
 }
-
-.about_heading{                               /* selecting div with class "about_heading" and adding styling to it */
-    font-size: 3rem;
-    text-align: center;
-    text-decoration: underline;
-    font-weight:600;
-}
-
-/* contact */
-.contact_sec{                                /* selecting div with class "contact_sec" and adding styling to it */
-    height: 60vh;
-    width:70vw;
-    margin: 0 auto;
-}
-
-.contact_heading{                            /* selecting div with class "contact_heading" and adding styling to it */
-    font-weight:600;
-    font-size: 3rem;
-    text-align: center;
-    text-decoration: underline;
-}
-
-.contact_info{                               /* selecting div with class "contact_info" and adding styling to it */
-    font-size:1.3em;
-    font-weight: 600;
-    margin-top:10vh;
-}
-.data{                                       /* selecting div with class "data" and adding styling to it */
-    font-weight:initial;
-}
-
-.Email,.mobile_no,.linkdin,.github,.others{ /* selecting many divs with the class listed and adding same styling to all of them */
-    padding:2vh 0;
-}
-
-span a{                                     /* selecting span and then navigating to a tag in it and adding styling to it */
-    color:black;
-}
-
-span a:hover{                               /* here we add a special animation to anchor tag when it is hovered (hover: when a cursor roams in the specified setion it is the hover state for that element) */
-    color:blue;
-}
-
-
-.para{                                      /* selecting div with class "para" and adding styling to it */
-    width:70vw; 
-    margin:8vh auto;
-    font-size: 2em;
+/*-------------------------------ANIMATIONS--------------------------------*/
+@keyframes leftse {
+  0% {
+    transform: translateX(-200px);
+  }
+  25%{
+    transform: translateX(50px);
+  }
 }
