@@ -1,56 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <title>portfolio website</title>
+    <link rel = "stylesheet"  href="app.css">   
+
+    <link rel = "preconnect" href="https ://fonts.gstatic.com">
+    <link href="https://fonts.goggleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700;&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&display=swap" rel="stylesheet">
+
+
+
+
+
 </head>
-
 <body>
-    <!-- We will be creating many elements in this document with some class (to add some styling later) -->
-    <!-- home page -->
-    <div id="home" class="homePage">
-        <div class="intro">                                  <!-- creating a master div to have child elements in it -->
-            <div class="name">Hi, I am &#60;name&#62;</div>  <!-- creating a div to enter your name (edit your name here) -->
-            <p>Frontend developer</p>                        <!-- paragraph tag -->
-            <button class="your_button">button</button>      <!-- creating a button -->
-        </div>
-        <div class="myImage">                                <!-- always a good habbit to add master divs -->
-            <img src="https://miro.medium.com/max/3960/0*HICLyAdNSIyT0ODU.jpg" alt="MyImage">  <!-- adding a image using url -->
-        </div>
-    </div>
+    <!--<nav class = "navbar">
+        <ul>
+            <li><a href = "#">Home</a></li>
+            <li><a href = "#">About Me</a></li>
+            <li><a href = "#">Portfolio</a></li>
+            <li><a href = "#">Skills</a></li>
+            <li><a href = "#">Contact Me</a></li>
+            
+        </ul>
+    </nav>-->
+    <!--hero Section start-->
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Portfo<span>lio</span></h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html" target="_parent">About Us</a></li>
+                <li><a href="education.html" target="_parent">Education</a></li>
+                <li><a href="skill.html" target="_parent">Skills</a></li>
+                <li><a href="contact.html" target="_parent">Contact Me</a></li>
+            </ul>
+           <!--<a href="#" class="btn">Hire Me</a>-->
+        </nav>
 
-    <!-- about me -->
-    <div id="aboutme" class="about">                         <!-- again a master div -->
-        <div class="about_heading">                          <!-- child div for heading -->
-            About me
-        </div>
-        <!-- adding a paragraph tag to write "about me", edit it and write about you -->
-        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptates provident molestias a
-            animi facilis iusto voluptatum repellat eligendi consequatur distinctio placeat mollitia veritatis
-            recusandae, ad, quasi commodi enim quos! Quasi aspernatur veniam, blanditiis sint necessitatibus dicta
-            libero voluptatibus reiciendis asperiores nemo maiores ducimus corrupti magnam error voluptatum ab velit.
-        </p>
+        <div class ="content">
+           <h4>Hello,my name is</h4>
+           <h1 contenteditable="true">Subhadeep <span data-text="Mondal">Mondal</span></h1>
+           <h3>I'm a Web Devloper</h3>
+           <div class = "newslatter">
+              <form>
+                 <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+                 <input type ="submit" name="submit" value="Lets Start">
+                 
+              </form>
+           </div>
+      </div>
     </div>
+    <!--About Section-->
+    
 
-    <!-- contact -->
-    <div id="contact" class="contact_sec">                  <!-- adding a master div again -->
-        <div class="contact_heading">
-            Contact Me                                      <!-- adding a chiid div for heading -->
+    <!--service section start-->
+    <!--<div class="service">
+         <div class="title">
+            <h2>Our Services</h2>
+         </div>
+
+         <div class="box">
+            <div class="car">
+
+            </div>
+         </div>
+    </div>-->
+
+    <!--Contact Me-->
+    <!--<div class = "contact-me">
+        <p>Let Me Get you a beautiful website</p>
+        <a class = "button-two" href="#">Hire Me</a>
+
+    </div>-->
+
+    <!--footer start-->
+    <footer>
+        <p>My Social Media Handel</p>
+        <div class = "social">
+            <a href = "https://www.facebook.com/profile.php?id=100084895640251"><i class="fa-brands fa-facebook"></i></a>
+            <a href = "https://github.com/im-subhadeep"><i class="fa-brands fa-github"></i></a>
+            <a href = "https://www.linkedin.com/in/subhadeep-mondal-8090b222b/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href = "https://www.instagram.com/im_subhadeep__/"><i class="fa-brands fa-instagram"></i></a>
         </div>
-        <div class="contact_info">
-            <!-- adding more divs for personal details, edit them! -->
-            <div class="Email">Email : <span class='data'>gdsc@example.com</span></div>
-            <div class="mobile_no">Mobile no : <span class='data'>+91 XXXXXXXXXX</span></div>
-            <!-- adding anchor tag to directly redirect user to your profile, add links to your profile in href -->
-            <div class="linkdin">linkdin :<span class='data'> <a
-                        href="https://www.linkedin.com/company/gdsc-iiit-kalyani/">Linkdin IN</a></span></div>  
-            <div class="github">Github : <span class='data'> <a href="https://github.com/GDSC-IIIT-Kalyani">Github</a></span></div>
-            <div class="others">Others :<span class='data'> <a href="https://gdsc.bio.link/">BIO</a></span></div>
-        </div>
+    </footer>
 </body>
-
 </html>
