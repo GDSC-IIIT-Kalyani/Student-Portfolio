@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:800px)"href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:530px)"href="phone.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact me">Contact me</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <div class="main">
+            <h1 class="headings">HELLO EVERYONE,<br>I AM <br> SAYAN MANDAL.</h1>
+            <div class="hero-text"><h3>Hey, There!</h3>
+        <h3>Everyone</h3>
+            <h1>I am a <span class ="input"></span></h1>
+            <hr>
+    <br>
+    <div class="xx">
+    <h4>My Social Media Handle</h4>
+</div>
+    <br>
+    <div class="social">
+        <a href="https://www.linkedin.com/in/sayan-mandal-38b05b25b/"><i class="fa-brands fa-linkedin"></i></a> 
+               <a href="https://github.com/sayan-iiitian"><i class="fa-brands fa-github"></i></a>
+               <a href="https://www.instagram.com/rock_with_iiitian_sayan/"><i class="fa-brands fa-instagram"></i></a>
+               <a href="https://www.facebook.com/profile.php?id=100043949051440"><i class="fa-brands fa-facebook"></i></a>
+               <a href="https://twitter.com/SayanIIITian"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+</div>
+        </div>
+    </section>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script>
+        var typed=new Typed(".input",{
+            strings:["WEB DEVELOPER.","JAVA PROGRAMMER.","C PROGRAMMER.","PYTHON PROGRAMMER."],
+            typeSpeed: 70,
+            backSpeed: 60,
+            loop:true
+        });
+    </script>
+    <section id="about">
+        <h1 class="headings"></h1>
+        <div id="pic">
+            
+            <img class="about-pic" src="Sayan_Mandal.jpg" alt="">
+            <div class="intro" id="intro">
+                <h2>ABOUT ME</h2>
+                <p>Myself SAYAN MANDAL from Indian Institute of Information Technology, Kalyani. I am a WEB DEVELOPER and also have interest in Artificial Intelligence-Machine Learning and
+                    APP DEVELOPMENT. I also like to do COMPETITIVE PROGRAMMING in various platforms like CODECHEF, HACKERRANK, CODEFORCES, ATCODER, etc.
+                    I am a first year engineering student with a strong foundation in programming language such as JAVA and
+                    C. I am seeking opportunity to further develop my skills and gain practical experience in the industry. Presently, I am also Core Team Member of both Developmental Club and Competitive Programming Club (=Tech Club) in our College.</p>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h1 class="headings">SKILLS</h1>
+        <div class="row">
+            <img src="Skills/png2.png" alt="">
+            <div class="box">
+                <h1 class="headings">Web Developer</h1>
+            </div>
+            <div class="box">
+                <h1 class="headings">JAVA Programmer</h1>
+            </div>
+            <div class="box">
+                <h1 class="headings">C Programmer</h1>
+            </div>
+            <div class="box">
+                <h1 class="headings">Python Programmer</h1>
+            </div>
+        </div>
+    </section>
+    <section id="contact me">
+        <h1 class="headings">CONTACT</h1>
+        <div class="ee">
+        <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Location : Kolkata, India.</span>
+                            </div>
+                        
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email : sayan191102@gmail.com.</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-user-graduate"></i>
+                                <span>Education : Indian Institute of Information Technology,Kalyani.</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>Mobile Number : 8240653161.</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-globe-asia"></i>
+                                <span>Languages : English, Hindi, Bengali.</span>
+                            </div>
+                        </div>
+                    </div>
+                        
+        <form action="" class="form">
+            <input type="text" name="name" class="input" placeholder="Enter Your Name">
+            <input type="email" name="email" class="input" placeholder="Enter your Email">
+            <textarea name="msg" class="msg" cols="30" rows="10"
+            placeholder="Enter Your Message"></textarea>
+            <input type="submit" value="SEND" class="send">
+        </form>
+    </section>
+    
+</body>
+</html>
