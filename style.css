@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding:  0;
+    font-family: sans-serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+#home {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0,0,0,0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+} 
+#home ::before{
+    content: " ";
+    position:absolute;
+    top: 0;
+    right: 0;
+    background:url('walpapers.jpg') no-repeat center center / cover ;
+    height: 900px;
+
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+//*
+.main{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right:10%;
+
+}
+*//
+.heading{
+     font-family: century;
+     font-size: 3rem;
+     text-align: center;
+     margin: 40px 0;
+
+
+
+}
+.btn {
+    padding: 10px  35px ;
+    background-color: transparent;
+    border:1px solid white ;
+    color:white ;
+    outline: none;
+    transition: .6s ease ;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color:white ;
+    color: black;
+    box-shadow: 0 0 5px white 0 0 10px, white 0 0 15px , white;
+font-weight:bold ;
+}
+/*  About section */
+
+#about {
+    display:  flex;
+    flex-direction: column;
+box-sizing: border-box;
+padding: 20px;
+margin-bottom:50px ;
+
+}
+#pic{
+    display: flex;
+}
+    #pic img{
+        width: 575px;
+        height: 400px;
+
+
+    }
+    #intro {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        padding: 10px;
+
+    }
+    .intro h3{
+        font-size: 2rem ;
+        margin-bottom:20px ;
+    }
+/*  EDUCATION SECTION     */
+#education{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    align-items: center;
+    padding: 20px;
+
+
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:  space-around;
+    box-sizing: border-box;
+
+     
+
+}
+.gallery img{
+    width: 360px;
+    height: 240px;
+margin: 10px;
+
+
+}
+.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+}
+.education.box-container .box {
+    width: 27rem;
+    margin: 4 rem 1rem ;
+    padding-left: 4rem;
+    padding-left: .2rem  solid #fff;
+    position: relative;
+}
+    .education .box-container .box span {
+        font-size: 1.3rem;
+        background:#222;
+        color:#fff;
+        border-radius: 5rem;
+    }
+        .education .box-container .box h3 {
+            font-size: 2rem;
+            
+            color:#fff;
+            border-radius: 1.5rem;
+    
+        
+    }
+    
+
+.education .box-container .box p {
+    font-size: 1.4rem;
+    
+    color:#eee;
+    border-radius: 1rem 0; 
+
+
+}
+    
+.education .box-container .box i {
+    position:absolute;
+    top:-1.5rem; left:-2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius:  50%;
+    line-height:5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--yellow);
+
+
+
+}
+/*-----Contact Section  */
+#contact {
+    display: flex;
+    flex-direction:column ;
+    box-sizing: border-box;
+    background-color:rgba(0,0,0,0.9) ;
+    color: white;
+padding: 20px;
+
+}
+.form {
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+
+}
+#msg{
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+
+}
+#send{
+    padding: 10px;
+    width: 10%;
+    margin: 40px;
+    border: none;
+    outline: none;
+}
+#send:hover{
+    cursor:  pointer;
+    box-shadow: 0 0 10px;
+
+}
+
+
+
+
