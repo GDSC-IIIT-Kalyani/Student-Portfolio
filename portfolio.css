@@ -1,0 +1,151 @@
+
+        .navbar{
+            background-color: teal;
+            overflow: auto;
+        } 
+        .navbar li{
+            list-style: none;
+            float: right;
+            padding: 5px;
+            margin: 8px; 
+            font-size: larger;
+        }
+        .navbar li a:hover{
+            color: lavender;    
+        }
+        #name{
+            float: left;
+        }
+        .navbar a{
+            color: black;
+            text-decoration: none;
+        }
+        .Intro{
+            height: 650px;
+            width: 100%;
+            background-image: url('2581470.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            text-align: center;
+        }
+        .tableabout td{
+            
+            padding: 50px;
+        }
+        h1{
+            text-align: center;
+        }
+        .listcont li{
+            padding: 16px;
+            text-align: center;
+            list-style: none;
+
+        }
+        .listcont{
+            text-align: center; 
+            padding: 5px;
+            /* text-emphasis: italic; */
+            text-decoration: dashed;
+            font-size: large;
+            
+        }
+        .intro{
+            padding-top: 250px;
+            margin-top: 0px;
+        }
+        .skill tr{
+            text-align: center;
+            
+            margin: 10px;
+            
+        }
+        .skills__data {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            font-weight: var(--font-semi);
+            padding: 0.5rem 1rem;
+            margin-bottom: 10px;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 25px rgb(14 36 49 / 15%);
+            width: 25%;
+        } 
+/* .skills__data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-weight: var(--font-semi);
+    padding: 0.5rem 1rem;
+    margin-bottom: var(--mb-4);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 25px rgb(14 36 49 / 15%);
+    width: 25%;
+} */
+  
+    .skills__name{
+        text-align: center;
+    }
+    .button{
+        padding: 15px;
+        margin-top: 114px;
+    }
+    .about_skills{
+        float: right;
+        margin-right: 60px;
+        font-size: xx-large;
+    }
+    .skills__data{
+        margin-left: 200px;
+        
+    }
+    .about_me{
+        font-size: x-large;
+    }
+    .about__me{
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+    #button:link, #button:visited {
+        background-color: teal;
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        padding: 15px;
+        margin-top: 114px;
+    }
+      
+    #button:hover, #button:active {
+        background-color: turquoise;
+        padding: 15px;
+        margin-top: 114px;
+    }
+    #i1{
+        font-size: 55px;
+        color: teal;
+    }
+    #i2{
+        font-size: larger;
+    }
+    body{
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    .bottom_bar{
+        background-color: lavender;
+        overflow: auto;
+    }
+    .links a:hover{
+        opacity: calc(75%); 
+    }
+    .links{
+        list-style: none;
+        float: left;
+        padding-left: 0px;
+    } 
+    /*animations*/
+    
