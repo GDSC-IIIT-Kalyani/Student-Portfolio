@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    position: relative;
+    background-color: #BBD6B8;
+
+}
+
+.thank {
+    text-align: center;
+    position: absolute;
+    background-color: none;
+    width: 100%;
+    top: 600px;
+
+}
+
+.cont {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    align-content: center;
+    text-align: center;
+    background-image: conic-gradient(#FBFFB1, #FFEBB4, #FFBFA9, #FFACAC, #CBE4DE, #EDE9D5);
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.navbar-nav {
+    margin-left: 60%;
+    background-color: #37306B;
+}
+
+
+
+
+.para {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 150%;
+    font-weight: normal;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: normal;
+    font-size: 380%;
+    margin: 50px auto 0px auto;
+    line-height: 2;
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+.container1 {
+    background-image: linear-gradient(to bottom, #37306B, #66347F, #9E4784, #D27685, #FFEBB4, #FBFFB1);
+    text-align: center;
+    position: relative;
+    padding-top: 100px;
+    height: 640px;
+    width: 100%;
+}
+
+.container2 {
+    padding-top: 50px;
+    text-align: center;
+    line-height: 2;
+    margin: 0;
+    position: relative;
+    background-color: #A5F1E9;
+    background-image: conic-gradient(#FBFFB1, #FFEBB4, #FFBFA9, #FFACAC, #CBE4DE, #EDE9D5);
+}
+
+.profile-pic {
+    height: 40%;
+    width: 40%;
+}
+
+.vertical {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.w3-blue {
+    background-color: #27E1C1;
+    height: 30px;
+    border: 20px;
+    width: 250px;
+
+}
+
+.w3-light-grey {
+    background-color: whitesmoke;
+
+    height: 30px;
+    width: 250px;
+}
+
+
+.skill-row {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.skills {
+    width: 80%;
+    margin-top: 50px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 0px;
+    background-image: linear-gradient(to right, #F2CD5C, #FFEEAF);
+    border-radius: 500px;
+    box-shadow: 20px 20px 10px #FFACAC;
+}
+
+.table {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+.book1 {
+    float: left;
+    width: 25%;
+
+    margin-right: 30px;
+}
+
+.book2 {
+    float: right;
+    width: 25%;
+
+    margin-right: 30px;
+}
+
+
+
+.profile {
+    width: 50%;
+    margin: auto;
+}
+
+.intro {
+    width: 30%;
+    margin: auto;
+}
+
+.container3 {
+    width: 100%;
+    top: auto;
+    position: absolute;
+    text-align: center;
+    background-color: #EDF1D6;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    margin: auto;
+
+}
+
+.contact-me {
+    padding: 0;
+}
+
+.footer-link {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+}
+
+.line1 {
+    border-style: dotted;
+    margin-left: auto;
+    margin-right: auto;
+    width: 4%;
+    border-width: thick;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: #FF5F9E;
+    margin-top: 100px;
+    margin-bottom: 0;
+    padding-bottom: 10%;
+}
+
+.line2 {
+    border-style: dotted;
+    margin-left: auto;
+    margin-right: auto;
+    width: 4%;
+    border-width: thick;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: white;
+    margin-top: 100px;
+    margin-bottom: 0;
+    padding-bottom: 10%;
+}
