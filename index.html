@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subroto Banerjee</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/5f230f3b92.js" crossorigin="anonymous"></script>
 </head>
 <body>  
     <div id="header">
       <div class="container">
-        <nav>
+        <nav data-aos="fade-down" data-aos-duration="1000" >
           <img src="logo.png" class="logo" alt="">
           <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
@@ -23,7 +24,7 @@
           </ul>
           <img src="menu-removebg-preview.png" id="menu" class="img" onclick="openmenu()">
         </nav>
-        <div class="header-text">
+        <div class="header-text" data-aos="fade-right" data-aos-duration="1000">
           <p>Frontend Developer and Java/C Programmer</p>
           <h1>Hi, I'm <span>Subroto Banerjee</span></h1>
           <p>First year Student at <br> Indian Institute of Information Technology, Kalyani </p>
@@ -35,11 +36,11 @@
         <div class="container">
           <div class="row">
             <div class="about-col-1">
-              <img src="WhatsApp Image 2023-03-26 at 5.48.29 PM.jpeg" alt="">
+              <img src="WhatsApp Image 2023-03-26 at 5.48.29 PM.jpeg" data-aos="fade-right" data-aos-duration="1000" alt="">
             </div>
             <div class="about-col-2">
-              <h1 class="sub-title">About me</h1>
-              <p>I love coding, the challenge that each problem brings with it excites me. 
+              <h1 class="sub-title" data-aos="fade-left" data-aos-duration="1000">About me</h1>
+              <p data-aos="fade-left" data-aos-duration="1000">I love coding, the challenge that each problem brings with it excites me. 
                 I use Java as main coding language, I am learning C at my college,I am also a Postman Student Expert, I love self learning, and acquiring different skills.
                 I am also involved in my college in some tech building stuff.
                 I also share my learnings regularly on twitter through my tweets.  
@@ -48,11 +49,11 @@
                 I also am an occasional Vlogger, and I put my vlogging videos also on youtube. 
                 I edit my vlogs myself so I am a bit of video editor myself. 
                 I am exploring different fields right now, currently I am learning web dev, exploring its capabilities and building my prowess in it</p>
-              <div class="tab-titles">
+              <div class="tab-titles" data-aos="fade-right" data-aos-duration="1000">
                 <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                 <p class="tab-links" onclick="opentab('education')">Education</p>
               </div>
-              <div class="tab-contents active-tab" id="skills">
+              <div class="tab-contents active-tab" id="skills" data-aos="fade-left" data-aos-duration="1000">
                 <ul>
                   <li><span>Java</span><br>Programmer</li>
                   <li><span>C</span><br>Programmer</li>
@@ -74,8 +75,8 @@
       <!--PROJECTS-->
       <div id="projects">
         <div class="container">
-          <h1 class="sub-title">Projects</h1>
-          <div class="project-list">
+          <h1 class="sub-title" data-aos="fade-right" data-aos-duration="1000">Projects</h1>
+          <div class="project-list" data-aos="fade-left" data-aos-duration="1000">
             <div class="work">
               <img src="restaurant.jpg">
               <div class="layer">
@@ -95,7 +96,7 @@
       <div id="contact">
         <div class="container">
           <div class="row">
-            <div class="contact-left">
+            <div class="contact-left" data-aos="fade-right" data-aos-duration="1000">
               <h1 class="sub-title contactme">Contact Me</h1>
               <p><img src="email-removebg-preview.png" alt=""> subroto.2003@gmail.com</p>
               <p><img src="phone-removebg-preview.png" alt=""> +91 8954402360</p>
@@ -108,7 +109,7 @@
               </div>
               <a href="current resume.pdf" download class="btn btn2">Download Resume</a>
             </div>
-            <div class="contact-right">
+            <div class="contact-right" data-aos="fade-left" data-aos-duration="1000">
               <form name="submit-to-google-sheet">
                 <input type="text" name="Name" placeholder="Your Name" required id="">
                 <input type="email" name="Email" placeholder="Your Email" required>
@@ -166,5 +167,9 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
