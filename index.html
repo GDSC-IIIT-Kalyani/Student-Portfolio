@@ -1,56 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Portfolio Website</title>
+    <title>Subroto Banerjee</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/5f230f3b92.js" crossorigin="anonymous"></script>
 </head>
-
-<body>
-    <!-- We will be creating many elements in this document with some class (to add some styling later) -->
-    <!-- home page -->
-    <div id="home" class="homePage">
-        <div class="intro">                                  <!-- creating a master div to have child elements in it -->
-            <div class="name">Hi, I am &#60;name&#62;</div>  <!-- creating a div to enter your name (edit your name here) -->
-            <p>Frontend developer</p>                        <!-- paragraph tag -->
-            <button class="your_button">button</button>      <!-- creating a button -->
+<body>  
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="logo.png" class="logo" alt="">
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#">Other Ventures</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <img src="cross-removebg-preview.png" class="img" onclick="closemenu()">
+          </ul>
+          <img src="menu-removebg-preview.png" id="menu" class="img" onclick="openmenu()">
+        </nav>
+        <div class="header-text" data-aos="fade-right" data-aos-duration="1000">
+          <p>Frontend Developer and Java/C Programmer</p>
+          <h1>Hi, I'm <span>Subroto Banerjee</span></h1>
+          <p>First year Student at <br> Indian Institute of Information Technology, Kalyani </p>
         </div>
-        <div class="myImage">                                <!-- always a good habbit to add master divs -->
-            <img src="https://miro.medium.com/max/3960/0*HICLyAdNSIyT0ODU.jpg" alt="MyImage">  <!-- adding a image using url -->
-        </div>
+      </div>
     </div>
-
-    <!-- about me -->
-    <div id="aboutme" class="about">                         <!-- again a master div -->
-        <div class="about_heading">                          <!-- child div for heading -->
-            About me
+    <!------------------about-------------->
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="WhatsApp Image 2023-03-26 at 5.48.29 PM.jpeg" data-aos="fade-right" data-aos-duration="1000" alt="">
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title" data-aos="fade-left" data-aos-duration="1000">About me</h1>
+              <p data-aos="fade-left" data-aos-duration="1000">I love coding, the challenge that each problem brings with it excites me. 
+                I use Java as main coding language, I am learning C at my college,I am also a Postman Student Expert, I love self learning, and acquiring different skills.
+                I am also involved in my college in some tech building stuff.
+                I also share my learnings regularly on twitter through my tweets.  
+                I am very active on social media platforms, as I like interacting with people from various fields and places. I believe learning is sharing. 
+                Also , I am a die hard hiphop fan, I put my music on youtube as well. 
+                I also am an occasional Vlogger, and I put my vlogging videos also on youtube. 
+                I edit my vlogs myself so I am a bit of video editor myself. 
+                I am exploring different fields right now, currently I am learning web dev, exploring its capabilities and building my prowess in it</p>
+              <div class="tab-titles" data-aos="fade-right" data-aos-duration="1000">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+              </div>
+              <div class="tab-contents active-tab" id="skills" data-aos="fade-left" data-aos-duration="1000">
+                <ul>
+                  <li><span>Java</span><br>Programmer</li>
+                  <li><span>C</span><br>Programmer</li>
+                  <li><span>Python</span><br>Programmer</li>
+                  <li><span>HTML, CSS, Javascript</span><br>Web developement</li>
+                  <li><span>Linux</span><br>Able to work on it efficiently</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li><span>10+2 (2009-2021)</span><br>Kendriya Vidyalaya No. 2, Agra Cantt</li>
+                  <li><span>Bachelors in Technology (Electronics and Communication Engineering) (2022-2026)</span><br>Indian Institute of Information Technology, Kalyani</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- adding a paragraph tag to write "about me", edit it and write about you -->
-        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptates provident molestias a
-            animi facilis iusto voluptatum repellat eligendi consequatur distinctio placeat mollitia veritatis
-            recusandae, ad, quasi commodi enim quos! Quasi aspernatur veniam, blanditiis sint necessitatibus dicta
-            libero voluptatibus reiciendis asperiores nemo maiores ducimus corrupti magnam error voluptatum ab velit.
-        </p>
-    </div>
-
-    <!-- contact -->
-    <div id="contact" class="contact_sec">                  <!-- adding a master div again -->
-        <div class="contact_heading">
-            Contact Me                                      <!-- adding a chiid div for heading -->
+      </div>
+      <!--PROJECTS-->
+      <div id="projects">
+        <div class="container">
+          <h1 class="sub-title" data-aos="fade-right" data-aos-duration="1000">Projects</h1>
+          <div class="project-list" data-aos="fade-left" data-aos-duration="1000">
+            <div class="work">
+              <img src="restaurant.jpg">
+              <div class="layer">
+                <h3>Basic Restaurant Management and Billing System</h3>
+                <p>
+                  This shows the user menu, takes order (from the guy at cash counter's perspective)
+                  and prepares a bill. It also stores the data date and order numberwise in a text file.
+                  <a href="https://github.com/TeeWrath/Basic-Restaurant-Management-and-Billing-System"><img src="link_icon-removebg-preview.png" id="link-icon" alt=""></a>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="contact_info">
-            <!-- adding more divs for personal details, edit them! -->
-            <div class="Email">Email : <span class='data'>gdsc@example.com</span></div>
-            <div class="mobile_no">Mobile no : <span class='data'>+91 XXXXXXXXXX</span></div>
-            <!-- adding anchor tag to directly redirect user to your profile, add links to your profile in href -->
-            <div class="linkdin">linkdin :<span class='data'> <a
-                        href="https://www.linkedin.com/company/gdsc-iiit-kalyani/">Linkdin IN</a></span></div>  
-            <div class="github">Github : <span class='data'> <a href="https://github.com/GDSC-IIIT-Kalyani">Github</a></span></div>
-            <div class="others">Others :<span class='data'> <a href="https://gdsc.bio.link/">BIO</a></span></div>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <!-------------------contact---------------------->
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left" data-aos="fade-right" data-aos-duration="1000">
+              <h1 class="sub-title contactme">Contact Me</h1>
+              <p><img src="email-removebg-preview.png" alt=""> subroto.2003@gmail.com</p>
+              <p><img src="phone-removebg-preview.png" alt=""> +91 8954402360</p>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/subroto.banerjee.56?mibextid=ZbWKwL" target="_blank" class="fb"><img src="facebook-removebg-preview.png"></a>
+                <a href="https://www.instagram.com/subroto._banerjee" target="_blank" class="insta"><img src="insta-removebg-preview.png"></a>
+                <a href="https://www.linkedin.com/in/subroto-banerjee-70983b214" target="_blank" class="linkedin"><img src="linkedin-removebg-preview.png"></a>
+                <a href="https://twitter.com/Subroto0108?t=C__765SW7dm6EDEYRj6odg&s=09" target="_blank" class="tw"><img src="twitter-removebg-preview.png"></a>
+                <a href="https://github.com/TeeWrath" target="_blank" class="git"><img src="github-removebg-preview.png"></a>
+              </div>
+              <a href="current resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right" data-aos="fade-left" data-aos-duration="1000">
+              <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required id="">
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" id="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
         </div>
+        </div>
+        <div class="copyright">
+          <p>BY SUBROTO BANERJEE </p>
+        </div>
+      </div>
+      <!--javascript-->
+      <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+          for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+          }
+          for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+        }
+      </script>
+      <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+          sidemenu.style.right = "0";
+        }
+        function closemenu(){
+          sidemenu.style.right = "-200px";
+        }
+      </script>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbylbkURwSaKw1CbZ8J-DaJ1HR3vOQ822EoplacXLVEcMtQ01qmwOU2M3alBA659yurtfg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              msg.innerHTML = "Message Sent Successfully"
+              setTimeout(function(){
+                msg.innerHTML = ""
+              },5000)
+              form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
-
 </html>
