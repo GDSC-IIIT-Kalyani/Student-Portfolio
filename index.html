@@ -3,54 +3,149 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Portfolio Website</title>
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat&family=Raleway&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- We will be creating many elements in this document with some class (to add some styling later) -->
-    <!-- home page -->
-    <div id="home" class="homePage">
-        <div class="intro">                                  <!-- creating a master div to have child elements in it -->
-            <div class="name">Hi, I am &#60;Waqas&#62;</div>  <!-- creating a div to enter your name (edit your name here) -->
-            <p>Frontend developer</p>                        <!-- paragraph tag -->
-            <button class="your_button">button</button>      <!-- creating a button -->
+    <header>
+        <div class="nav-container">
+            <h3 class="nav-title"><a href="#">Portfolio</a></h3>
+            <nav class="navigator">
+                <ul class="nav-link">
+                    <li><a href="#home" class="nav-go">Home</a></li>
+                    <li><a href="#about" class="nav-go">About</a></li>
+                    <li><a href="#project" class="nav-go">Project</a></li>
+                    <li><a href="#contact" class="nav-go">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="myImage">                                <!-- always a good habbit to add master divs -->
-            <img src="https://miro.medium.com/max/3960/0*HICLyAdNSIyT0ODU.jpg" alt="MyImage">  <!-- adding a image using url -->
+        
+    </header>
+    font-family: 'Kaushan Script', cursive; font-weight: bold;  display: inline-block; padding-left: 10%;
+    <section id="home">
+        <div class="home-container">
+            <div class="home-title home-div">
+                <h3>Hello, I am</h3>
+                <h1>Waqas Omar</h1>
+                <h2>Learning Full Stack Web Development</h2>
+                <h3>Love <span class="creative">Esports</span></h3>
+                <!-- <h3>Specialised in <span class="creative">Website</span></h3> -->
+            </div>
+            <div class="home-img home-div">
+                <img src="./programmer.gif" alt="programmer">
+            </div>
         </div>
-    </div>
+    </section>
 
-    <!-- about me -->
-    <div id="aboutme" class="about">                         <!-- again a master div -->
-        <div class="about_heading">                          <!-- child div for heading -->
-            About me
+    <section id="about">
+        <div class="about-container">
+            <div class="about-img">
+                
+                <img src="waqas.jpg" alt="waqas omar"width=400px>
+            </div>
+            <div class="about-text">
+                <h1>Hello,</h1>
+                <p>Hello! I am a fresher at IIIT Kalyani from CSE department. 
+                    deeply enamored by the worlds of programming and gaming. 
+                    With an innate curiosity and a strong desire to excel, 
+                    I am a fast learner, always eager to acquire new skills and knowledge in this dynamic field. 
+                    Currently learning C, html, CSS and Javascript and interested 
+                    in full stack web development.</p>
+            </div>
         </div>
-        <!-- adding a paragraph tag to write "about me", edit it and write about you -->
-        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptates provident molestias a
-            animi facilis iusto voluptatum repellat eligendi consequatur distinctio placeat mollitia veritatis
-            recusandae, ad, quasi commodi enim quos! Quasi aspernatur veniam, blanditiis sint necessitatibus dicta
-            libero voluptatibus reiciendis asperiores nemo maiores ducimus corrupti magnam error voluptatum ab velit.
-        </p>
-    </div>
+    </section>
 
-    <!-- contact -->
-    <div id="contact" class="contact_sec">                  <!-- adding a master div again -->
-        <div class="contact_heading">
-            Contact Me                                      <!-- adding a chiid div for heading -->
+    <section id="project">
+        <div class="project-title">
+            <h1>My <span class="my-project">Projects</span></h1>
         </div>
-        <div class="contact_info">
-            <!-- adding more divs for personal details, edit them! -->
-            <div class="Email">Email : <span class='data'>gdsc@example.com</span></div>
-            <div class="mobile_no">Mobile no : <span class='data'>+91 XXXXXXXXXX</span></div>
-            <!-- adding anchor tag to directly redirect user to your profile, add links to your profile in href -->
-            <div class="linkdin">linkdin :<span class='data'> <a
-                        href="https://www.linkedin.com/company/gdsc-iiit-kalyani/">Linkdin IN</a></span></div>  
-            <div class="github">Github : <span class='data'> <a href="https://github.com/GDSC-IIIT-Kalyani">Github</a></span></div>
-            <div class="others">Others :<span class='data'> <a href="https://gdsc.bio.link/">BIO</a></span></div>
+        <div class="project-container">
+            <div class="project-item">
+                <div class="item-img">
+                    
+                    <img src="TinDog.png" alt="" width="350px" height="200px">
+                </div>
+                <div class="item-title">
+                    <h2>TinDog</h2>
+                </div>
+                <div class="item-desc">
+                    Tindog is a dating website dedicated for dogs.
+                </div>
+                <div class="item-button">
+                    <a href="https://github.com/waqas-11/TinDog" target="_blank"><button
+                            class="repo">Repository</button></a>
+                    <a href="https://waqas-11.github.io/TinDog/" target="_blank"><button
+                            class="web">Website</button></a>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="item-img">
+                   
+                    <img src="MoveIt.png" alt="" width="350px" height="200px">
+                </div>
+                <div class="item-title">
+                    <h2>Move-It</h2>
+                </div>
+                <div class="item-desc">
+                    Move-it is a website that provides moving services.
+                </div>
+                <div class="item-button">
+                    <a href="https://github.com/waqas-11/Move-It" target="_blank"><button
+                            class="repo">Repository</button></a>
+                    <a href="https://waqas-11.github.io/Move-It/" target="_blank"><button
+                            class="web">Website</button></a>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="item-img">
+                    <img src="mondrian.png" alt="mondrian-art" width="350px" height="200px">
+                </div>
+                <div class="item-title">
+                    <h2>Mondrian Art</h2>
+                </div>
+                <div class="item-desc">
+                    Mondrian art is an art that created using css grid.
+                </div>
+                <div class="item-button">
+                    <a href="https://github.com/waqas-11/Mondrian-Project" target="_blank"><button
+                            class="repo">Repository</button></a>
+                    <a href="https://waqas-11.github.io/Mondrian-Project/" target="_blank"><button
+                            class="web">Website</button></a>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-title">
+                <h1 class="contact-title">Contact Me.</h1>
+            </div>
+            <div class="contact-subtitle">
+                <h2 class="contact-subtitle">Let's make a wonderful project together.</h2>
+
+            </div>
+            <div class="contact-button">
+                <a href="mailto:waqasomar2@gmail.com" target="_blank" class="btn">Get In Touch</a>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <a class="footer-link" href="https://www.linkedin.com/in/md-waqas-omar-b70572291">LinkedIn</a>
+        <a class="footer-link" href="https://discordapp.com/users/436554816114655262">Discord</a>
+        <a class="footer-link" href="https://instagram.com/waqas_omar_11?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a>
+        <p class="copyright">© Waqas Omar. All Right Reserved.</p>
+    </footer>
+
+    
 </body>
 
 </html>
