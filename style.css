@@ -269,12 +269,12 @@ body{
     font-weight: bold;
     line-height: 25px;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 .contact-button .btn:hover{
     border: none;
     background-color: #5C8374;
-    transition: 0.5s;
 }
 
 .footer{
