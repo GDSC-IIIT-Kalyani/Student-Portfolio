@@ -1,0 +1,225 @@
+body {
+    margin: 30px 30px 30px 30px;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000000;
+}
+.sticky_mail
+{ position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000000;
+}
+
+
+#intro{
+    display: flex; 
+    align-content: center;
+}
+nav>ul {
+    list-style-type: none;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: #333;
+    position: -webkit-sticky;
+    position:sticky;
+    top: 0;
+}
+
+.option {
+    float: left;
+}
+
+.option a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.option a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
+header {
+    text-align: center;
+}
+
+#Portfolio_header {
+    font-size: 2em;
+}
+
+#Profile {
+    max-width: 50%;
+    border-radius: 5%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+#Contact {
+    color: white;
+}
+
+.card a {
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.button_Edu:hover,
+.card a:hover {
+    opacity: 0.7;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+.skill_card {
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 70%;
+    border-radius: 5px;
+}
+
+.skill_card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.skill_img {
+    width: 10%;
+    border-radius: 5px 5px 0 0;
+}
+
+.skill_container {
+    padding: 2px 16px;
+}
+#skill {
+    display: grid;
+    align-content: space-evenly;
+    grid-template-columns: auto auto;
+    width: auto;
+    gap: 30px;
+    padding: 30px;
+}
+
+
+
+
+
+.test_score_card {
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 70%;
+    border-radius: 5px;
+}
+
+.test_score_card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.test_score_img {
+    width: 20%;
+    border-radius: 5px 5px 0 0;
+}
+
+.test_score_container {
+    padding: 2px 16px;
+}
+#test_score {
+    display: grid;
+    align-content: space-evenly;
+    grid-template-columns: auto  ;
+    width: auto;
+    gap: 30px;
+    padding: 30px;
+}
+
+
+.project_card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* max-width: 300px; */
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+.project_card a {
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(76, 36, 219);
+}
+
+.project_card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: baseline;
+}
+
+
+
