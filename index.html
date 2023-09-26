@@ -1,55 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vipul Singh Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <style>
+        /* CSS styles go here */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2dc9e5;
+        }
+
+        header {
+            background-color: #0fd9ebde;
+            color: #021315;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+
+            background-color: #3a61ef;
+            color: #1e9c26;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 10px;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(220, 108, 209, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #3a61ef;
+            color: #191504;
+        }
+    </style>
 </head>
-
 <body>
-    <!-- We will be creating many elements in this document with some class (to add some styling later) -->
-    <!-- home page -->
-    <div id="home" class="homePage">
-        <div class="intro">                                  <!-- creating a master div to have child elements in it -->
-            <div class="name">Hi, I am Vipul Singh</div>  <!-- creating a div to enter your name (edit your name here) -->
-            <p>Coder</p>                        <!-- paragraph tag -->
-            <button class="your_button">button</button>      <!-- creating a button -->
+    <header>
+        <h1 style="font-size: 40px";>Vipul Singh</h1>
+        <div class="myImage">                               
+            <a href="https://ibb.co/bBhP0zS"><img src="https://i.ibb.co/bBhP0zS/12.jpg" alt="15"></a>  
         </div>
-        <div class="myImage">                                <!-- always a good habbit to add master divs -->
-            <a href="https://imgbb.com/"><img src="https://i.ibb.co/4RhF6M1/12.jpg" alt="12"></a>  <!-- adding a image using url -->
-        </div>
+    </header>
+    <nav id="nav">
+        <ul id="Navigation">
+    
+            <li class="option"><a class="active" href="#aboutme">ABOUT ME</a></li>
+            <li class="option"><a href="#skills">SKILLS</a></li>
+            <li class="option"><a href="#achievements">ACHIEVEMENTS</a></li>
+            <li class="option"><a href="#contact">CONTACT</a></li>
+
+            
+        </ul>
+    </nav>
+    <div id="aboutme" class="about">   
+    <div class="container">
+        <h2><u>About Me</u></h2>
+        <p>I am currently pursuing my bachelor's degree in ECE branch at IIIT Kalyani. I am very passionate about learning coding skills. I like using HTML/CSS for making attractive web pages.
+            I am looking forward to a great academic journey at this college and hope to make most out of it by getting a good placement. In my free time, I love exploring new facts on linkedIn.</p>
     </div>
-
-    <!-- about me -->
-    <div id="aboutme" class="about">                         <!-- again a master div -->
-        <div class="about_heading">                          <!-- child div for heading -->
-            About me
-        </div>
-        <!-- adding a paragraph tag to write "about me", edit it and write about you -->
-        <p class="para">I am currently pursuing my bachelor's degree in ECE branch at IIIT Kalyani. I am very passionate about learning coding skills. I like using HTML/CSS for making attractive web pages.
-            I am looking forward to a great academic journey at this college and hope to make most out of it by getting a good placement. In my free time, I love exploring new facts on linkedIn.
-
+    <div id="skills" class="skills"></div>
+    <div class="container">
+        <h2><u>Skills</u></h2>
+        <p><ul>
+            <li>C Programming</li>
+            <li>HTML/CSS</li>
+            <li>Scratch</li>
+            <li>XML</li>
+            <li>Soft Spoken</li>
+            <li>Video Editing</li>
+        </ul>
         </p>
     </div>
-
-    <!-- contact -->
-    <div id="contact" class="contact_sec">                  <!-- adding a master div again -->
-        <div class="contact_heading">
-            Contact Me                                      <!-- adding a chiid div for heading -->
-        </div>
-        <div class="contact_info">
-            <!-- adding more divs for personal details, edit them! -->
-            <div class="Email">Email : <span class='data'>vipulsingh2003@gmail.com</span></div>
+    <div id="achievements" class="achievements"></div>
+    <div class="container">
+        <h2><u>Achievements</u></h2>
+        <p>
+                <table border="1">
+                    <tr>
+                        <th>OLYMPIADS</th>
+                        <th>POSITION</th>
+                    </tr>
+                    <tr>
+                        <td>NTSE Stage 1</td>
+                        <td>Qualified</td>
+                    </tr>
+                    <tr>
+                        <td>Coding Contest School level</td>
+                        <td>3rd Position</td>
+                    </tr>
+                    <tr>
+                        <td>Academic Scholar(1-10th class)</td>
+                        <td>1st Position</td>
+                    </tr>
+                    <tr>
+                        <td>NSO Olympiad</td>
+                        <td>2nd Position (State level)</td>
+                    </tr>
+                    <tr>
+                        <td>CoderZ League</td>
+                        <td>3rd Position</td>
+                    </tr>
+                    <tr>
+                        <td>Scratch contest</td>
+                        <td>1st Position</td>
+                    </tr>
+                </table>
+            </p>
+    </div>
+    <div id="contact" class="contact"></div>
+    <div class="container">
+        <h2><u>Contact</u></h2>
+        <p><div class="Email">Email : <span class='data'>vipulsingh2003@gmail.com</span></div>
             <div class="mobile_no">Mobile no : <span class='data'>+91 9760670402</span></div>
-            <!-- adding anchor tag to directly redirect user to your profile, add links to your profile in href -->
             <div class="linkdin">linkdin :<span class='data'> <a
                         href="https://www.linkedin.com/company/Vipul Singh/">Vipul Singh</a></span></div>  
             <div class="github">Github : <span class='data'> <a href="https://github.com/vipulsingh04">vipulsingh04</a></span></div>
-            <div class="others">Instagram :<span class='data'> <a href="https://instagram.com/_vipul.04_/">_vipul.04_</a></span></div>
-        </div>
+            <div class="others">Instagram :<span class='data'> <a href="https://instagram.com/_vipul.04_/">_vipul.04_</a><i
+                class="fa fa-instagram fa-4x"></i></span></div></p>
+    </div>
+    <footer>                 
+            
+        THANKS FOR GETTING IN TOUCH
+            
+    </footer>
 </body>
-
 </html>
