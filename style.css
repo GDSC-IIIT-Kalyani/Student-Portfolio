@@ -1,98 +1,218 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+*,
+*::before,
+*::after {
+    padding: 0;
     margin: 0;
-    padding: 0;  /* providing default margin and padding to be 0 */
+    box-sizing: border-box;
 }
 
-/* home page styling */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #181818;
 
-.homePage{                                      /* selecting div with class "homePage" and adding styling to it */
-    display: flex;                              /* creating a flex box */
-    justify-content: space-around;   
-    height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.big-wrapper {
+    position: relative;
+    padding: 1.7rem 0 2rem;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    position: relative;
+    max-width: 81rem;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 3rem;
+    z-index: 10;
+}
+
+header {
+    position: relative;
+    z-index: 70;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.logo h3 {
+    color: #fff;
+    font-size: 1.55rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.links ul {
+    display: flex;
+    list-style: none;
     align-items: center;
 }
 
-.myImage img{                                  /* selecting div with class "myImage" then navigating to img tag inside it, and adding styling to it */
-    height: 18rem;
-    width: auto;
-    border-radius: 1rem;
+.links a {
+    color: #fff;
+    margin-left: 4.5rem;
+    display: inline-block;
+    transition: 0.3s;
+    text-decoration: none;
 }
 
-.name{                                         /* selecting div with class "name" and adding styling to it */
-    font-size: 3rem; 
+.links a:hover {
+    color: #0071c8;
+    transform: scale(1.05);
 }
 
-.intro p{                                      /* selecting div with class "intro" then navigating to p tag inside it, and adding styling to it */
-    font-size: 2rem;
-    line-height: 3rem;
+
+img {
+    width: 100%;
 }
 
-.your_button{                                  /* selecting button with class "your_button" and adding styling to it */
-    font-size: 1rem;
-    padding: 5px;
-    cursor: pointer;
-    background-color: rgb(42, 42, 255);
-    border-radius: 5px;
-    width:100px;
-    height:50px;
-    border:2px solid white;
-    color:white;
+a {
+    text-decoration: none;
+}
+
+
+.cta .btn {
+    display: inline-block;
+    padding: 0.9rem 1.9rem;
+    color: #fff;
+    background-color: #018bf6;
+    border-radius: 30px;
     text-transform: capitalize;
-}
-.your_button:hover{                           /* here we add a special animation to button when it is hovered (hover: when a cursor roams in the specified setion it is the hover state for that element) */
-   
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-}
-/* about me */
-.about{                                       /* selecting div with class "about" and adding styling to it */
-    min-height: 60vh;
+    transition: 0.3s;
 }
 
-.about_heading{                               /* selecting div with class "about_heading" and adding styling to it */
-    font-size: 3rem;
+.cta .btn:hover {
+    background-color: #0071c8;
+    transform: scale(1);
+}
+
+
+.showcase-area .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.big-title {
+    font-size: 1.4rem;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 1.4;
+}
+
+.text {
+    color: #919191;
+    font-size: 1.1rem;
+    margin: 1.9rem 0 2.5rem;
+    max-width: 600px;
+    line-height: 2.3;
+}
+
+.showcase-area .btn {
+    box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.05);
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.person {
+    width: 80%;
+    margin-left: 60px;
+}
+.about, .projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.about h1,
+.projects h1{
     text-align: center;
-    text-decoration: underline;
-    font-weight:600;
+    padding: 30px 50px;
 }
+.about p{
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    line-height: 2;
+    padding: 0px 150px;
 
-/* contact */
-.contact_sec{                                /* selecting div with class "contact_sec" and adding styling to it */
-    height: 60vh;
-    width:70vw;
-    margin: 0 auto;
 }
-
-.contact_heading{                            /* selecting div with class "contact_heading" and adding styling to it */
-    font-weight:600;
-    font-size: 3rem;
+.content{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 100px;
+}
+.projects .cat{
     text-align: center;
-    text-decoration: underline;
+}
+.projects img{
+    padding: 30px;
+    width: 80%;
+    border-radius: 20%;
+    
+}
+.projects p{
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    line-height: 2;
+    
+
 }
 
-.contact_info{                               /* selecting div with class "contact_info" and adding styling to it */
-    font-size:1.3em;
-    font-weight: 600;
-    margin-top:10vh;
-}
-.data{                                       /* selecting div with class "data" and adding styling to it */
-    font-weight:initial;
-}
-
-.Email,.mobile_no,.linkdin,.github,.others{ /* selecting many divs with the class listed and adding same styling to all of them */
-    padding:2vh 0;
-}
-
-span a{                                     /* selecting span and then navigating to a tag in it and adding styling to it */
-    color:black;
-}
-
-span a:hover{                               /* here we add a special animation to anchor tag when it is hovered (hover: when a cursor roams in the specified setion it is the hover state for that element) */
-    color:blue;
+.footer {
+    background-color: #6f6f6f82;
+    padding: 10px 0;
 }
 
 
-.para{                                      /* selecting div with class "para" and adding styling to it */
-    width:70vw; 
-    margin:8vh auto;
-    font-size: 2em;
+.bottom-container{
+    margin: auto;
+    padding: 50px 0 20px;
+    text-align: center;
+}
+.copyright{
+    color: #f4ffff;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+.footer-link {
+    color: #ffffff;
+    margin: 10px 20px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s linear;
+}
+.footer-link:hover{
+    color: #0071c8;
+    transform: scale(1.05);
 }
