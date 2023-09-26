@@ -11,7 +11,32 @@
     height: 100vh;
     align-items: center;
 }
-
+.topnav {
+    background-color: #000000;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+ 
+  .topnav a:hover {
+    background-color: #ee0909;
+    color: black;
+  }
+  
+  
+  .topnav a.active {
+    background-color: #3004aa;
+    color: white;
+  }
 .myImage img{                                  /* selecting div with class "myImage" then navigating to img tag inside it, and adding styling to it */
     height: 18rem;
     width: auto;
@@ -33,7 +58,7 @@
     cursor: pointer;
     background-color: rgb(42, 42, 255);
     border-radius: 5px;
-    width:100px;
+    width:100px;s
     height:50px;
     border:2px solid white;
     color:white;
@@ -54,6 +79,57 @@
     text-decoration: underline;
     font-weight:600;
 }
+
+.skills{                                       /* selecting div with class "about" and adding styling to it */
+    min-height: 60vh;
+}
+
+.about_skills{                               /* selecting div with class "about_heading" and adding styling to it */
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+    font-weight:600;
+   
+}
+
+.achievments{
+    min-height: 60vh;
+}
+.achievments_heading{
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+    font-weight:600;
+}
+.Img1 img{                                  /* selecting div with class "myImage" then navigating to img tag inside it, and adding styling to it */
+    height: 20px;
+    width: 50px;
+    border-radius: 1rem;
+    align-items: flex-end;
+}
+
+
+
+
+.Jee_Main,.Class_10,.Class_12{
+    padding:2vh 0;
+    font-size: 2em;
+}
+
+span a{                                     /* selecting span and then navigating to a tag in it and adding styling to it */
+    color:rgb(253, 250, 250);
+}
+
+span a:hover{                               /* here we add a special animation to anchor tag when it is hovered (hover: when a cursor roams in the specified setion it is the hover state for that element) */
+    color:rgb(228, 202, 10);
+}
+
+.para{                                      /* selecting div with class "para" and adding styling to it */
+    width:70vw; 
+    margin:8vh auto;
+    font-size: 2em;
+}
+
 
 /* contact */
 .contact_sec{                                /* selecting div with class "contact_sec" and adding styling to it */
@@ -78,12 +154,13 @@
     font-weight:initial;
 }
 
-.Email,.mobile_no,.linkdin,.github,.others{ /* selecting many divs with the class listed and adding same styling to all of them */
+.Email,.mobile_no,.Linkdin,.github,.others,.Discord,.Instagram{ /* selecting many divs with the class listed and adding same styling to all of them */
     padding:2vh 0;
+    color:#ee0909;
 }
 
 span a{                                     /* selecting span and then navigating to a tag in it and adding styling to it */
-    color:black;
+    color:rgb(241, 11, 11);
 }
 
 span a:hover{                               /* here we add a special animation to anchor tag when it is hovered (hover: when a cursor roams in the specified setion it is the hover state for that element) */
