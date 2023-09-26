@@ -1,1 +1,49 @@
+<style>
+        /* CSS styles go here */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2dc9e5;
+        }
 
+        header {
+            background-color: #0fd9ebde;
+            color: #021315;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+
+            background-color: #3a61ef;
+            color: #1e9c26;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 10px;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(220, 108, 209, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #3a61ef;
+            color: #191504;
+        }
+    </style>
