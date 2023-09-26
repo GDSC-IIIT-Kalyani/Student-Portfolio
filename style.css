@@ -31,7 +31,7 @@
     font-size: 1rem;
     padding: 5px;
     cursor: pointer;
-    background-color: rgb(42, 42, 255);
+    background-color: rgb(255, 42, 42);
     border-radius: 5px;
     width:100px;
     height:50px;
@@ -45,7 +45,7 @@
 }
 /* about me */
 .about{                                       /* selecting div with class "about" and adding styling to it */
-    min-height: 60vh;
+    min-height: 40vh;
 }
 
 .about_heading{                               /* selecting div with class "about_heading" and adding styling to it */
