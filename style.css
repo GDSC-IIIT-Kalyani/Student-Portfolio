@@ -12,18 +12,25 @@
     align-items: center;
 }
 .topnav {
-    background-color: #000000;
-    overflow: hidden;
+    background-color: #090808bd;
+    
+    position: fixed;
+    float: right;
+    
+    
+
   }
+  
   
   /* Style the links inside the navigation bar */
   .topnav a {
-    float: left;
+    float: right;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    
   }
   
  
@@ -35,7 +42,7 @@
   
   .topnav a.active {
     background-color: #3004aa;
-    color: white;
+    color: rgb(2, 2, 2);
   }
 .myImage img{                                  /* selecting div with class "myImage" then navigating to img tag inside it, and adding styling to it */
     height: 28rem;
@@ -76,7 +83,7 @@
 .about_heading{                               /* selecting div with class "about_heading" and adding styling to it */
     font-size: 3rem;
     text-align: center;
-    text-decoration: underline;
+    
     font-weight:600;
 }
 
@@ -86,7 +93,7 @@
 .Eq_heading{
     font-size: 3rem;
     text-align: center;
-    text-decoration: underline;
+   
     font-weight:600;
 }
 
@@ -111,12 +118,14 @@ span a:hover{                               /* here we add a special animation t
 
 .skills{                                       /* selecting div with class "about" and adding styling to it */
     min-height: 60vh;
+    text-align: center;
+
 }
 
 .about_skills{                               /* selecting div with class "about_heading" and adding styling to it */
     font-size: 3rem;
     text-align: center;
-    text-decoration: underline;
+    
     font-weight:600;
    
 }
@@ -127,7 +136,7 @@ span a:hover{                               /* here we add a special animation t
 .achievments_heading{
     font-size: 3rem;
     text-align: center;
-    text-decoration: underline;
+    
     font-weight:600;
 }
 .Img1 img{                                  /* selecting div with class "myImage" then navigating to img tag inside it, and adding styling to it */
@@ -143,6 +152,7 @@ span a:hover{                               /* here we add a special animation t
 .Jee_Main,.Class_10,.Class_12{
     padding:2vh 0;
     font-size: 2em;
+    text-align: center;
 }
 
 span a{                                     /* selecting span and then navigating to a tag in it and adding styling to it */
