@@ -27,12 +27,26 @@ html {
 { position: fixed;
   bottom: 50px;
   right: 20px;
-  padding: 10px;
+  padding: 5px;
   background-color: #ffffff;
   border: 1px solid #000000;
   border-radius: 5px;
   text-decoration: none;
   color: #000000;
+}
+
+
+#new_about_me {
+    display:block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: auto auto auto auto;
+    max-width: 900px;
+    text-align:left;
+    font-family: arial;
+    padding: 50px;
+}
+#new_about_me:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 
@@ -80,9 +94,12 @@ header {
 #Portfolio_header {
     font-size: 2.5em;
 }
+.caption{
+    width: 100%;
+}
 
 #Profile {
-    max-width: 110%;
+    max-width: 80%;
     border-radius: 50%;
 }
 
