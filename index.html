@@ -214,20 +214,42 @@
   </section>
   <br><br><br>
   <!-- Contact section -->
-  <section id="contact">
-    <h2>Contact me via :</h2>
-    <div class="project-grid">
-      <a href="mailto:anipriyo2004@gmail.com"><i class="fa fa-envelope fa-4x"></i></a>
-      <a href="https://www.linkedin.com/in/anipriyo-mandal/"><i class="fa fa-linkedin fa-4x"></i></a>
-      <a href="https://www.facebook.com/profile.php?id=100092993658050&mibextid=b06tZ0"><i
-          class="fa fa-facebook fa-4x"></i></a>
-      <a href="https://instagram.com/the_melodious_one_?igshid=OGQ5ZDc2ODk2ZA=="><i
-          class="fa fa-instagram fa-4x"></i></a>
-      <a href="https://open.spotify.com/user/31ec6zpsxx742snlwcvhxbbxdqd4?si=5fea66b2fb214cab"><i
-          class="fa fa-spotify fa-4x"></i></a>
-
+  <div class="container">
+    <h1>Contact Me</h1>
+    <form action="form.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+    
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your email address" required>
+    
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+    
+      <input type="submit" value="Send">
+    </form>
     </div>
-  </section>
+
+  <footer class="footer">
+      <section id="contact">
+        <br>
+        <div class="project-grid">
+          <a href="mailto:anipriyo2004@gmail.com"><i class="fa fa-envelope fa-4x"></i></a>
+          <a href="https://www.linkedin.com/in/anipriyo-mandal/"><i class="fa fa-linkedin fa-4x "></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100092993658050&mibextid=b06tZ0"><i
+              class="fa fa-facebook fa-4x"></i></a>
+          <a href="https://instagram.com/the_melodious_one_?igshid=OGQ5ZDc2ODk2ZA=="><i
+              class="fa fa-instagram fa-4x"></i></a>
+          <a href="https://open.spotify.com/user/31ec6zpsxx742snlwcvhxbbxdqd4?si=5fea66b2fb214cab"><i
+              class="fa fa-spotify fa-4x"></i></a>
+        </div>
+      </section>
+      <br>
+      <div id="rights">
+         &copy; ANIPRIYO MANDAL  | All rights reserved &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+      </div>
+      <br>
+  </footer>
 
 </body>
 

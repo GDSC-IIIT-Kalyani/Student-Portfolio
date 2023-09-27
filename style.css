@@ -1,9 +1,7 @@
-body {
-    margin: 30px 30px 30px 30px;
-}
+
 .back-to-top {
     position: fixed;
-    bottom: 60px;
+    bottom: 90px;
     right: 20px;
     padding: 10px;
     background-color: #ffffff;
@@ -14,7 +12,7 @@ body {
 }
 .sticky_mail
 { position: fixed;
-  bottom: 20px;
+  bottom: 50px;
   right: 20px;
   padding: 10px;
   background-color: #ffffff;
@@ -125,7 +123,18 @@ h2 {
 }
 
 
-
+footer{
+    background-color: #333;
+  
+  }
+#rights{
+    background-color: #333;
+    text-align: right;
+    color: white;
+}
+.fa-envelope , .fa-linkedin , .fa-facebook , .fa-instagram ,.fa-spotify {
+        color: #4CAF50;
+}
 
 
 
@@ -220,3 +229,30 @@ h2 {
     justify-content: space-evenly;
     align-content: baseline;
 }
+
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Style the container */
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the heading */
+  h1 {
+    text-align: center;
+  }
