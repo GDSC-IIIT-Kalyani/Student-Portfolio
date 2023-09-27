@@ -1,56 +1,97 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Portfolio Website</title>
+    <title>Swastik Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        h1{
+            font-family:cursive;color: orangered;
+               }
+        h2{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h3{
+            font-family:Arial, Helvetica, sans-serif;align-items: start;
+
+        }
+        h6{
+            align-items: center;
+        }
+        p{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        </style>
 </head>
-
 <body>
-    <!-- We will be creating many elements in this document with some class (to add some styling later) -->
-    <!-- home page -->
-    <div id="home" class="homePage">
-        <div class="intro">                                  <!-- creating a master div to have child elements in it -->
-            <div class="name">Hi, I am &#60;name&#62;</div>  <!-- creating a div to enter your name (edit your name here) -->
-            <p>Frontend developer</p>                        <!-- paragraph tag -->
-            <button class="your_button">button</button>      <!-- creating a button -->
-        </div>
-        <div class="myImage">                                <!-- always a good habbit to add master divs -->
-            <img src="https://miro.medium.com/max/3960/0*HICLyAdNSIyT0ODU.jpg" alt="MyImage">  <!-- adding a image using url -->
-        </div>
-    </div>
+    <header>
+        <nav>
+            <div class="container">
+                <h3 style="font-size: 39px";>portefeuille de</h3>
+                <h1 style="font-size: 99px;">Swastik Gupta</h1>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <!-- about me -->
-    <div id="aboutme" class="about">                         <!-- again a master div -->
-        <div class="about_heading">                          <!-- child div for heading -->
-            About me
+    <section id="about" class="section">
+        <div class="container">                                <!-- always a good habbit to add master divs -->
+            <a href="https://ibb.co/Y8BY2x3"><img src="https://i.ibb.co/pZjG2Sx/mypic.jpg" height="350" width="250" alt="mypic" style=" border: 2px solid white ;"></a>  <!-- adding a image using url -->
+            <div class="text">
+                <h2 style="font-size: 39px;color:red;">About Me</h2>
+            <br>
+            <br>
+            <p  style="font-size: 25px;">HELLO GUYS!!<br>
+                I am Swastik Gupta ,presently pursuing my Bachelor's Degree in <br>Computer Science and Engineering at<br>
+                 Indian Institute of Information Technology, Kalyani.<br> I have keen interest in Web Development and CP. <br>
+                 I am currently learning C,C++,Python,HTML and CSS.<br> I also love gaming and sports.<br><br></p>
+            </div>
         </div>
-        <!-- adding a paragraph tag to write "about me", edit it and write about you -->
-        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptates provident molestias a
-            animi facilis iusto voluptatum repellat eligendi consequatur distinctio placeat mollitia veritatis
-            recusandae, ad, quasi commodi enim quos! Quasi aspernatur veniam, blanditiis sint necessitatibus dicta
-            libero voluptatibus reiciendis asperiores nemo maiores ducimus corrupti magnam error voluptatum ab velit.
-        </p>
-    </div>
+       
+    </section>
 
-    <!-- contact -->
-    <div id="contact" class="contact_sec">                  <!-- adding a master div again -->
-        <div class="contact_heading">
-            Contact Me                                      <!-- adding a chiid div for heading -->
+    <section id="Projects" class="section">
+        <div class="container">
+            <h2 style="font-size: 39px;color:red;">My Projects</h2><br><br>
+            <p style="font-size: 25px;";>Coming Soon!!!<br>Stay Tuned!!</p>
+            <!-- Add your portfolio items here -->
         </div>
-        <div class="contact_info">
-            <!-- adding more divs for personal details, edit them! -->
-            <div class="Email">Email : <span class='data'>gdsc@example.com</span></div>
-            <div class="mobile_no">Mobile no : <span class='data'>+91 XXXXXXXXXX</span></div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 style="font-size: 39px;color:red;">Contact Me</h2>
+        <br><br>
+        <p>
+            <div class="Email">Email : <span class='data'>guptaswastik7305@gmail.com</span></div>
+           
+            
+            <div class="Instagram">Instagram :<span class='data'><a href="https://instagram.com/swastikgupta_1?igshid=OGQ5ZDc2ODk2ZA==">swastikgupta_1</a></span></div>
             <!-- adding anchor tag to directly redirect user to your profile, add links to your profile in href -->
+            
+            
             <div class="linkdin">linkdin :<span class='data'> <a
-                        href="https://www.linkedin.com/company/gdsc-iiit-kalyani/">Linkdin IN</a></span></div>  
-            <div class="github">Github : <span class='data'> <a href="https://github.com/GDSC-IIIT-Kalyani">Github</a></span></div>
-            <div class="others">Others :<span class='data'> <a href="https://gdsc.bio.link/">BIO</a></span></div>
+                        href="https://www.linkedin.com/in/swastik-gupta-a9115328b">Linkdin IN</a></span></div>  
+            
+            
+            <div class="github">Github : <span class='data'> <a href="https://github.com/SoulMaster-1">Github</a></span></div>
+          </p>
         </div>
-</body>
+    </section>
+    <br>
+    <div class="container">
+        <h6 style="font-size: 35px;color: orangered;font-family: cursive;text-align: center;">
+                                                       Thanks for Visiting
+         </h6>  
+    </div>
 
+    <script src="script.js"></script>
+</body>
 </html>
