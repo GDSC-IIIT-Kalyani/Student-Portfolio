@@ -38,7 +38,7 @@
     color: white;
   }
 .myImage img{                                  /* selecting div with class "myImage" then navigating to img tag inside it, and adding styling to it */
-    height: 18rem;
+    height: 28rem;
     width: auto;
     border-radius: 1rem;
 }
