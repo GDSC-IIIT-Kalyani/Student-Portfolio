@@ -44,6 +44,7 @@ html {
     text-align:left;
     font-family: arial;
     padding: 50px;
+    transition: 0.3s;
 }
 #new_about_me:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -109,6 +110,7 @@ header {
     margin: auto;
     text-align: center;
     font-family: arial;
+    transition: 0.3s;
 }
 
 .title {
