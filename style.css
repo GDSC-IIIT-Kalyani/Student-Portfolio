@@ -1,98 +1,370 @@
 *{
     margin: 0;
-    padding: 0;  /* providing default margin and padding to be 0 */
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+    box-sizing: border-box;
 }
 
-/* home page styling */
+body{
 
-.homePage{                                      /* selecting div with class "homePage" and adding styling to it */
-    display: flex;                              /* creating a flex box */
-    justify-content: space-around;   
+    background: #080808;
+    color: #fff;
+
+    width: 100%;
     height: 100vh;
+    
+
+}
+.container{
+
+    padding: 10px 10%;
+    
+}
+.row{
+
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.combined h1 span{
+    color: #ff004f;
+}
+nav{
+
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
 }
 
-.myImage img{                                  /* selecting div with class "myImage" then navigating to img tag inside it, and adding styling to it */
-    height: 18rem;
-    width: auto;
-    border-radius: 1rem;
+nav ul li a{
+
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
 }
 
-.name{                                         /* selecting div with class "name" and adding styling to it */
-    font-size: 3rem; 
+nav ul li a::after{
+    content: '';
+    width:0%;
+    height: 3px;
+    background: #ff004f;
+    position:absolute;
+    left:0;
+    bottom: -6px;
+    transition: 0.5s;
+
+
 }
 
-.intro p{                                      /* selecting div with class "intro" then navigating to p tag inside it, and adding styling to it */
-    font-size: 2rem;
-    line-height: 3rem;
+nav ul li a:hover::after{
+
+    width: 100%;
 }
 
-.your_button{                                  /* selecting button with class "your_button" and adding styling to it */
-    font-size: 1rem;
-    padding: 5px;
-    cursor: pointer;
-    background-color: rgb(42, 42, 255);
-    border-radius: 5px;
-    width:100px;
-    height:50px;
-    border:2px solid white;
-    color:white;
-    text-transform: capitalize;
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+    
 }
-.your_button:hover{                           /* here we add a special animation to button when it is hovered (hover: when a cursor roams in the specified setion it is the hover state for that element) */
-   
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+.header-text h1{
+    margin-top: 20px;
+    font-size: 60px;
 }
-/* about me */
-.about{                                       /* selecting div with class "about" and adding styling to it */
-    min-height: 60vh;
+.header-text h1 span{
+color: #ff004f;
 }
-
-.about_heading{                               /* selecting div with class "about_heading" and adding styling to it */
-    font-size: 3rem;
-    text-align: center;
-    text-decoration: underline;
-    font-weight:600;
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile-photo img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
-/* contact */
-.contact_sec{                                /* selecting div with class "contact_sec" and adding styling to it */
-    height: 60vh;
-    width:70vw;
-    margin: 0 auto;
+/*-------------about----------*/
+#about{
+
+    
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
 }
 
-.contact_heading{                            /* selecting div with class "contact_heading" and adding styling to it */
-    font-weight:600;
-    font-size: 3rem;
-    text-align: center;
-    text-decoration: underline;
+.about-col-1{
+
+    flex-basis: auto;
+    
+    overflow: hidden;
+    margin-top: 20%;
+
+
+}
+.video-container{
+    position: relative;
+    width:100%;
+    height: 100vh;
+    overflow:hidden;
+
+}
+#background-video {
+    position:left;
+    top:5px;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    margin-right: 100px;
+    padding:200px;
+    -ms-flex-align: end;
+    
 }
 
-.contact_info{                               /* selecting div with class "contact_info" and adding styling to it */
-    font-size:1.3em;
+.about-col-2{
+    
+    justify-items: right;
+    padding-top: 10px;
+    padding-right: 50px;
+    margin-left: 100px;
+    margin-top: 20%;
+
+}
+.sub-title{
+    font-size: 60px;
     font-weight: 600;
-    margin-top:10vh;
-}
-.data{                                       /* selecting div with class "data" and adding styling to it */
-    font-weight:initial;
+    color: #fff;
 }
 
-.Email,.mobile_no,.linkdin,.github,.others{ /* selecting many divs with the class listed and adding same styling to all of them */
-    padding:2vh 0;
+.tab-titles{
+
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+
+}
+.tab-links::after{
+
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
 }
 
-span a{                                     /* selecting span and then navigating to a tag in it and adding styling to it */
-    color:black;
+.tab-links.active-link::after{
+    width:50%;
+
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
 }
 
-span a:hover{                               /* here we add a special animation to anchor tag when it is hovered (hover: when a cursor roams in the specified setion it is the hover state for that element) */
-    color:blue;
+.tab-contents ul li span{
+    color: #ff004f;
+    font-size: 14px;
+}
+/*--------------------education---------------*/
+#Education{
+    padding: 30px 0;
+
+}
+.education-list{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    
+}
+.education-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s,transform 0.5s;
 }
 
 
-.para{                                      /* selecting div with class "para" and adding styling to it */
-    width:70vw; 
-    margin:8vh auto;
-    font-size: 2em;
+.education-list div i{
+
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.education-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.education-list div a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 10px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.education-list div:hover{
+
+    background: #ff004f;
+    transform: translateY(-10px);
+    transition
+}
+
+/*----------------portfolio-----------*/
+#portfolio{
+
+    padding: 50px 0;
+}
+.work-list{
+
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top:50px;
+   
+}
+
+.work{
+
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+.work img{
+
+    width: 100%;
+    border-radius: 10px;
+    display:block;
+    transition: transform 0.5s;
+}
+.layer{
+
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display:flex;
+    align-items: centre;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: centre;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+.layer a{
+
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img    {
+transform: scale(1.1)
+
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width:fit-content;
+    border: 1px solid;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color:#fff;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+
+    background: #ff004f;
+    
+}
+/*------------------------contact----------------*/
+.contact-left{
+
+    flex-basis: 35%;
+}
+
+.contact-right{
+
+    flex-basis: 60%;
+}
+.contact-left p{
+
+    margin-top: 30px;
+}
+,.contact-left p i{
+    color:#ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color:#ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color:#ff004f;
+    transform: translate(-5px);
+
+    
 }
