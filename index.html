@@ -1,56 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>PERSONAL PORTFOLIO</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/3098cbacd8.js" crossorigin="anonymous"></script>
 </head>
-
-<body>
-    <!-- We will be creating many elements in this document with some class (to add some styling later) -->
-    <!-- home page -->
-    <div id="home" class="homePage">
-        <div class="intro">                                  <!-- creating a master div to have child elements in it -->
-            <div class="name">Hi, I am &#60;name&#62;</div>  <!-- creating a div to enter your name (edit your name here) -->
-            <p>Frontend developer</p>                        <!-- paragraph tag -->
-            <button class="your_button">button</button>      <!-- creating a button -->
+<body style="background-image: url(C:\Users\sneha\OneDrive\Documents\image_of_me.jpg); background-size: cover;background-position: center;">
+    <div id="header">
+<div class="container">
+    <nav>
+        <div class="combined">
+        <h1 style="color: white; font-size: 50px;"><span>S</span>nehasis</h1>
         </div>
-        <div class="myImage">                                <!-- always a good habbit to add master divs -->
-            <img src="https://miro.medium.com/max/3960/0*HICLyAdNSIyT0ODU.jpg" alt="MyImage">  <!-- adding a image using url -->
+        
+<ul>
+
+    <li><a href="#">HOME</a></li>
+    <li><a href="#">ABOUT</a></li>
+    <li><a href="#">SERVICES</a></li>
+    <li><a href="#">PORTFOLIO</a></li>
+    <li><a href="#">CONTACT</a></li>
+</ul>
+    </nav>
+
+    <div class="header-text">
+        <p>Content Creator</p>
+        <h1>Hi, I'm <span>Snehasis</span><br> From West Bengal</h1>
+        <div class="profile-photo">
+            <img src="C:\Users\sneha\OneDrive\Pictures\mypic.jpg" alt="me">
+        </div>
+    
+    </div>
+
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                
+                
+        
+                <div>
+                    <div class="about-col-2">
+                        <div class="video-container">
+                            <video autoplay muted loop id="background-video">
+                                <source src="C:\Users\sneha\Downloads\video (1080p).mp4">
+                                
+                            </video>
+                        </div>
+                        <hr>
+
+                        <h1 class="sub-title">About Me</h1>
+                        <p>L"A proud freshman at IIIT Kalyani. Hailing from West Bengal, I bring with me a passion for technology and a deep curiosity about the world of computer science. My journey into the world of academia has just begun, and I am eager to explore the vast opportunities and challenges that lie ahead.
+
+                            Beyond the classroom, I am an avid programmer, photographer, content creator and I believe in the power of extracurricular activities to complement my academic pursuits. I look forward to engaging with the vibrant IIIT Kalyani community, making new friends, and contributing to the campus in any way I can.
+                            
+                            As I embark on this exciting chapter of my life, I am excited to learn, grow, and make lasting memories at IIIT Kalyani. Feel free to connect with me—I'm always open to new friendships and collaborative ventures!"
+                            
+                            
+                            
+                            
+                            </p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                
+                                
+                            </div>
+
+                            <div class="tab-contents active-tab" id="skills">
+
+                                <ul>
+                                
+                                    <li><span>Content Creation</span><br>Social Media</li>
+                                    <li><span>Designing Web Interface</span><br>Web and App Development</li>
+                                    <li><span>Photographer</span><br>Macro and others</li>
+
+
+
+                                </ul>
+                                <hr>
+                            </div>
+                                    
+                    </div>
+                    </div>
+                 
         </div>
     </div>
 
-    <!-- about me -->
-    <div id="aboutme" class="about">                         <!-- again a master div -->
-        <div class="about_heading">                          <!-- child div for heading -->
-            About me
-        </div>
-        <!-- adding a paragraph tag to write "about me", edit it and write about you -->
-        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptates provident molestias a
-            animi facilis iusto voluptatum repellat eligendi consequatur distinctio placeat mollitia veritatis
-            recusandae, ad, quasi commodi enim quos! Quasi aspernatur veniam, blanditiis sint necessitatibus dicta
-            libero voluptatibus reiciendis asperiores nemo maiores ducimus corrupti magnam error voluptatum ab velit.
-        </p>
-    </div>
+</div>
+<!-----------------Education----------->
 
-    <!-- contact -->
-    <div id="contact" class="contact_sec">                  <!-- adding a master div again -->
-        <div class="contact_heading">
-            Contact Me                                      <!-- adding a chiid div for heading -->
+<div id="Education">
+<div class="container">
+    <h1 class="sub-titles">My Education</h1>
+    <div class="education-list">
+        <div>
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>IIIT KALYANI</h2>
+            <p>Currently a freshman  at IIIT Kalyani I'M embarking on an exciting journey into the world of technology and higher education. With a passion for coding and a curiosity for all things tech, I'm is eager to dive into technical courses. I'm a quick learner, a team player, and always up for a challenge. Outside the classroom, you'll often find me participating in coding competitions, exploring new programming languages, and making friends through the various student clubs on campus. I'm ready to embrace the opportunities and experiences that IIIT Kalyani has to offer, both academically and personally.</p>
+          <a href="#">Learn More</a>
+            <img src="C:\Users\sneha\OneDrive\Documents\my_img.jpg" width="200px">
         </div>
-        <div class="contact_info">
-            <!-- adding more divs for personal details, edit them! -->
-            <div class="Email">Email : <span class='data'>gdsc@example.com</span></div>
-            <div class="mobile_no">Mobile no : <span class='data'>+91 XXXXXXXXXX</span></div>
-            <!-- adding anchor tag to directly redirect user to your profile, add links to your profile in href -->
-            <div class="linkdin">linkdin :<span class='data'> <a
-                        href="https://www.linkedin.com/company/gdsc-iiit-kalyani/">Linkdin IN</a></span></div>  
-            <div class="github">Github : <span class='data'> <a href="https://github.com/GDSC-IIIT-Kalyani">Github</a></span></div>
-            <div class="others">Others :<span class='data'> <a href="https://gdsc.bio.link/">BIO</a></span></div>
+        <div>
+            <i class="fa-solid fa-school-circle-xmark"></i>
+            <h2>Tribeni Tissues Vidhyapith</h2>
+            <p>In my journey towards academic and personal growth, my high school years served as the foundation upon which I built my aspirations and ambitions. I attended TTV, a place where curiosity was nurtured, friendships were forged, and dreams were cultivated. During my time there, I not only gained a strong academic foundation but also learned invaluable life skills and developed a passion for Science, Technology and Economics. The experiences and lessons from my high school years have been instrumental in shaping my character and setting the course for my future endeavors."</p>
+            <a href="#">Learn More</a>
+            <img src="C:\Users\sneha\OneDrive\Documents\school.jpg" width="200px">
         </div>
+        <div>
+            <i class="fa-solid fa-child"></i>
+            <h2>Vidhya Vihar</h2>
+            <p>"My journey in education began here, a place that laid the very first stepping stones of my academic and personal development. The nurturing environment fostered my curiosity and helped me develop essential foundational skills that have guided me throughout my educational journey. These early experiences instilled in me a love for knowledge and a sense of wonder, shaping the person I am today and fueling my aspirations for the future.During my formative years in primary school, I discovered the joy of learning, made enduring friendships, and began to understand the world around me</p>
+            <a href="#">Learn More</a>
+            <img src="C:\Users\sneha\OneDrive\Pictures\childpic.jpg" width="200px">
+        </div>
+    </div>
+</div>
+<!-----------------Portfolio----------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-titles">My Photography</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="C:\Users\sneha\OneDrive\Pictures\imgbutterfly.jpg" alt="">
+                <div class="layer">
+                    <h3>Macro image</h3>
+                    <p>A butterfly delicately perched on a glistening wet petal, a moment of ethereal beauty.</p>
+                    <a href="#"><i class="fa-duotone fa-camera"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="C:\Users\sneha\OneDrive\Pictures\imgdurga.jpg" alt="">
+                <div class="layer">
+                <h3>Durga Pic</h3>
+                <p>Durga's divine presence shines through rain-kissed glass, her power undiminished by the storm.</p>
+
+
+                <a href="#"><i class="fa-duotone fa-camera"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="C:\Users\sneha\OneDrive\Pictures\hangseshwari.jpg" alt="">
+                <div class="layer">
+                <h3>Temple</h3>
+                <p>A majestic temple nestled amidst breathtaking natural beauty</p>
+
+
+                <a href="#"><i class="fa-duotone fa-camera"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="https://instagram.com/snehasismukhopadhyay8864?igshid=YWYwM2I1ZDdmOQ== " class="btn">See More</a>
+
+    </div>
+</div>
+
+</div>
+
+
+
+
+<div id="contact">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>   snehasismukhopadhyay356@gmail.com</p>
+                <div class="social-icons">
+                    <h2>I am on X/Twitter</h2>
+                    <h3>Max Post Engagement: 500K</h3>
+                    <h3>FOLLOWERS: 4K</h3>
+
+                    <a href="https://x.com/SnehasisMukhop4?t=pZ7smrKMyKcckgeEje8Wfw&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+
+                    <h3>Other social media profiles</h3>
+                    <a href="https://instagram.com/snehasismukhopadhyay8864?igshid=YWYwM2I1ZDdmOQ== "><i class="fa-brands fa-square-instagram"></i></a>
+           <a href="https://www.linkedin.com/in/snehasis-mukhopadhyay-344519252/?originalSubdomain=in"><i class="fa-brands fa-linkedin"></i></a>
+           <a href=""><i class="fa-brands fa-facebook"></i></a>
+           
+           
+           
+                </div>
+
+            </div>
+            <div class="contact-left">
+
+        <form>
+            <input type="text" name="Name" placeholder="Your Name"required>
+            <input type="email" name="email" id="Your Email">
+            <textarea name="Message" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link");
+
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classlist.remove("active-tab");
+            
+        }
+        event.currentTarget.classlist.add("active-link");
+
+document.getElementById(tabname).classList.add("active-tab");
+
+
+
+    }
+
+</script>
+    
+    
 </body>
-
 </html>
