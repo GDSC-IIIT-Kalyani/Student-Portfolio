@@ -2,55 +2,428 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
+
+  <title>Anipriyo's's Resume - Portfolio HTML Page</title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="Tooplate">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 
-<body>
-    <!-- We will be creating many elements in this document with some class (to add some styling later) -->
-    <!-- home page -->
-    <div id="home" class="homePage">
-        <div class="intro">                                  <!-- creating a master div to have child elements in it -->
-            <div class="name">Hi, I am &#60;name&#62;</div>  <!-- creating a div to enter your name (edit your name here) -->
-            <p>Frontend developer</p>                        <!-- paragraph tag -->
-            <button class="your_button">button</button>      <!-- creating a button -->
-        </div>
-        <div class="myImage">                                <!-- always a good habbit to add master divs -->
-            <img src="https://miro.medium.com/max/3960/0*HICLyAdNSIyT0ODU.jpg" alt="MyImage">  <!-- adding a image using url -->
-        </div>
-    </div>
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
 
-    <!-- about me -->
-    <div id="aboutme" class="about">                         <!-- again a master div -->
-        <div class="about_heading">                          <!-- child div for heading -->
-            About me
-        </div>
-        <!-- adding a paragraph tag to write "about me", edit it and write about you -->
-        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptates provident molestias a
-            animi facilis iusto voluptatum repellat eligendi consequatur distinctio placeat mollitia veritatis
-            recusandae, ad, quasi commodi enim quos! Quasi aspernatur veniam, blanditiis sint necessitatibus dicta
-            libero voluptatibus reiciendis asperiores nemo maiores ducimus corrupti magnam error voluptatum ab velit.
-        </p>
-    </div>
+  <!-- MENU BAR -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
 
-    <!-- contact -->
-    <div id="contact" class="contact_sec">                  <!-- adding a master div again -->
-        <div class="contact_heading">
-            Contact Me                                      <!-- adding a chiid div for heading -->
+      <a class="navbar-brand" href="#">
+        Anipriyo's Resume
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a href="#intro" class="nav-link smoothScroll">Introduction</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#about" class="nav-link smoothScroll">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials" class="nav-link smoothScroll">Education</a>
+          </li>
+          <li class="nav-item">
+            <a href="#work" class="nav-link smoothScroll">Projects</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#contact" class="nav-link smoothScroll">Contact</a>
+          </li>
+        </ul>
+
+        <div class="mt-lg-0 mt-3 mb-4 mb-lg-0">
+          <a href="https://www.linkedin.com/in/anipriyo-mandal/" class="custom-btn btn" download>Download CV</a>
         </div>
-        <div class="contact_info">
-            <!-- adding more divs for personal details, edit them! -->
-            <div class="Email">Email : <span class='data'>gdsc@example.com</span></div>
-            <div class="mobile_no">Mobile no : <span class='data'>+91 XXXXXXXXXX</span></div>
-            <!-- adding anchor tag to directly redirect user to your profile, add links to your profile in href -->
-            <div class="linkdin">linkdin :<span class='data'> <a
-                        href="https://www.linkedin.com/company/gdsc-iiit-kalyani/">Linkdin IN</a></span></div>  
-            <div class="github">Github : <span class='data'> <a href="https://github.com/GDSC-IIIT-Kalyani">Github</a></span></div>
-            <div class="others">Others :<span class='data'> <a href="https://gdsc.bio.link/">BIO</a></span></div>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- Main -->
+  <section class="hero d-flex flex-column justify-content-center align-items-center" id="intro">
+    <br><br><br><br>
+    <div class="container">
+      <div class="row">
+        
+        <div class="mx-auto col-lg-5 col-md-5 col-10">
+          <img src="images/profile.jpg" class="img-fluid" alt="Anipriyo Profile pic" style="border-radius:50%">
         </div>
+
+        <div class="d-flex flex-column justify-content-center align-items-center col-lg-7 col-md-7 col-12">
+          <div class="hero-text">
+            <br><br><br><br>
+            <h1>Hello👋 <br>I am Anipriyo Mandal <br> Aspiring Scientist and a Research Enthusiast</h1>
+            <br><br>
+            <a href="mailto:anipriyo2004@gmail.com" class="email-link">
+              anipriyo2004@gmail.com
+            </a>
+            <a href="cse23017@iiitkalyani.ac.in" class="email-link">
+              cse23017@iiitkalyani.ac.in
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+  <section class="about section-padding" id="about">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6 col-md-6 col-12">
+          <h2 class="mb-4">This is About Me</h2>
+
+          <p>Hello there! I'm Anipriyo Mandal, and I'm on a mission to explore the world of innovation and technology.
+            Here's a bit about me in bullet points:</p>
+            <br>
+          <ul>
+            <li>🔬 <b>Scientist:</b> Quantum technology holds a special place in my heart. I'm determined to explore its
+              potential for solving real-world challenges and shaping the future of technology.</li>
+            <br>
+            <li>🌌 <b>Quantum Tech Aficionado:</b> Quantum technology fascinates me. I'm eager to delve deeper into this
+              field to harness its potential for solving real-life problems. My dream is to contribute to the future of
+              technology through quantum research </li>
+            <br>
+            <li>📡 <b>Defence Tech News Curator:</b> Beyond academics, I curate a news channel on Twitter, focusing on
+              defense technology and developments. It's a way for me to stay updated and share insights with a community
+              of fellow enthusiasts.</li>
+            <br>
+            <li>🎹 <b>Piano Enthusiast:</b> Music is my escape, and I express myself through the piano. It's not just a
+              hobby; it's a way to unwind, relax, and unleash my creativity.</li>
+            <br>
+            <li>🌟 <b>Favorite Quote:</b>"Learn to love and love to learn." This quote reflects my life philosophy,
+              emphasizing the importance of continuous learning and a passionate approach to life.</li>
+            <br>
+
+          </ul>
+        </div>
+
+        <div class="col-lg-5 mx-auto col-md-6 col-12">
+          <img src="images/true-agency.jpg" style="border-radius: 50%;" class="about-image img-fluid">
+          <ul class="mt-4 mb-5 mb-lg-0 profile-list list-unstyled">
+            <li><strong>Full Name :</strong> Anipriyo Mandal </li>
+
+            <li><strong>Date of Birth:</strong> 25th August 2004</li>
+
+            <li><strong>Website :</strong> #</li>
+
+            <li><strong>Email :</strong> anipriyo2004@gmai.com</li>
+            <li><strong>Email :</strong> cse23017@iiitkalyani.ac.in</li>
+            <li><strong>You can approach me in:</strong> English, Hindi & Bengali</li>
+            
+          </ul>
+        </div>
+        <p>I'm thrilled to share my portfolio with you, where you'll find a collection of my work, projects, and
+          research endeavors. Feel free to explore, and if you'd like to collaborate or connect, don't hesitate to reach
+          out.
+
+          Let's embark on a journey of innovation and knowledge together!</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Education -->
+  <section class="testimonials section-padding" id="testimonials">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12">
+          <h2 class="mb-5 text-center">Educational Qualification</h2>
+          <br><br>
+          <div class="owl-carousel owl-theme" id="testimonials-carousel">
+            <div class="item">
+              <div class="testimonials-thumb d-flex">
+                <div class="testimonials-image">
+                  <img src="images/iiit.jpg" class="img-fluid" alt="IIIT Logo">
+                </div>
+
+                <div class="testimonials-info">
+
+
+                  <h6 class="mb-0">Indian Institute of Information Technology</h6>
+                  <p>B.Tech CSE (Aug 2023 - Present)</p>
+                  <span>CGPA : </span>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="testimonials-thumb d-flex">
+                <div class="testimonials-image">
+                  <img src="images/spdl.png" class="img-fluid" alt="Springdale Logo">
+                </div>
+
+                <div class="testimonials-info">
+
+                  <h6 class="mb-0">Springdale High School</h6>
+                  <p>Higher Secondary (July 2021 - March 2023)</p>
+                  <span>Grade: XII : 91.8%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="testimonials-thumb d-flex">
+                <div class="testimonials-image">
+                  <img src="images/spdl.png" class="img-fluid" alt="Springdale Logo">
+                </div>
+
+                <div class="testimonials-info">
+
+
+                  <h6 class="mb-0">Springdale High School</h6>
+                  <p>Secondary (Jan 2011 - May 2021)</p>
+                  <span>Grade: X: 97.57%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Test Scores -->
+  <br><br><br><br><br><br><br><br>
+  <section id="score">
+    <h2 align="center" style="font-size: 3rem;">Test Scores</h2>
+    <br><br>
+    <section id="test_score">
+      <div class="test_score_card">
+        <img class="test_score_img" src="images/jeem.jpg" alt="Jee Mains" style="width:10%">
+        <div class="test_score_container">
+          <h6>JEE Mains</h6>
+          <p class="title">Apr 2023</p>
+          <p style="color: black;">CRL(Gen) 31139 </p>
+        </div>
+      </div>
+
+      <div class="test_score_card">
+        <img class="test_score_img" src="images/wbchse.jpg" alt="Wbchse" style="width:10%">
+        <div class="test_score_container">
+          <h6>WBCHSE (12th Boards)</h6>
+          <p class="title">March 2023</p>
+          <p style="color: black;">Score: 91.8% </p>
+        </div>
+      </div>
+
+      <div class="test_score_card">
+        <img class="test_score_img" src="images/wbbse.jpg" alt="WBBSE" style="width:10%">
+        <div class="test_score_container">
+          <h6><b>WBBSE (10th Boards)</b></h6>
+          <p class="title">May 2021</p>
+          <p style="color: black;">Score: 97.57%</p>
+        </div>
+      </div>
+    </section>
+  </section>
+  <br><br>
+
+
+
+  <!-- project -->
+  </section>
+  <br><br><br><br><br>
+  <section id="work">
+    <h2 align="center" style="font-size: 4rem;">Projects</h2>
+    <br><br><br>
+    <div class="project-grid">
+      <div class="project_card">
+        <img src="images/portfolio.jpg" alt="Project 1">
+        <h3>My Portfolio</h3>
+        <p>Here goes a link to my <a href="https://anipriyo.github.io/Student-Portfolio/">portfolio</a> </p>
+      </div>
+      <div class="project_card">
+        <img src="images/project2.png" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>Coming Soon....</p>
+      </div>
+      <div class="project_card">
+        <img src="images/project3.png" alt="Project 3">
+        <h3>Project 3</h3>
+        <p>Coming Soon....</p>
+      </div>
+    </div>
+  </section>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <!-- skills
+<section class="testimonials section-padding" id="testimonials">
+  <div class="container">
+       <div class="row">
+
+            <div class="col-12">
+                <h3 class="mb-5 text-center">Skills</h3>
+
+                <div class="owl-carousel owl-theme" id="testimonials-carousel">
+                    <div class="item">
+                        <div class="testimonials-thumb d-flex">
+                            <div class="testimonials-image">
+                                <img src="images/testimonials/testimonial-image01.jpg" class="img-fluid" alt="testimonials image">
+                            </div>
+
+                            <div class="testimonials-info">
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+
+                                <h6 class="mb-0">Ben</h6>
+                                <span>Art Director</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="testimonials-thumb d-flex">
+                            <div class="testimonials-image">
+                                <img src="images/testimonials/testimonial-image02.jpg" class="img-fluid" alt="testimonials image">
+                            </div>
+
+                            <div class="testimonials-info">
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+
+                                <h6 class="mb-0">Marie</h6>
+                                <span>Marketing Consultant</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="testimonials-thumb d-flex">
+                            <div class="testimonials-image">
+                                <img src="images/testimonials/testimonial-image03.jpg" class="img-fluid" alt="testimonials image">
+                            </div>
+
+                            <div class="testimonials-info">
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+
+                                <h6 class="mb-0">Jen</h6>
+                                <span>Product Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                    
+                </div>
+
+            </div>
+
+       </div>
+</section> -->
+
+
+
+
+
+  <section class="contact section-padding pt-0" id="contact">
+    <div class="container">
+      <h3>Contact Me</h3><br><br>
+      <div class="row">
+
+        <div class="col-lg-6 col-md-6 col-12">
+          <form action="#" method="get" class="contact-form webform" role="form">
+
+            <div class="form-group d-flex flex-column-reverse">
+              <input type="text" class="form-control" name="cf-name" id="cf-name" placeholder="Your Name">
+
+              <label for="cf-name" class="webform-label">Full Name</label>
+            </div>
+
+            <div class="form-group d-flex flex-column-reverse">
+              <input type="email" class="form-control" name="cf-email" id="cf-email" placeholder="Your Email">
+
+              <label for="cf-email" class="webform-label">Your Email</label>
+            </div>
+
+            <div class="form-group d-flex flex-column-reverse">
+              <textarea class="form-control" rows="5" name="cf-message" id="cf-message"
+                placeholder="Your Message"></textarea>
+
+              <label for="cf-message" class="webform-label">Message</label>
+            </div>
+
+            <button type="submit" class="form-control" id="submit-button" name="submit">Send</button>
+          </form>
+        </div>
+
+        <div class="mx-auto col-lg-4 col-md-6 col-12">
+          <h3 class="my-4 pt-4 pt-lg-0">Say hello</h3>
+
+          <!-- <p class="mb-1">010-020-0340</p> -->
+
+          <p>
+            <a href="mailto:anipriyo2004@gmail.com">
+              anipriyo2004@gmail.com
+              <i class="fas fa-arrow-right custom-icon"></i>
+            </a>
+          </p>
+          <p>
+            <a href="cse23017@iiitkalyani.ac.in">
+              cse23017@iiitkalyani.ac.in
+              <i class="fas fa-arrow-right custom-icon"></i>
+            </a>
+          </p>
+
+          <ul class="social-links mt-2">
+            <li><a href="https://www.facebook.com/profile.php?id=100092993658050&mibextid=b06tZ0" rel="noopener"
+                class="fab fa-facebook"></a></li>
+            <li><a href="https://open.spotify.com/user/31ec6zpsxx742snlwcvhxbbxdqd4?si=5fea66b2fb214cab" rel="noopener"
+                class="fab fa-spotify"></a></li>
+            <li><a href="https://instagram.com/the_melodious_one_?igshid=OGQ5ZDc2ODk2ZA==" rel="noopener"
+                class="fab fa-instagram"></a></li>
+            <li><a href="https://www.linkedin.com/in/anipriyo-mandal/" rel="noopener" class="fab fa-linkedin"></a></li>
+          </ul>
+
+          <p class="copyright-text mt-5 pt-3">Copyright &copy; 2023 Anipriyo's Resume Page</p>
+
+          <p>Design: Anipriyo Mandal</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- SCRIPTS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/custom.js"></script>
+
 </body>
 
 </html>
