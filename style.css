@@ -59,18 +59,7 @@
     line-height: 3rem;
 }
 
-.your_button{                                  /* selecting button with class "your_button" and adding styling to it */
-    font-size: 1rem;
-    padding: 5px;
-    cursor: pointer;
-    background-color: rgb(42, 42, 255);
-    border-radius: 5px;
-    width:100px;s
-    height:50px;
-    border:2px solid white;
-    color:white;
-    text-transform: capitalize;
-}
+
 .your_button:hover{                           /* here we add a special animation to button when it is hovered (hover: when a cursor roams in the specified setion it is the hover state for that element) */
    
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
@@ -224,23 +213,6 @@ span a:hover{                               /* here we add a special animation t
     font-size: 16px;
     padding: 8px 16px;
  }
-
- 
-
- .linkedin {
-    background-color: #0077b5;
- }
- .discord {
-    background-color: #1a08bd;
- }
- 
- .whatsapp {
-    background-color: #25d366;
- }
-
-.instagram {
-   background-color: #ef05e8;
-}
 
  
 
