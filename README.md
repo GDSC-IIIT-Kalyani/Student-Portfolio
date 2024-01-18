@@ -1,2 +1,2 @@
 # Student-Portfolio
-https://githubsamridhi.github.io/Student-Portfolio/
+https://samridhi171.github.io/Student-Portfolio/
